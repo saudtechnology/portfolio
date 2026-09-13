@@ -5,7 +5,7 @@ runs:
   using: composite
   steps:
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v5
       with:
         node-version: 24.14.0
 
@@ -16,7 +16,7 @@ runs:
         corepack prepare pnpm@12.4.1 --activate
 
     - name: Cache pnpm store
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v5
       with:
         node-version: 24.14.0
         cache: pnpm
