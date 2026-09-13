@@ -1,0 +1,65 @@
+# https://lefthook.dev/configuration/
+min_version: 2.0.0
+
+output:
+  - meta
+  - summary
+  - failure
+  - execution
+
+pre-commit:
+  parallel: true
+  commands:
+    prettier:
+      glob: '*.{js,jsx,ts,tsx,mjs,cjs,json,yml,yaml,md,mdx,css}'
+      run: pnpm exec prettier --check {staged_files}
+
+    eslint:
+      glob: '*.{js,jsx,ts,tsx,mjs,cjs}'
+      run: pnpm exec eslint {staged_files} --max-warnings 0
+
+    stylelint:
+      glob: '*.{css,scss}'
+      run: pnpm exec stylelint {staged_files}
+
+    markdownlint:
+      glob: '*.md'
+      run: pnpm exec markdownlint --config .markdownlint.json --ignore-path .markdownlintignore {staged_files}
+
+    gitleaks:
+      run: pnpm test:sast:secrets
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm exec commitlint --edit {1}
+
+pre-push:
+  parallel: false
+  commands:
+    branch-name:
+      run: pnpm lint:check:branchname
+
+    prettier:
+      run: pnpm lint:check:prettier
+
+    eslint:
+      run: pnpm eslint:check
+
+    stylelint:
+      run: pnpm lint:check:stylelint
+
+    markdownlint:
+      run: pnpm lint:check:markdown
+
+    sast:
+      run: pnpm test:sast:all
+
+    unit:
+      run: pnpm test:unit
+
+    hint:
+      run: pnpm test:hint
+
+    lighthouse:
+      run: pnpm exec lhci autorun
