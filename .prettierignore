@@ -1,0 +1,64 @@
+# Global Monorepo Prettier Ignore Architecture
+# Official Reference: https://prettier.io
+
+# ============================================================
+# 1. THIRD-PARTY DEPENDENCIES
+# ============================================================
+node_modules/
+.pnpm-store/
+
+# ============================================================
+# 2. BUILD AND COMPILATION OUTPUT TARGETS
+# ============================================================
+.next/
+out/
+dist/
+build/
+
+# ============================================================
+# 3. COVERAGE AND SAST SECURITY REPORTS
+# ============================================================
+htmlcov/
+coverage/
+.coverage*
+.nyc_output/
+.vitest/
+test-results/
+playwright-report/
+blob-report/
+hint-report/
+
+# ============================================================
+# 4. SYSTEM LOGS AND TEMPORARY RUN PACKS
+# ============================================================
+tmp/
+temp/
+.cache/
+.stylelintcache
+*.log
+
+# ============================================================
+# 5. ECOSYSTEM EXTERNAL LOCKFILES
+# ============================================================
+# Prettier ignores pnpm-lock.yaml implicitly;
+pnpm-lock.yaml
+
+# ============================================================
+# 6. GENERATED METADATA AND COMPILED ARTIFACTS
+# ============================================================
+next-env.d.ts
+*.min.js
+*.min.css
+*.map
+
+# ============================================================
+# 7. IDE WORKSPACES AND VCS METADATA
+# ============================================================
+.idea/
+.vscode/
+.git/
+
+# ============================================================
+# 10. DEVOPS AND DEPLOYMENT VOLUMES
+# ============================================================
+docker-data/

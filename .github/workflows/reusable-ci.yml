@@ -1,0 +1,167 @@
+name: Reusable CI
+
+on:
+  workflow_call:
+    inputs:
+      require_changeset:
+        description: Fail when the PR has no .changeset file
+        type: boolean
+        default: false
+
+env:
+  LEFTHOOK: '0'
+  NEXT_PUBLIC_SITE_URL: https://saudtechnology.com
+
+jobs:
+  changeset:
+    name: Changeset
+    if: ${{ inputs.require_changeset && github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - name: Require changeset
+        shell: bash
+        run: |
+          PR_AUTHOR="${{ github.actor }}"
+          PR_TITLE="${{ github.event.pull_request.title }}"
+          if [ "$PR_AUTHOR" = "github-actions[bot]" ] || [[ "$PR_TITLE" == "Version Packages"* ]]; then
+            echo "Changeset PR detected. Skipping requirement."
+            exit 0
+          fi
+          BASE_BRANCH="${{ github.base_ref }}"
+          git fetch origin "$BASE_BRANCH" --depth=1 || true
+          CHANGED_FILES=$(git diff --name-only "origin/${BASE_BRANCH}...HEAD")
+          HAS_CHANGESET=$(echo "$CHANGED_FILES" | grep -E '^\.changeset/.*\.md$' || true)
+          if [ -z "$HAS_CHANGESET" ]; then
+            echo "::error::No changeset found. Run pnpm changeset, commit the generated file, and push."
+            exit 1
+          fi
+
+  audit:
+    name: Dependency audit
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - run: pnpm test:audit
+
+  secrets:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup-pnpm
+      - run: pnpm test:sast:secrets
+
+  semgrep:
+    name: Semgrep
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - run: pnpm test:sast:semgrep
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/setup-pnpm
+      - name: Lint
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+          COMMIT_FROM_SHA: ${{ github.event.pull_request.base.sha }}
+          COMMIT_TO_SHA: ${{ github.event.pull_request.head.sha }}
+        run: pnpm lint:check:all
+
+  unit:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - run: pnpm test:unit
+
+  build:
+    name: Static export
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - run: pnpm build
+      - name: Assert export
+        run: test -f out/index.html && test -f out/.nojekyll && test -f out/CNAME
+      - uses: actions/upload-artifact@v4
+        with:
+          name: static-site
+          path: out
+          include-hidden-files: true
+          retention-days: 1
+
+  e2e:
+    name: Playwright
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - uses: actions/download-artifact@v4
+        with:
+          name: static-site
+          path: out
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm exec playwright test
+
+  lighthouse:
+    name: Lighthouse
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - uses: actions/download-artifact@v4
+        with:
+          name: static-site
+          path: out
+      - run: pnpm exec lhci autorun
+
+  hint:
+    name: Webhint
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - uses: actions/download-artifact@v4
+        with:
+          name: static-site
+          path: out
+      - run: pnpm lint:check:hint
