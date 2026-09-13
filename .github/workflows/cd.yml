@@ -1,0 +1,55 @@
+# Continuous delivery: quality on main, then GitHub Pages.
+# https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+# https://github.com/actions/deploy-pages
+
+name: CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  LEFTHOOK: '0'
+  NEXT_PUBLIC_SITE_URL: https://saudtechnology.com
+
+jobs:
+  quality:
+    name: Quality
+    uses: ./.github/workflows/reusable-ci.yml
+    with:
+      require_changeset: false
+    permissions:
+      contents: read
+
+  deploy:
+    name: GitHub Pages
+    needs: quality
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: ${{ github.ref_name }}
+      url: ${{ vars.SITE_URL }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup-pnpm
+      - run: pnpm build
+      - name: Assert export
+        run: test -f out/index.html && test -f out/.nojekyll && test -f out/CNAME
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: out
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
