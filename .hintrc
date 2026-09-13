@@ -1,0 +1,34 @@
+{
+	"connector": {
+		"name": "local",
+	},
+	"extends": ["web-recommended"],
+	"formatters": ["summary", "html"],
+	"hintsTimeout": 120000,
+	"hints": {
+		"meta-charset-utf-8": "off",
+		"meta-viewport": "off",
+		"html-checker": "off",
+		"detect-css-reflows/composite": "off",
+		"detect-css-reflows/paint": "off",
+		"compat-api/css": [
+			"default",
+			{
+				"ignore": ["hyphens", "scrollbar-color", "-webkit-text-size-adjust", "text-size-adjust"],
+			},
+		],
+		"content-type": "off",
+		"http-cache": "off",
+		"http-compression": "off",
+		"no-disallowed-headers": "off",
+		"no-friendly-error-pages": "off",
+		"no-html-only-headers": "off",
+		"no-http-redirects": "off",
+		"no-vulnerable-javascript-libraries": "off",
+		"ssllabs": "off",
+		"strict-transport-security": "off",
+		"stylesheet-limits": "off",
+		"validate-set-cookie-header": "off",
+		"x-content-type-options": "off",
+	},
+}
