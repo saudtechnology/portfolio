@@ -47,7 +47,7 @@ jobs:
       - run: pnpm build
       - name: Assert export
         run: test -f out/index.html && test -f out/.nojekyll && test -f out/CNAME
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: out
       - name: Deploy
