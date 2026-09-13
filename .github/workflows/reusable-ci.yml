@@ -129,7 +129,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup-pnpm
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v8
         with:
           name: static-site
           path: out
@@ -145,7 +145,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup-pnpm
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v8
         with:
           name: static-site
           path: out
@@ -160,7 +160,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup-pnpm
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@v8
         with:
           name: static-site
           path: out
