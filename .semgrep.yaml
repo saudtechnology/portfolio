@@ -1,0 +1,16 @@
+# https://semgrep.dev/docs/writing-rules/rule-syntax
+
+rules:
+  - id: no-raw-console-in-source
+    languages: [javascript, typescript]
+    severity: ERROR
+    message: ❌ [SEMGREP AUDIT] Prefer structured logging or remove console usage from production source.
+    patterns:
+      - pattern-either:
+          - pattern: console.log(...)
+          - pattern: console.debug(...)
+    paths:
+      exclude:
+        - scripts/**
+        - '**/*.{test,spec}.{js,ts,tsx}'
+        - '**/*.config.{js,mjs,cjs,ts}'
