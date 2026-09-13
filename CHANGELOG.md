@@ -1,5 +1,19 @@
 # Changelog
 
+## 3.0.0
+
+### Major Changes
+
+- f964e8c: test
+
+### Minor Changes
+
+- f964e8c: e
+
+### Patch Changes
+
+- f964e8c: kkkk
+
 ## 2.0.0
 
 ### Major Changes
