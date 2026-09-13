@@ -34,7 +34,7 @@ jobs:
       - uses: ./.github/actions/setup-pnpm
 
       - name: Version packages
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
           version: pnpm infra:release:changeset:version:packages
         env:
