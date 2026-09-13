@@ -1,5 +1,0 @@
----
-'saudtechnology-portfolio': major
----
-
-test

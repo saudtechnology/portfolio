@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.0.0
+
+### Major Changes
+
+- bbe59d7: test
+
+### Patch Changes
+
+- bbe59d7: kkkk
+
 ## 1.0.0
 
 ### Major Changes
