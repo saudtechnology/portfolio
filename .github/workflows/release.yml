@@ -36,7 +36,6 @@ jobs:
       - name: Version packages
         uses: changesets/action@v1
         with:
-          publish: false
           version: pnpm infra:release:changeset:version:packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -47,8 +46,10 @@ jobs:
         run: |
           VERSION=$(node -p "require('./package.json').version")
           TAG="v$VERSION"
-          echo "Identified root version: $VERSION"
-          echo "Creating a unified tag: $TAG"
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists. Skipping."
+            exit 0
+          fi
           git tag "$TAG"
           git push origin "$TAG"
           gh release create "$TAG" --generate-notes --title "$TAG"
