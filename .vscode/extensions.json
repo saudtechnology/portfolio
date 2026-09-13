@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+		"webhint.vscode-webhint",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "davidanson.vscode-markdownlint",
+		"stylelint.vscode-stylelint",
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    "EditorConfig.EditorConfig",
+    "redhat.vscode-yaml",
+    "usernamehw.errorlens",
+    "SonarSource.sonarlint-vscode",
+		"chrmarti.regex"
+  ]
+}
