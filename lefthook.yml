@@ -60,3 +60,6 @@ pre-push:
 
     hint:
       run: pnpm test:hint
+
+    lighthouse:
+      run: pnpm exec lhci autorun
