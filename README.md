@@ -1,4 +1,4 @@
-# SˆUD TECHNOLOGY
+# SAUD TECHNOLOGY
 
 [![CI](https://github.com/saudtechnology/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/saudtechnology/portfolio/actions/workflows/ci.yml)
 [![Security](https://img.shields.io/badge/security-Gitleaks%20%7C%20Semgrep%20%7C%20CodeQL-2ea44f)](SECURITY.md)

@@ -85,7 +85,7 @@
 		"test:audit": "pnpm audit --prod",
 		"test:lighthouse": "pnpm build && lhci autorun",
 		"test:sast:secrets": "gitleaks-secret-scanner git --config=.gitleaks.toml --redact --verbose --exit-code=1",
-		"test:sast:semgrep": "docker run --rm -v \".:/src\" semgrep/semgrep semgrep scan --config=.semgrep.yaml --config=p/security-audit --config=p/javascript --quiet --error",
+		"test:sast:semgrep": "bash ./scripts/semgrep.sh",
 		"test:sast:all": "pnpm test:sast:secrets && pnpm test:sast:semgrep",
 		"prettier:fix": "prettier --write .",
 		"markdown:fix": "markdownlint --config .markdownlint.json --ignore-path .markdownlintignore --dot . --fix",
@@ -104,7 +104,7 @@
 		"lint:check:yaml": "eslint --no-error-on-unmatched-pattern --no-warn-ignored \"**/*.{yml,yaml}\"",
 		"lint:check:json": "eslint --no-error-on-unmatched-pattern --no-warn-ignored \"**/*.{json}\"",
 		"lint:check:toml": "taplo lint",
-		"lint:check:sh": "infra:script:lint:check:sh"
+		"lint:check:sh": "pnpm infra:script:lint:check:sh"
 	},
 	"dependencies": {
 		"next": "16.3.5",
