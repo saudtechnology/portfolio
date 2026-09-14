@@ -13,7 +13,7 @@ test('site origin defaults to the canonical domain', () => {
 test('wordmark and motto stay in English', () => {
 	assert.equal(SITE_NAME, 'SAUD TECHNOLOGY');
 	assert.equal(SITE_WORDMARK, 'SAUD TECHNOLOGY');
-	assert.equal(SITE_MOTTO, 'Think Big. Build Smart.');
+	assert.equal(SITE_MOTTO, 'Engineering Intelligence. Architecting the Future.');
 	assert.ok(source.includes(SITE_NAME));
 	assert.ok(source.includes(SITE_WORDMARK));
 	assert.ok(source.includes(SITE_MOTTO));
