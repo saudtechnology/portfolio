@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+/* Hex lives in src/lib/site/tokens.ts (injected by BrandStyles). */
+
+:root {
+	color-scheme: dark;
+
+	--background: var(--plate);
+	--foreground: var(--snow);
+	--surface: var(--forest);
+	--border: var(--forest);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color-scheme: light;
+
+		--background: var(--snow);
+		--foreground: var(--pine);
+		--surface: var(--snow);
+		--border: var(--mute-on-light);
+		--mute: var(--mute-on-light);
+	}
+}
+
+html.dark {
+	color-scheme: dark;
+
+	--background: var(--plate);
+	--foreground: var(--snow);
+	--surface: var(--forest);
+	--border: var(--forest);
+}
+
+html.light {
+	color-scheme: light;
+
+	--background: var(--snow);
+	--foreground: var(--pine);
+	--surface: var(--snow);
+	--border: var(--mute-on-light);
+	--mute: var(--mute-on-light);
+}
+
+@theme inline {
+	--color-void: var(--void);
+	--color-pine: var(--pine);
+	--color-plate: var(--plate);
+	--color-forest: var(--forest);
+	--color-snow: var(--snow);
+	--color-mute: var(--mute);
+	--color-neon: var(--neon);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-surface: var(--surface);
+	--color-border: var(--border);
+	--font-sans: var(--font-montserrat);
+}
+
+html {
+	text-size-adjust: 100%;
+	background: var(--background);
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	image-rendering: auto;
+}
+
+a {
+	color: var(--neon);
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+a:focus-visible {
+	outline: 2px solid var(--neon);
+	outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	a:hover {
+		opacity: 1;
+	}
+}
