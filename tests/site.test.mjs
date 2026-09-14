@@ -7,7 +7,7 @@ const source = readFileSync(new URL('../src/lib/site/identity.ts', import.meta.u
 
 test('site origin defaults to the canonical domain', () => {
 	assert.equal(new URL(SITE_URL).origin, 'https://saudtechnology.com');
-	assert.ok(source.includes('https://saudtechnology.com'));
+	assert.match(source, /NEXT_PUBLIC_SITE_URL \?\? 'https:\/\/saudtechnology\.com'/);
 });
 
 test('wordmark and motto stay in English', () => {
