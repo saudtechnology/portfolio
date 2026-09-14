@@ -12,6 +12,8 @@
     "redhat.vscode-yaml",
     "usernamehw.errorlens",
     "SonarSource.sonarlint-vscode",
+    "timonwong.shellcheck",
+    "tamasfe.even-better-toml",
 		"chrmarti.regex"
   ]
 }
