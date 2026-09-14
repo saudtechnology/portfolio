@@ -7,37 +7,46 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs&logoColor=white)](package.json)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-**Embrace a Vision of Innovation and Excellence.**
+> **Embrace a Vision of Innovation and Excellence.**
+>
+> **Think Big. Build Smart.**
+>
+> **Engineering Intelligence. Architecting the Future.**
 
-**Think Big. Build Smart.**
+**SAUD TECHNOLOGY** is an independent technology engineering practice and portfolio by **THIAGO SAUD**, focused on the intersection of **Artificial Intelligence, Machine Learning, Software Architecture, Frontend Engineering and high-scale distributed systems**.
 
-**SAUD TECHNOLOGY** stands as the professional identity under which **THIAGO SAUD** operates on mission-critical platforms—the user interface and the underlying system.
+The portfolio explores the architecture and implementation of **AI-native systems, Generative AI applications, Large Language Models, RAG pipelines, Agentic AI, Multimodal Intelligence, Computer Vision, MLOps, intelligent Frontend applications and distributed systems**.
 
-Our focus lies in the development of high-reliability and high-traffic digital systems for fintech, banking, and regulated operations, where technical decisions directly impact latency, availability, security posture, and business indicators.
+It is built around a simple engineering philosophy:
 
-**Frontend:** Architecture of web platforms, design systems, and micro-frontends. Rendering and caching strategies, reliability standards for critical journeys, measurable performance (Core Web Vitals / Real User Monitoring), progressive delivery, and user experience prepared for failures: elegant degradation and error isolation.
+> **Architecture defines scale.**
+>
+> **Intelligence defines advantage.**
+>
+> **Engineering turns both into reality.**
 
-**AI & MLOps:** Model engineering in production, not just in the demonstration phase. Use of Python and Deep Learning; implementation of RAG and Agentic AI with LangChain / LangGraph; training cycle, registration, testing, and observability with MLflow. Models undergo the same rigorous release process as interfaces—versioned, monitored, and recoverable in case of failure.
+This repository contains selected **projects, experiments, architectures and engineering work** spanning **AI Engineering, Machine Learning, MLOps, production infrastructure, cloud platforms, frontend architecture, software architecture and advanced digital products**.
 
-The criterion of excellence remains consistent in both areas: platforms that remain fast, secure, and operational as complexity increases.
+The goal is not simply to build software.
 
-Elevate your business to new heights with professional-quality software!
+It is to **engineer intelligent systems designed for scale, resilience and real-world impact.**
 
 This repository is a **single Next.js application**, not a monorepo. The
-root package is private. It is not published to npm. GitHub Pages serves the
-static export from `out/`.
+root package is private. It is not published to npm. GitHub Pages serves
+the static export from `out/`.
 
 ## 🎯 Goals
 
 - Publish the official SAUD TECHNOLOGY presence as a static site.
 - Keep the App Router contract explicit: reserved files in `src/app/`,
-  shared UI in `src/components/`, constants in `src/lib/`.
-- Apply frontend and delivery practices that hold in production: Core Web
-  Vitals, SEO document metadata, deterministic installs, and quality gates
-  before `main`.
+  shared UI in `src/components/`, constants in `src/lib/`, global CSS in
+  `src/styles/`.
+- Apply frontend and delivery practices that hold in production: Core
+  Web Vitals, SEO document metadata, deterministic installs, and quality
+  gates before `main`.
 - Automate linting, tests, SAST, versioning, and Pages deployment.
-- Keep local hooks and GitHub Actions aligned so the same rules run on the
-  workstation and on the PR.
+- Keep local hooks and GitHub Actions aligned so the same rules run on
+  the workstation and on the PR.
 
 ## 🏗️ Repository role
 
@@ -50,8 +59,11 @@ Developer
 ├── Lefthook
 │   └── Local Git quality gates
 │
-├── ESLint / Stylelint / Prettier / Markdownlint
-│   └── Code, CSS, and documentation quality
+├── ESLint / Stylelint / Prettier / Markdownlint / Taplo
+│   └── Code, CSS, YAML, TOML, and documentation quality
+│
+├── ShellCheck
+│   └── POSIX / Bash lint (scripts/*.sh) — host binary, not npm
 │
 ├── Gitleaks / Semgrep / CodeQL / pnpm audit
 │   └── Secrets, SAST, and production-dependency audit
@@ -68,108 +80,163 @@ Developer
 
 ## 🗂️ Structure
 
+Tree taken from the repository on disk. Generated trees
+(`node_modules/`, `.next/`, `out/`, `playwright-report/`,
+`test-results/`, `.lighthouseci/`, `.act/`, `coverage/`,
+`hint-report/`) and macOS `.DS_Store` files are omitted.
+
 ```text
 portfolio/
-├── CHANGELOG.md              # Release history consumed by Changesets
-├── CODE_OF_CONDUCT.md        # Expected conduct for anyone touching the repo
-├── CONTRIBUTING.md           # Branch, commit, lint, test, and changeset rules
-├── LICENSE                   # MIT terms
-├── README.md                 # Repository operating guide
-├── SECURITY.md               # Vulnerability reporting
+├── AGENTS.md                          # Agent operating notes for this repo
+├── CHANGELOG.md                       # Release history consumed by Changesets
+├── CLAUDE.md                          # Pointer for Claude Code
+├── CODE_OF_CONDUCT.md                 # Expected conduct
+├── CONTRIBUTING.md                    # Branch, commit, lint, test, changeset
+├── LICENSE                            # MIT terms
+├── README.md                          # Repository operating guide
+├── SECURITY.md                        # Vulnerability reporting
 │
-├── .actrc                    # Default flags for local Act runs
-├── .editorconfig             # Editor-agnostic indent and newline rules
-├── .env.example              # Documented env names (no production values)
-├── .env.production           # NEXT_PUBLIC_SITE_URL for `next build`
-├── .gitignore                # Generated trees and secrets stay untracked
-├── .git-blame-ignore-revs    # Revisions omitted from git blame
-├── .gitleaks.toml            # Secret-scan rules
-├── .markdownlint.json        # Markdownlint rule set
-├── .markdownlintignore       # Paths Markdownlint skips
-├── .node-version             # Node 24.14 pin for version managers
-├── .npmrc                    # pnpm/npm client policy
-├── .prettierignore           # Paths Prettier skips
-├── .prettierrc.mjs           # Prettier options
-├── .semgrep.yaml             # Repository Semgrep rules
-├── .stylelintignore          # Paths Stylelint skips
-├── commitlint.config.mjs     # Conventional Commits
-├── eslint.config.mjs         # ESLint flat config + eslint-config-next
-├── lefthook.yml              # pre-commit, commit-msg, pre-push
-├── lighthouserc.json         # Lighthouse CI assertions on out/
-├── next.config.ts            # Static export and Next options
-├── next-env.d.ts             # Next-generated TypeScript references
-├── package.json              # Private package, engines, scripts
-├── playwright.config.ts      # E2E against the static preview
-├── pnpm-lock.yaml            # Locked dependency graph
-├── postcss.config.mjs        # Tailwind v4 PostCSS pipeline
-├── stylelint.config.mjs      # CSS rules + Tailwind v4 at-rules
-├── tsconfig.json             # TypeScript + `@/*` → `src/*`
+├── .actrc                             # Default flags for local Act runs
+├── .editorconfig                      # Editor-agnostic indent and newlines
+├── .env.example                       # Documented env names (no secrets)
+├── .git-blame-ignore-revs             # Revisions omitted from git blame
+├── .gitignore                         # Generated trees and secrets untracked
+├── .gitleaks.toml                     # Secret-scan rules
+├── .hintrc                            # webhint audit config
+├── .markdownlint.json                 # Markdownlint rule set
+├── .markdownlintignore                # Paths Markdownlint skips
+├── .mcp.json                          # MCP server config for agents
+├── .node-version                      # Node 24.14 pin for version managers
+├── .npmrc                             # pnpm / npm client policy
+├── .prettierignore                    # Paths Prettier skips
+├── .prettierrc.mjs                    # Prettier options
+├── .semgrep.yaml                      # Repository Semgrep rules
+├── .stylelintignore                   # Paths Stylelint skips
+├── .stylelintrc                       # Stylelint RC companion
+├── .taplo.toml                        # TOML lint (Taplo)
 │
-├── .vscode/
-│   ├── extensions.json       # Recommended workspace extensions
-│   ├── launch.json           # Debug launch configs
-│   └── settings.json         # Formatter, ESLint, Stylelint, TS SDK
-│
-├── .github/
-│   ├── CODEOWNERS            # Default review ownership
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   ├── dependabot.yml        # Dependency update PRs
-│   ├── ISSUE_TEMPLATE/       # Bug, feature, and support forms
-│   ├── actions/
-│   │   └── setup-pnpm/       # Node 24.14 + Corepack + frozen install
-│   └── workflows/
-│       ├── reusable-ci.yml   # Shared quality jobs (lint, SAST, tests, export)
-│       ├── ci.yml            # PR / merge queue → reusable-ci
-│       ├── cd.yml            # main → reusable-ci then GitHub Pages
-│       ├── release.yml       # Changesets PR + unified tag vX.Y.Z
-│       └── codeql.yml        # Scheduled and PR CodeQL
+├── commitlint.config.mjs              # Conventional Commits
+├── eslint.config.mjs                  # Flat ESLint + eslint-config-next
+├── lefthook.yml                       # pre-commit, commit-msg, pre-push
+├── lighthouserc.json                  # Lighthouse CI assertions on out/
+├── next-env.d.ts                      # Next-generated TypeScript references
+├── next.config.ts                     # Static export and Next options
+├── package.json                       # Private package, engines, scripts
+├── playwright.config.ts               # E2E against the static preview
+├── pnpm-lock.yaml                     # Locked dependency graph
+├── pnpm-workspace.yaml                # Workspace declaration (single package)
+├── postcss.config.mjs                 # Tailwind v4 PostCSS pipeline
+├── stylelint.config.mjs               # CSS rules + Tailwind v4 at-rules
+├── tsconfig.json                      # TypeScript + @/* → src/*
 │
 ├── .changeset/
-│   └── config.json           # Changesets base branch, changelog, access
+│   └── config.json                    # Base branch, changelog, access
+│
+├── .claude/
+│   └── skills/
+│       ├── README.md                  # Skill index
+│       ├── changeset-release/SKILL.md # How to cut a Changesets release
+│       └── next-static-export/SKILL.md# How the Pages export is produced
+│
+├── .vscode/
+│   ├── extensions.json                # Recommended workspace extensions
+│   ├── launch.json                    # Debug launch configs
+│   └── settings.json                  # Formatter, ESLint, Stylelint, TS SDK
+│
+├── .github/
+│   ├── CODEOWNERS                     # Default review ownership
+│   ├── PULL_REQUEST_TEMPLATE.md       # PR body contract
+│   ├── dependabot.yml                 # Dependency update PRs
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── config.yml                 # Issue form routing
+│   │   ├── 01-bug-report.yml          # Bug form
+│   │   ├── 02-feature-request.yml     # Feature form
+│   │   └── 03-support-request.yml     # Support form
+│   ├── actions/
+│   │   └── setup-pnpm/
+│   │       └── action.yml             # Node 24.14 + Corepack + frozen install
+│   └── workflows/
+│       ├── reusable-ci.yml            # Shared quality jobs
+│       ├── ci.yml                     # PR / merge queue → reusable-ci
+│       ├── cd.yml                     # main + workflow_dispatch → Pages
+│       ├── release.yml                # Changesets PR + tag vX.Y.Z
+│       └── codeql.yml                 # Scheduled and PR CodeQL
 │
 ├── scripts/
-│   ├── setup.sh              # Local bootstrap via Corepack pnpm
-│   ├── prepare-lefthook.mjs  # Safe Lefthook install from `prepare`
-│   ├── validate-branch-name.sh
-│   └── validate-commit-message.sh
+│   ├── setup.sh                       # Local bootstrap via Corepack pnpm
+│   ├── lint-shell.sh                  # Local ShellCheck runner (host binary)
+│   ├── prepare-lefthook.mjs           # Lefthook install from prepare
+│   ├── validate-branch-name.sh        # Branch pattern
+│   └── validate-commit-message.sh     # Commitlint range or edit file
 │
 ├── src/
-│   ├── app/                  # App Router reserved files (URL map)
-│   │   ├── layout.tsx        # Root layout, metadata, font, JSON-LD
-│   │   ├── globals.css       # Design tokens + Tailwind entry
-│   │   ├── error.tsx         # Root-segment error boundary
-│   │   ├── loading.tsx       # Root-segment loading UI
-│   │   ├── not-found.tsx     # Site 404
-│   │   ├── robots.ts         # /robots.txt
-│   │   ├── sitemap.ts        # /sitemap.xml
-│   │   ├── manifest.ts       # /manifest.webmanifest
-│   │   ├── opengraph-image.tsx
-│   │   ├── twitter-image.tsx
-│   │   ├── favicon.ico
-│   │   └── (home)/           # Route group — no extra URL segment
-│   │       └── page.tsx      # `/`
-│   ├── components/           # Shared UI (not a route)
-│   │   └── json-ld.tsx       # Schema.org graph in the document
-│   └── lib/
-│       └── site.ts           # URL, wordmark, motto, mailbox
+│   ├── app/                           # App Router reserved files (URL map)
+│   │   ├── layout.tsx                 # Root layout, metadata, font
+│   │   ├── error.tsx                  # / error boundary (en-US)
+│   │   ├── loading.tsx                # / loading UI
+│   │   ├── not-found.tsx              # / 404
+│   │   ├── robots.ts                  # /robots.txt
+│   │   ├── sitemap.ts                 # /sitemap.xml
+│   │   ├── manifest.ts                # /manifest.webmanifest
+│   │   ├── opengraph-image.tsx        # Generated OG image (App Router)
+│   │   ├── opengraph-image.png        # Static OG fallback in the segment
+│   │   ├── opengraph-image.alt.txt    # OG alt text
+│   │   ├── twitter-image.tsx          # Generated Twitter card
+│   │   ├── twitter-image.png          # Static Twitter fallback
+│   │   ├── twitter-image.alt.txt      # Twitter alt text
+│   │   ├── icon.png                   # App icon (Next metadata file)
+│   │   ├── apple-icon.png             # Apple touch icon
+│   │   ├── favicon.ico                # Browser favicon
+│   │   ├── (home)/
+│   │   │   └── page.tsx               # / — route group, no URL segment
+│   │   └── pt-BR/
+│   │       ├── layout.tsx             # Portuguese document segment
+│   │       ├── page.tsx               # /pt-BR
+│   │       ├── error.tsx              # /pt-BR error boundary
+│   │       ├── loading.tsx            # /pt-BR loading UI
+│   │       └── not-found.tsx          # /pt-BR 404
+│   ├── components/                    # Shared UI (not a route)
+│   │   ├── i18n/
+│   │   │   ├── html-lang.tsx          # html lang alignment
+│   │   │   ├── locale-document.tsx    # Locale document shell
+│   │   │   └── locale-gate.tsx        # Locale entry / preference
+│   │   ├── pages/
+│   │   │   ├── home/page.tsx          # Home composition
+│   │   │   ├── error/page.tsx         # Shared error view
+│   │   │   └── loading/page.tsx       # Shared loading view
+│   │   ├── seo/
+│   │   │   └── json-ld.tsx            # Schema.org graph
+│   │   └── theme/
+│   │       └── brand-styles.tsx       # Brand tokens applied to the tree
+│   ├── lib/
+│   │   ├── i18n/
+│   │   │   └── messages.ts            # en-US / pt-BR copy
+│   │   └── site/
+│   │       ├── index.ts               # Public site module barrel
+│   │       ├── identity.ts            # Wordmark, motto, mailbox, URLs
+│   │       ├── schema.ts              # JSON-LD data
+│   │       └── tokens.ts              # Colour and type tokens
+│   └── styles/
+│       └── globals.css                # Design tokens + Tailwind entry
 │
-├── public/                   # Static files at site root (sibling of src/)
-│   ├── CNAME                 # GitHub Pages custom-domain file in the export
-│   ├── .nojekyll             # Present if publishing from a branch
-│   └── .well-known/
-│       └── security.txt      # RFC 9116 contact
+├── public/                            # Static files at site root
+│   ├── CNAME                          # Custom domain in the Pages export
+│   ├── .nojekyll                      # Disable Jekyll on Pages
+│   ├── .well-known/
+│   │   └── security.txt               # RFC 9116 contact
+│   └── icons/
+│       ├── icon.png                   # Source mark
+│       ├── icon-192.png               # PWA 192
+│       ├── icon-192-maskable.png      # PWA 192 maskable
+│       ├── icon-512.png               # PWA 512
+│       └── icon-512-maskable.png      # PWA 512 maskable
 │
-├── e2e/                      # Playwright specs
-│   └── home.spec.ts
-└── tests/                    # Node.js unit tests
-    └── site.test.mjs
+├── e2e/                               # Playwright against the export
+└── tests/                             # Node.js unit tests
 ```
 
 `public/` is a sibling of `src/`. Next.js does not serve `src/public`.
-
-Generated trees such as `node_modules/`, `.next/`, `out/`,
-`playwright-report/`, `test-results/`, `.lighthouseci/`, and `.act/` are
-gitignored and recreated as required.
+Global CSS lives in `src/styles/globals.css`, not under `src/app/`.
 
 ## 🧰 Technology stack
 
@@ -179,10 +246,14 @@ gitignored and recreated as required.
 | Package manager    | pnpm `12.4.1` (Corepack)                    | Locked dependency install  |
 | Application        | Next.js 16 App Router, React 19, TypeScript | Site                       |
 | Output             | `output: 'export'` → `out/`                 | GitHub Pages               |
+| Locales            | `en-US` (`/`) and `pt-BR` (`/pt-BR`)        | Document language          |
 | Styles             | Tailwind CSS v4, Stylelint                  | Visual system and CSS gate |
 | Fonts              | Montserrat (`next/font`)                    | Official typeface          |
 | Git hooks          | Lefthook                                    | Local gates                |
-| JS/TS lint         | ESLint + `eslint-config-next`               | Static analysis            |
+| JS/TS lint         | ESLint + `eslint-config-next` + SonarJS     | Static analysis            |
+| YAML / JSON lint   | `eslint-plugin-yml`, `@eslint/json`         | Workflows and manifests    |
+| TOML lint          | Taplo                                       | `.taplo.toml` targets      |
+| Shell lint         | ShellCheck                                  | `scripts/*.sh`             |
 | Formatting         | Prettier                                    | Source format              |
 | Documentation lint | Markdownlint                                | Markdown quality           |
 | CSS lint           | Stylelint + `stylelint-config-standard`     | CSS / Tailwind at-rules    |
@@ -234,10 +305,16 @@ Lefthook and CI.
 - pnpm `12.4.1` via Corepack (do not use the standalone installer under
   `~/Library/pnpm` against this `packageManager` field)
 - Git
+- ShellCheck when running `pnpm lint:check:sh` or Lefthook **pre-push**
 - Docker when running Semgrep locally
 - Act when rehearsing workflows
 
-Authoritative versions: [`package.json`](package.json), [`.node-version`](.node-version).
+Authoritative versions: [`package.json`](package.json),
+[`.node-version`](.node-version).
+
+Host binaries (ShellCheck, Docker, Act) are **not** installed by
+`pnpm infra:script:setup`. That script only bootstraps Corepack pnpm
+and Lefthook.
 
 ### Installation
 
@@ -252,9 +329,9 @@ pnpm infra:script:setup
 ### Development and preview
 
 ```bash
-pnpm dev          # http://localhost:3000
-pnpm build        # writes out/
-pnpm preview      # http://127.0.0.1:4173 — same artifact Pages serves
+pnpm dev       # Next.js + Turbopack
+pnpm build     # writes out/
+pnpm preview   # serve out/ on port 4173 — same artifact Pages serves
 ```
 
 `pnpm start` is an alias of `preview`. It does not run `next start`.
@@ -270,12 +347,16 @@ pnpm lint:check:all
 ```
 
 1. Branch name
-2. ESLint (`--max-warnings 0`)
+2. ESLint (`--max-warnings 0`) — JS/TS plus JSON and YAML
+   (empty mapping values in workflows fail here;
+   `workflow_dispatch:` must be `workflow_dispatch: {}`)
 3. Stylelint
-4. Commitlint (range vs `origin/main` or `COMMIT_*_SHA`)
-5. Markdownlint
-6. Prettier `--check`
-7. `next typegen` + `tsc --noEmit`
+4. JSON / YAML / TOML
+5. ShellCheck via `pnpm lint:check:sh`
+6. Commitlint (range vs `origin/main` or `COMMIT_*_SHA`)
+7. Markdownlint
+8. Prettier `--check`
+9. `next typegen` + `tsc --noEmit`
 
 ### Automatic fixes
 
@@ -283,9 +364,9 @@ pnpm lint:check:all
 pnpm lint:fix:all
 ```
 
-ESLint, Stylelint, Prettier, Markdownlint.
+ESLint, Stylelint, Prettier, Markdownlint. ShellCheck has no `--fix`.
 
-### Tests
+### 🧪 Tests
 
 ```bash
 pnpm test:unit
@@ -305,6 +386,45 @@ pnpm test:sast:all
 
 `test:sast:all` runs Gitleaks then Semgrep.
 
+## Host binaries versus Actions
+
+Some gates are Node packages (`eslint`, `prettier`, `stylelint`). Others
+are binaries on the workstation. `pnpm install` does not provide them.
+
+| Binary     | Local command                                  | GitHub Actions                        |
+| ---------- | ---------------------------------------------- | ------------------------------------- |
+| ShellCheck | `pnpm lint:check:sh` → `scripts/lint-shell.sh` | not a dedicated workflow in this tree |
+| Docker     | `pnpm test:sast:semgrep`                       | reusable-ci / dedicated SAST job      |
+| Act        | `pnpm infra:test:workflow:ci`                  | not applicable                        |
+
+If ShellCheck is missing, the local runner exits 1:
+
+```text
+shellcheck is required. Install: https://www.shellcheck.net/
+```
+
+That is expected. Lefthook **pre-commit** warns and continues
+(`shellcheck not installed`). Lefthook **pre-push** and
+`pnpm lint:check:all` fail — they call `lint:check:sh` with no fallback.
+
+Install on macOS:
+
+```bash
+brew install shellcheck
+command -v shellcheck
+pnpm lint:check:sh
+```
+
+Apple's `/bin/bash` is 3.2. `scripts/lint-shell.sh` uses `mapfile`, which
+requires Bash >= 4. After installing ShellCheck, either run the script
+with Homebrew Bash (`$(brew --prefix)/bin/bash ./scripts/lint-shell.sh`)
+or keep `mapfile` off the 3.2 code path.
+
+YAML in `.github/workflows/` is linted by ESLint (`eslint-plugin-yml`),
+not by ShellCheck. An empty mapping such as `workflow_dispatch:` with no
+value fails `yml/no-empty-mapping-value`. The valid form for a manual
+dispatch with no inputs is `workflow_dispatch: {}`.
+
 ## 🔐 Security
 
 Independent controls:
@@ -323,11 +443,11 @@ See [SECURITY.md](SECURITY.md).
 
 Lefthook is installed by the `prepare` lifecycle after `pnpm install`.
 
-| Hook       | Enforces                                                     |
-| ---------- | ------------------------------------------------------------ |
-| pre-commit | Prettier, ESLint, Stylelint, Markdownlint, Gitleaks (staged) |
-| commit-msg | Commitlint                                                   |
-| pre-push   | Branch name, full lint set, SAST, unit tests                 |
+| Hook       | Enforces                                                                                                           |
+| ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| pre-commit | Prettier, ESLint, Stylelint, Markdownlint, Gitleaks (staged). ShellCheck if the binary exists; otherwise a warning |
+| commit-msg | Commitlint                                                                                                         |
+| pre-push   | Branch name, full lint set including `lint:check:sh`, SAST, unit tests                                             |
 
 Build, Playwright, Lighthouse, and `pnpm audit` stay in CI.
 
@@ -339,16 +459,17 @@ Definition: [`lefthook.yml`](lefthook.yml).
 PR → CI (reusable-ci) → merge main → CD (reusable-ci + Pages) + Release
 ```
 
-- **CI** (`ci.yml`): pull request to `main`. Requires a changeset except on
-  Version Packages PRs.
-- **CD** (`cd.yml`): after quality on `main`, rebuilds `out/` and deploys
-  with `actions/upload-pages-artifact` + `actions/deploy-pages`.
-- **Release** (`release.yml`): Changesets opens Version Packages; the tag
-  `vX.Y.Z` and GitHub Release are created when that PR is merged.
+- **CI** (`ci.yml`): pull request to `main`. Requires a changeset except
+  on Version Packages PRs.
+- **CD** (`cd.yml`): `push` to `main` and `workflow_dispatch: {}`. After
+  quality, rebuilds `out/` and deploys with
+  `actions/upload-pages-artifact` + `actions/deploy-pages`.
+- **Release** (`release.yml`): Changesets opens Version Packages; the
+  tag `vX.Y.Z` and GitHub Release are created when that PR is merged.
 
-Pages source must be **GitHub Actions**. Custom domain and HTTPS are set in
-the repository Pages settings. `public/CNAME` is the file in the export, not
-the DNS panel.
+Pages source must be **GitHub Actions**. Custom domain and HTTPS are set
+in the repository Pages settings. `public/CNAME` is the file in the
+export, not the DNS panel.
 
 ## 🤝 Contributing
 
@@ -365,8 +486,8 @@ Expected:
 
 ## 🏷️ Versioning
 
-Changesets + Semantic Versioning. Contributors record intent; the release
-workflow consumes it.
+Changesets + Semantic Versioning. Contributors record intent; the
+release workflow consumes it.
 
 ```bash
 pnpm infra:release:changeset
@@ -394,7 +515,8 @@ Version application:
 pnpm infra:release:changeset:version:packages
 ```
 
-The site is not published to npm. `changeset publish` is not the Pages path.
+The site is not published to npm. `changeset publish` is not the Pages
+path.
 
 ## 🧪 Local GitHub Actions
 
@@ -407,8 +529,8 @@ act push -W .github/workflows/cd.yml -j quality
 act push -W .github/workflows/release.yml --dryrun
 ```
 
-Flags live in [`.actrc`](.actrc). Do not attach a real `GITHUB_TOKEN` when
-rehearsing deploy or release.
+Flags live in [`.actrc`](.actrc). Do not attach a real `GITHUB_TOKEN`
+when rehearsing deploy or release.
 
 ## 🛠️ Package scripts
 
@@ -445,17 +567,21 @@ Run from the repository root: `pnpm <script>`.
 
 ### Quality
 
-| Script                                   | Responsibility           |
-| ---------------------------------------- | ------------------------ |
-| `eslint:check` / `eslint:fix`            | ESLint                   |
-| `lint:check:stylelint` / `stylelint:fix` | Stylelint                |
-| `lint:check:prettier` / `prettier:fix`   | Prettier                 |
-| `lint:check:markdown` / `markdown:fix`   | Markdownlint             |
-| `lint:check:code:ts`                     | Typegen + `tsc --noEmit` |
-| `lint:check:branchname`                  | Current branch           |
-| `lint:check:commit`                      | Commitlint               |
-| `lint:check:all`                         | Full lint gate           |
-| `lint:fix:all`                           | Safe automatic fixes     |
+| Script                                   | Responsibility                              |
+| ---------------------------------------- | ------------------------------------------- |
+| `eslint:check` / `eslint:fix`            | ESLint (JS/TS, JSON, YAML)                  |
+| `lint:check:stylelint` / `stylelint:fix` | Stylelint                                   |
+| `lint:check:prettier` / `prettier:fix`   | Prettier                                    |
+| `lint:check:markdown` / `markdown:fix`   | Markdownlint                                |
+| `lint:check:json`                        | ESLint JSON                                 |
+| `lint:check:yaml`                        | ESLint YAML (includes workflows)            |
+| `lint:check:toml`                        | Taplo                                       |
+| `lint:check:sh`                          | ShellCheck via `scripts/lint-shell.sh`      |
+| `lint:check:code:ts`                     | Typegen + `tsc --noEmit`                    |
+| `lint:check:branchname`                  | Current branch                              |
+| `lint:check:commit`                      | Commitlint                                  |
+| `lint:check:all`                         | Full lint gate (fails if ShellCheck absent) |
+| `lint:fix:all`                           | ESLint, Stylelint, Prettier, Markdownlint   |
 
 ### Tests and security
 
@@ -469,6 +595,7 @@ Run from the repository root: `pnpm <script>`.
 | `test:sast:semgrep`      | Semgrep (Docker)                      |
 | `test:sast:all`          | Secrets + Semgrep                     |
 | `test:report:playwright` | HTML report (`--reporter=html` first) |
+| `test:report:unit`       | Node coverage report                  |
 
 ## 📄 License
 
