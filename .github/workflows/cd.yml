@@ -8,7 +8,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -25,11 +25,11 @@ jobs:
   quality:
     name: Quality
     uses: ./.github/workflows/reusable-ci.yml
-    with:
-      require_changeset: false
     permissions:
       contents: read
       pull-requests: read
+    with:
+      require_changeset: false
 
   deploy:
     name: GitHub Pages
