@@ -47,7 +47,7 @@ pre-commit:
       run: command -v shellcheck >/dev/null && shellcheck --severity=warning {staged_files} || echo "shellcheck not installed"
 
     gitleaks:
-      run: pnpm test:sast:secrets
+      run: pnpm exec gitleaks-secret-scanner git --config=.gitleaks.toml --redact --verbose --exit-code=1
 
 commit-msg:
   commands:
