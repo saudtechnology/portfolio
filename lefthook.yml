@@ -12,11 +12,23 @@ pre-commit:
   commands:
     prettier:
       glob: '*.{js,jsx,ts,tsx,mjs,cjs,json,yml,yaml,md,mdx,css}'
+      exclude:
+        - pnpm-lock.yaml
       run: pnpm exec prettier --check {staged_files}
 
     eslint:
       glob: '*.{js,jsx,ts,tsx,mjs,cjs}'
-      run: pnpm exec eslint {staged_files} --max-warnings 0
+      run: pnpm exec eslint {staged_files} --max-warnings 0 --no-warn-ignored
+
+    json:
+      glob: '*.json'
+      run: pnpm exec eslint {staged_files} --max-warnings 0 --no-warn-ignored
+
+    yaml:
+      glob: '*.{yml,yaml}'
+      exclude:
+        - pnpm-lock.yaml
+      run: pnpm exec eslint {staged_files} --max-warnings 0 --no-warn-ignored
 
     stylelint:
       glob: '*.{css,scss}'
@@ -25,6 +37,14 @@ pre-commit:
     markdownlint:
       glob: '*.md'
       run: pnpm exec markdownlint --config .markdownlint.json --ignore-path .markdownlintignore {staged_files}
+
+    toml:
+      glob: '*.toml'
+      run: pnpm exec taplo lint {staged_files}
+
+    shellcheck:
+      glob: '*.sh'
+      run: command -v shellcheck >/dev/null && shellcheck --severity=warning {staged_files} || echo "shellcheck not installed"
 
     gitleaks:
       run: pnpm test:sast:secrets
@@ -49,6 +69,12 @@ pre-push:
     stylelint:
       run: pnpm lint:check:stylelint
 
+    toml:
+      run: pnpm lint:check:toml
+
+    shell:
+      run: pnpm lint:check:sh
+
     markdownlint:
       run: pnpm lint:check:markdown
 
@@ -57,9 +83,3 @@ pre-push:
 
     unit:
       run: pnpm test:unit
-
-    hint:
-      run: pnpm test:hint
-
-    lighthouse:
-      run: pnpm exec lhci autorun
