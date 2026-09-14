@@ -103,7 +103,8 @@
 		"lint:check:hint": "hint ./out",
 		"lint:check:yaml": "eslint --no-error-on-unmatched-pattern --no-warn-ignored \"**/*.{yml,yaml}\"",
 		"lint:check:json": "eslint --no-error-on-unmatched-pattern --no-warn-ignored \"**/*.{json}\"",
-		"lint:check:toml": "taplo lint"
+		"lint:check:toml": "taplo lint",
+		"lint:check:sh": "infra:script:lint:check:sh"
 	},
 	"dependencies": {
 		"next": "16.3.5",
