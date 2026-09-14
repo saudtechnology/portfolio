@@ -1,10 +1,11 @@
-import { SITE_DESCRIPTION } from '../site/identity';
+import { SITE_DESCRIPTION, SITE_MOTTO } from '../site/identity';
 
 export const locales = ['en-US', 'pt-BR'] as const;
 export type Locale = (typeof locales)[number];
 
 export const messages = {
 	'en-US': {
+		motto: SITE_MOTTO,
 		description: SITE_DESCRIPTION,
 		notFoundTitle: 'Page not found',
 		notFoundBack: 'Back to home',
@@ -13,8 +14,9 @@ export const messages = {
 		loading: 'Loading',
 	},
 	'pt-BR': {
+		motto: 'Inteligência de Engenharia. Arquitetando o Futuro.',
 		description:
-			'Senior AI & MLOps Engineering and Principal Frontend Engineering — architecting intelligent systems, scalable software, and high-performance digital products.',
+			'Engenheiro Sênior de IA e MLOps • Principal Engenheiro de Frontend — arquitetando sistemas inteligentes, software escalável e produtos digitais de alto desempenho.',
 		notFoundTitle: 'Página não encontrada',
 		notFoundBack: 'Voltar ao início',
 		errorTitle: 'Falha ao carregar',

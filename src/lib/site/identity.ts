@@ -10,7 +10,7 @@ export const SITE_MOTTO = 'Engineering Intelligence. Architecting the Future.';
 export const SITE_PROFILES = ['https://github.com/thiagosaud', 'https://www.linkedin.com/in/thiagosaud'] as const;
 
 export const SITE_DESCRIPTION =
-	'Senior AI & MLOps Engineering and Principal Frontend Engineering — architecting intelligent systems, scalable software, and high-performance digital products.';
+	'Senior AI & MLOps Engineering • Principal Frontend Engineering — architecting intelligent systems, scalable software, and high-performance digital products.';
 
 export const SITE_KNOWS_ABOUT = [
 	// AI Engineering

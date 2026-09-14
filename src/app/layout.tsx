@@ -10,7 +10,6 @@ import {
 	SITE_DESCRIPTION,
 	SITE_KNOWS_ABOUT,
 	SITE_LOCALE,
-	SITE_MOTTO,
 	SITE_NAME,
 	SITE_URL,
 	SITE_WORDMARK,
@@ -18,6 +17,7 @@ import {
 } from '@/lib/site';
 
 import '@/styles/globals.css';
+import { messages } from '@/lib/i18n/messages';
 
 const montserrat = Montserrat({
 	subsets: ['latin'],
@@ -37,7 +37,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_URL),
 	title: {
-		default: `${SITE_WORDMARK} — ${SITE_MOTTO}`,
+		default: `${SITE_WORDMARK} — ${messages['en-US'].motto}`,
 		template: `%s · ${SITE_WORDMARK}`,
 	},
 	description: SITE_DESCRIPTION,
@@ -71,22 +71,22 @@ export const metadata: Metadata = {
 		locale: SITE_LOCALE,
 		url: SITE_URL,
 		siteName: SITE_NAME,
-		title: `${SITE_WORDMARK} — ${SITE_MOTTO}`,
-		description: SITE_DESCRIPTION,
+		title: `${SITE_WORDMARK} — ${messages['en-US'].motto}`,
+		description: messages['en-US'].description,
 		images: [
 			{
-				url: '/opengraph-image.png?v=2',
+				url: '/opengraph-image.jpg?v=2',
 				width: 1200,
 				height: 630,
-				alt: `${SITE_WORDMARK} — ${SITE_MOTTO}`,
+				alt: `${SITE_WORDMARK} — ${messages['en-US'].motto}`,
 			},
 		],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: `${SITE_WORDMARK} — ${SITE_MOTTO}`,
-		description: SITE_DESCRIPTION,
-		images: ['/opengraph-image.png?v=2'],
+		title: `${SITE_WORDMARK} — ${messages['en-US'].motto}`,
+		description: messages['en-US'].description,
+		images: ['/twitter-image.jpg?v=2'],
 	},
 	formatDetection: {
 		email: false,
