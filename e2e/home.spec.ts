@@ -9,9 +9,9 @@ test('home exposes brand, heading and canonical language', async ({ page }) => {
 });
 
 test.describe('Portuguese segment', () => {
-	test.use({ locale: 'pt-BR' });
+	test.use({ LocaleType: 'pt-BR' });
 
-	test('uses pt-BR when the browser locale is Portuguese', async ({ page }) => {
+	test('uses pt-BR when the browser LocaleType is Portuguese', async ({ page }) => {
 		await page.goto('/pt-BR/');
 		await expect(page).toHaveURL(/\/pt-BR\/?$/);
 		await expect(page.locator('html')).toHaveAttribute('lang', 'pt-BR');

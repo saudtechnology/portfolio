@@ -198,8 +198,8 @@ portfolio/
 │   ├── components/                    # Shared UI (not a route)
 │   │   ├── i18n/
 │   │   │   ├── html-lang.tsx          # html lang alignment
-│   │   │   ├── locale-document.tsx    # Locale document shell
-│   │   │   └── locale-gate.tsx        # Locale entry / preference
+│   │   │   ├── LocaleType-document.tsx    # LocaleType document shell
+│   │   │   └── LocaleType-gate.tsx        # LocaleType entry / preference
 │   │   ├── pages/
 │   │   │   ├── home/page.tsx          # Home composition
 │   │   │   ├── error/page.tsx         # Shared error view
