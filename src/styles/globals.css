@@ -1,28 +1,8 @@
 @import 'tailwindcss';
 
-/* Hex lives in src/lib/site/tokens.ts (injected by BrandStyles). */
+/* Design Token configuration layers injected dynamically via ThemeBrandStyles component execution */
 
-:root {
-	color-scheme: dark;
-
-	--background: var(--plate);
-	--foreground: var(--snow);
-	--surface: var(--forest);
-	--border: var(--forest);
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		color-scheme: light;
-
-		--background: var(--snow);
-		--foreground: var(--pine);
-		--surface: var(--snow);
-		--border: var(--mute-on-light);
-		--mute: var(--mute-on-light);
-	}
-}
-
+:root,
 html.dark {
 	color-scheme: dark;
 
