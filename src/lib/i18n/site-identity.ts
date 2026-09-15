@@ -5,8 +5,17 @@ import { detectLocale, FullLocaleType, LocaleType } from './locales';
  * Enforces a strict read-only nature for predictable data flow.
  */
 export type SiteIdentityTranslationType = Readonly<{
-	SITE: { DESCRIPTION: string; MOTTO: string; KEYWORDS: string[] };
 	AUTHOR: { JOB_TITLE: string };
+	SITE: {
+		DESCRIPTION: string;
+		MOTTO: string;
+		KEYWORDS: string[];
+		MANIFEST: {
+			NAME: string;
+			SHORT_NAME: string;
+			DESCRIPTION: string;
+		};
+	};
 }>;
 
 /**
@@ -56,6 +65,32 @@ const getSiteDescriptionConfig = (): Readonly<Record<LocaleType, Record<'LAST' |
 	};
 };
 
+/**
+ * Factory utility function that dynamically compiles and hydra-formats the Web App Manifest
+ * semantic text descriptors based on the requested language token.
+ *
+ * Architectural Advantages:
+ * 1. Single Responsibility: Decouples raw translation string calculations from the main manifest layout factory tree.
+ * 2. Absolute Type Safety: Enforces rigid return mapping contracts bound directly onto your system's global identity schemas.
+ * 3. Cascade Insulation: Utilizes pure logical evaluation flags to prevent property lookups from collapsing during static builds.
+ *
+ * @param locale - The active system concrete language target token code utilized to determine text direction parameters.
+ * @returns A strictly typed object matching the concrete SiteIdentityTranslationType schema layout node.
+ */
+const getSiteManifestConfig = (locale: LocaleType): SiteIdentityTranslationType['SITE']['MANIFEST'] => {
+	const {
+		state: { isEnUS },
+	} = detectLocale(locale);
+
+	return {
+		NAME: isEnUS ? 'View Portfolio in English' : 'Ver Portfólio em Português',
+		SHORT_NAME: isEnUS ? 'English' : 'Português',
+		DESCRIPTION: isEnUS
+			? 'Access the digital portfolio compiled in standard international English'
+			: 'Acessar o portfólio traduzido em idioma nativo brasileiro',
+	};
+};
+
 // Initialize the localized configuration indexes to prepare data injection mapping
 const SITE_DESCRIPTION_CONFIG = getSiteDescriptionConfig();
 const AUTHOR_JOB_POSITION_CONFIG = getAuthorJobPositionConfig();
@@ -74,6 +109,7 @@ export const SITE_IDENTITY_TRANSLATION: Readonly<{
 	'en-US': {
 		AUTHOR: { JOB_TITLE: AUTHOR_JOB_POSITION_CONFIG['en-US'].FULL },
 		SITE: {
+			MANIFEST: getSiteManifestConfig('en-US'),
 			DESCRIPTION: SITE_DESCRIPTION_CONFIG['en-US'].FULL,
 			MOTTO: 'Engineering Intelligence. Architecting the Future.',
 			KEYWORDS: [
@@ -121,6 +157,7 @@ export const SITE_IDENTITY_TRANSLATION: Readonly<{
 	'pt-BR': {
 		AUTHOR: { JOB_TITLE: AUTHOR_JOB_POSITION_CONFIG['pt-BR'].FULL },
 		SITE: {
+			MANIFEST: getSiteManifestConfig('pt-BR'),
 			DESCRIPTION: SITE_DESCRIPTION_CONFIG['pt-BR'].FULL,
 			MOTTO: 'Inteligência de Engenharia. Arquitetando o Futuro.',
 			KEYWORDS: [

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import SITE_IDENTITY from '@/lib/site/identity';
 import { BRAND_THEME_COLORS } from '@/lib/site/tokens';
+import TRANSLATIONS from '@/lib/i18n/translations';
 
 /**
  * Next.js Special Route Segment Configuration.
@@ -60,17 +61,17 @@ export default function manifest(): MetadataRoute.Manifest {
 		/// Provides immediate, balanced deep-linking buttons when holding down the application icon on mobile launchers
 		shortcuts: [
 			{
-				name: 'View Portfolio in English',
-				short_name: 'English',
-				description: 'Access the digital portfolio compiled in standard international English',
-				url: '/?utm_source=pwa_shortcut_en',
+				name: TRANSLATIONS['en-US'].SITE.MANIFEST.NAME,
+				short_name: TRANSLATIONS['en-US'].SITE.MANIFEST.SHORT_NAME,
+				description: TRANSLATIONS['en-US'].SITE.MANIFEST.DESCRIPTION,
+				url: '/?utm_source=pwa_shortcut_en_us',
 				icons: [{ src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
 			},
 			{
-				name: 'Ver Portfólio em Português',
-				short_name: 'Português',
-				description: 'Acessar o portfólio traduzido em idioma nativo brasileiro',
-				url: '/pt-BR/?utm_source=pwa_shortcut_pt',
+				name: TRANSLATIONS['pt-BR'].SITE.MANIFEST.NAME,
+				short_name: TRANSLATIONS['pt-BR'].SITE.MANIFEST.SHORT_NAME,
+				description: TRANSLATIONS['pt-BR'].SITE.MANIFEST.DESCRIPTION,
+				url: '/pt-BR/?utm_source=pwa_shortcut_pt_br',
 				icons: [{ src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
 			},
 		],
