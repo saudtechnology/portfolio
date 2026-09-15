@@ -16,6 +16,6 @@ test.describe('Portuguese segment', () => {
 		await page.goto('/pt-BR/');
 		await expect(page).toHaveURL(/\/pt-BR\/?$/);
 		await expect(page.locator('html')).toHaveAttribute('lang', 'pt-BR');
-		await expect(page.getByRole('heading', { level: 1 })).toHaveText(SITE_IDENTITY['en-US'].SITE.MOTTO);
+		await expect(page.getByRole('heading', { level: 1 })).toHaveText(SITE_IDENTITY['pt-BR'].SITE.MOTTO);
 	});
 });
