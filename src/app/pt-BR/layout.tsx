@@ -9,9 +9,11 @@ import TRANSLATIONS from '@/lib/i18n/translations';
  * Compiles comprehensive, type-safe SEO metrics specifically tailored for the Brazilian Portuguese localization tree.
  * Locks down metadata schemas, canonical alternates, OpenGraph parameters, and high-scale Twitter visual cards.
  */
+const CURRENT_TITLE = `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['pt-BR'].SITE.MOTTO}`;
+
 export const metadata: Metadata = {
 	title: {
-		absolute: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['pt-BR'].SITE.MOTTO}`, // Compiles the dynamic fallback title suffix leveraging standard brand constants
+		absolute: CURRENT_TITLE, // Compiles the dynamic fallback title suffix leveraging standard brand constants
 	},
 	description: TRANSLATIONS['pt-BR'].SITE.DESCRIPTION,
 	alternates: {
@@ -27,20 +29,13 @@ export const metadata: Metadata = {
 		locale: 'pt_BR',
 		url: SITE_IDENTITY.global.SITE.URL,
 		siteName: SITE_IDENTITY.global.SITE.NAME,
-		title: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['pt-BR'].SITE.MOTTO}`,
+		title: CURRENT_TITLE,
 		description: TRANSLATIONS['pt-BR'].SITE.DESCRIPTION,
-		images: [
-			{
-				url: '/opengraph-image.jpg?v=2',
-				width: 1200,
-				height: 630,
-				alt: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['pt-BR'].SITE.MOTTO}`,
-			},
-		],
+		images: [{ url: '/opengraph-image.jpg?v=2', width: 1200, height: 630, alt: CURRENT_TITLE }],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['pt-BR'].SITE.MOTTO}`,
+		title: CURRENT_TITLE,
 		description: TRANSLATIONS['pt-BR'].SITE.DESCRIPTION,
 		images: ['/twitter-image.jpg?v=2'],
 	},

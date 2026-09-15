@@ -38,10 +38,12 @@ export const viewport: Viewport = {
  * Compiles comprehensive, type-safe global SEO metrics specifically tailored for the base default language path.
  * Enforces meta base tags, canonical loops, semantic authorship properties, and automated robots guidelines.
  */
+const CURRENT_TITLE = `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['en-US'].SITE.MOTTO}`;
+
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_IDENTITY.global.SITE.URL),
 	title: {
-		absolute: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['en-US'].SITE.MOTTO}`, // Compiles the default baseline tab title string
+		absolute: CURRENT_TITLE, // Compiles the default baseline tab title string
 	},
 	description: TRANSLATIONS['en-US'].SITE.DESCRIPTION,
 	applicationName: SITE_IDENTITY.global.SITE.NAME,
@@ -74,20 +76,13 @@ export const metadata: Metadata = {
 		locale: SITE_IDENTITY.global.SITE.LOCALE_BASE.LOCALE,
 		url: SITE_IDENTITY.global.SITE.URL,
 		siteName: SITE_IDENTITY.global.SITE.NAME,
-		title: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['en-US'].SITE.MOTTO}`,
+		title: CURRENT_TITLE,
 		description: TRANSLATIONS['en-US'].SITE.DESCRIPTION,
-		images: [
-			{
-				url: '/opengraph-image.jpg?v=2',
-				width: 1200,
-				height: 630,
-				alt: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['en-US'].SITE.MOTTO}`,
-			},
-		],
+		images: [{ url: '/opengraph-image.jpg?v=2', width: 1200, height: 630, alt: CURRENT_TITLE }],
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['en-US'].SITE.MOTTO}`,
+		title: CURRENT_TITLE,
 		description: TRANSLATIONS['en-US'].SITE.DESCRIPTION,
 		images: ['/twitter-image.jpg?v=2'],
 	},
