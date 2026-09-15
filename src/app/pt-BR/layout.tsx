@@ -11,8 +11,7 @@ import TRANSLATIONS from '@/lib/i18n/translations';
  */
 export const metadata: Metadata = {
 	title: {
-		default: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['pt-BR'].SITE.MOTTO}`, // Compiles the dynamic fallback title suffix leveraging standard brand constants
-		template: `%s · ${SITE_IDENTITY.global.SITE.WORDMARK}`, // Standardized structure that injects child view title tokens dynamically (%s)
+		absolute: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['pt-BR'].SITE.MOTTO}`, // Compiles the dynamic fallback title suffix leveraging standard brand constants
 	},
 	description: TRANSLATIONS['pt-BR'].SITE.DESCRIPTION,
 	alternates: {

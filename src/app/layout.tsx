@@ -41,8 +41,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_IDENTITY.global.SITE.URL),
 	title: {
-		default: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['en-US'].SITE.MOTTO}`, // Compiles the default baseline tab title string
-		template: `%s · ${SITE_IDENTITY.global.SITE.WORDMARK}`, // Standardized structure that wraps nested child title tokens seamlessly (%s)
+		absolute: `${SITE_IDENTITY.global.SITE.WORDMARK} — ${TRANSLATIONS['en-US'].SITE.MOTTO}`, // Compiles the default baseline tab title string
 	},
 	description: TRANSLATIONS['en-US'].SITE.DESCRIPTION,
 	applicationName: SITE_IDENTITY.global.SITE.NAME,
