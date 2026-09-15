@@ -14,6 +14,7 @@
     "SonarSource.sonarlint-vscode",
     "timonwong.shellcheck",
     "tamasfe.even-better-toml",
+		"vitest.explorer",
 		"chrmarti.regex"
   ]
 }

@@ -40,6 +40,7 @@
 	"bugs": {
 		"url": "https://github.com/saudtechnology/portfolio/issues"
 	},
+	"type": "module",
 	"packageManager": "pnpm@12.4.1",
 	"engines": {
 		"node": ">=24.14.0",
@@ -80,7 +81,7 @@
 		"infra:test:workflow:reusable-ci": "act pull_request -W .github/workflows/ci.yml",
 		"test:report:playwright": "pnpm exec playwright show-report",
 		"test:report:unit": "pnpm exec node --test --experimental-test-coverage --test-coverage-include='src/**' tests/**/*.test.mjs",
-		"test:unit": "node --test tests/**/*.test.mjs",
+		"test:unit": "vitest run",
 		"test:e2e": "pnpm build && playwright test",
 		"test:audit": "pnpm audit --prod",
 		"test:lighthouse": "pnpm build && lhci autorun",
@@ -140,6 +141,7 @@
 		"stylelint-config-standard": "^39.0.0",
 		"tailwindcss": "^4",
 		"typescript": "^5",
-		"validate-branch-name": "^1.3.2"
+		"validate-branch-name": "^1.3.2",
+		"vitest": "^5.0.0"
 	}
 }

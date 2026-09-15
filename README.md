@@ -5,6 +5,8 @@
 [![Node.js](https://img.shields.io/badge/node.js-%3E%3D24.14.0-339933?logo=node.js&logoColor=white)](package.json)
 [![pnpm](https://img.shields.io/badge/pnpm-12.4.1-F69220?logo=pnpm&logoColor=white)](package.json)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs&logoColor=white)](package.json)
+[![Vitest](https://img.shields.io/badge/Vitest-Unit-6E9F18?logo=vitest&logoColor=white)](package.json)
+[![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?logo=playwright&logoColor=white)](package.json)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 > **Embrace a Vision of Innovation and Excellence.**
