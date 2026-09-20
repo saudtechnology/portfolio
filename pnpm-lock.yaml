@@ -181,7 +181,7 @@ importers:
         version: 3.0.2
       '@commitlint/cli':
         specifier: ^21.2.2
-        version: 21.2.2(@types/node@24.13.4)(conventional-commits-parser@7.1.2)(typescript@5.9.3)
+        version: 21.2.2(@types/node@24.13.4)(conventional-commits-parser@7.1.2)(typescript@6.0.3)
       '@commitlint/config-conventional':
         specifier: ^21.2.2
         version: 21.2.2
@@ -217,7 +217,7 @@ importers:
         version: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
       eslint-config-next:
         specifier: 16.3.5
-        version: 16.3.5(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+        version: 16.3.5(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       eslint-config-prettier:
         specifier: ^10.1.8
         version: 10.1.8(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))
@@ -232,7 +232,7 @@ importers:
         version: 2.1.1(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       hint:
         specifier: ^7.1.13
-        version: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+        version: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lefthook:
         specifier: ^2.1.10
         version: 2.1.12
@@ -244,25 +244,25 @@ importers:
         version: 3.9.6
       schema-dts:
         specifier: ^2.0.0
-        version: 2.0.0(typescript@5.9.3)
+        version: 2.0.0(typescript@6.0.3)
       serve:
         specifier: ^14.2.4
         version: 14.2.6(supports-color@7.2.0)
       stylelint:
         specifier: ^16.25.0
-        version: 16.26.1(supports-color@7.2.0)(typescript@5.9.3)
+        version: 16.26.1(supports-color@7.2.0)(typescript@6.0.3)
       stylelint-config-standard:
         specifier: ^39.0.0
-        version: 39.0.1(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
+        version: 39.0.1(stylelint@16.26.1(supports-color@7.2.0)(typescript@6.0.3))
       tailwindcss:
         specifier: ^4
         version: 4.3.3
       typescript:
-        specifier: ^5
-        version: 5.9.3
+        specifier: ^6
+        version: 6.0.3
       validate-branch-name:
         specifier: ^1.3.2
-        version: 1.3.2(typescript@5.9.3)
+        version: 1.3.2(typescript@6.0.3)
       vitest:
         specifier: ^5.0.0
         version: 5.0.0(@types/node@24.13.4)(jsdom@21.1.2(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(supports-color@7.2.0))(vite@8.3.0(@types/node@24.13.4)(jiti@2.7.0)(yaml@2.9.1))
@@ -5755,8 +5755,8 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -6395,12 +6395,12 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@commitlint/cli@21.2.2(@types/node@24.13.4)(conventional-commits-parser@7.1.2)(typescript@5.9.3)':
+  '@commitlint/cli@21.2.2(@types/node@24.13.4)(conventional-commits-parser@7.1.2)(typescript@6.0.3)':
     dependencies:
       '@commitlint/config-conventional': 21.2.2
       '@commitlint/format': 21.2.2
       '@commitlint/lint': 21.2.2
-      '@commitlint/load': 21.2.2(@types/node@24.13.4)(typescript@5.9.3)
+      '@commitlint/load': 21.2.2(@types/node@24.13.4)(typescript@6.0.3)
       '@commitlint/read': 21.2.1(conventional-commits-parser@7.1.2)
       '@commitlint/types': 21.2.0
       tinyexec: 1.3.1
@@ -6445,14 +6445,14 @@ snapshots:
       '@commitlint/rules': 21.2.2
       '@commitlint/types': 21.2.0
 
-  '@commitlint/load@21.2.2(@types/node@24.13.4)(typescript@5.9.3)':
+  '@commitlint/load@21.2.2(@types/node@24.13.4)(typescript@6.0.3)':
     dependencies:
       '@commitlint/config-validator': 21.2.0
       '@commitlint/execute-rule': 21.0.1
       '@commitlint/resolve-extends': 21.2.2
       '@commitlint/types': 21.2.0
-      cosmiconfig: 9.0.2(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.3.0(@types/node@24.13.4)(cosmiconfig@9.0.2(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig: 9.0.2(typescript@6.0.3)
+      cosmiconfig-typescript-loader: 6.3.0(@types/node@24.13.4)(cosmiconfig@9.0.2(typescript@6.0.3))(typescript@6.0.3)
       es-toolkit: 1.52.0
       is-plain-obj: 4.1.0
       picocolors: 1.1.1
@@ -6649,13 +6649,13 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@hint/configuration-accessibility@2.0.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/configuration-accessibility@2.0.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/connector-puppeteer': 2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-axe': 4.4.21(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      '@hint/connector-puppeteer': 2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-axe': 4.4.21(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -6663,43 +6663,43 @@ snapshots:
       - utf-8-validate
     optional: true
 
-  '@hint/configuration-development@8.3.20(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)(typescript@5.9.3)':
+  '@hint/configuration-development@8.3.20(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
-      '@hint/configuration-accessibility': 2.0.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/configuration-progressive-web-apps': 7.0.29(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/connector-local': 3.2.28(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-json': 3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-babel-config': 2.4.28(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-button-type': 3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-compat-api': 4.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-create-element-svg': 1.3.27(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-css-prefix-order': 1.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-detect-css-reflows': 1.0.7(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-disown-opener': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-highest-available-document-mode': 5.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-leading-dot-classlist': 1.0.20(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-meta-charset-utf-8': 4.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-meta-viewport': 5.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-no-bom': 4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-inline-styles': 1.0.19(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-protocol-relative-urls': 3.1.7(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-scoped-svg-styles': 1.3.28(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-sri': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-typescript-config': 2.5.16(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-webpack-config': 2.4.30(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(@hint/parser-webpack-config@2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-babel-config': 2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-html': 3.1.4(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-jsx': 1.1.6(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-less': 1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-sass': 1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-typescript': 1.0.26(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)(typescript@5.9.3)
-      '@hint/parser-typescript-config': 2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-webpack-config': 2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      '@hint/configuration-accessibility': 2.0.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/configuration-progressive-web-apps': 7.0.29(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/connector-local': 3.2.28(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-json': 3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-babel-config': 2.4.28(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-button-type': 3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-compat-api': 4.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-create-element-svg': 1.3.27(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-css-prefix-order': 1.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-detect-css-reflows': 1.0.7(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-disown-opener': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-highest-available-document-mode': 5.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-leading-dot-classlist': 1.0.20(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-meta-charset-utf-8': 4.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-meta-viewport': 5.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-no-bom': 4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-inline-styles': 1.0.19(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-protocol-relative-urls': 3.1.7(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-scoped-svg-styles': 1.3.28(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-sri': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-typescript-config': 2.5.16(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-webpack-config': 2.4.30(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(@hint/parser-webpack-config@2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-babel-config': 2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-html': 3.1.4(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-jsx': 1.1.6(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-less': 1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-sass': 1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-typescript': 1.0.26(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)(typescript@6.0.3)
+      '@hint/parser-typescript-config': 2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-webpack-config': 2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -6709,19 +6709,19 @@ snapshots:
       - utf-8-validate
     optional: true
 
-  '@hint/configuration-progressive-web-apps@7.0.29(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/configuration-progressive-web-apps@7.0.29(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/connector-jsdom': 4.1.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/connector-puppeteer': 2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-apple-touch-icons': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-manifest-app-name': 2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-manifest-exists': 2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-manifest-file-extension': 3.0.24(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-manifest-is-valid': 3.4.20(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      '@hint/connector-jsdom': 4.1.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/connector-puppeteer': 2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-apple-touch-icons': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-manifest-app-name': 2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-manifest-exists': 2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-manifest-file-extension': 3.0.24(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-manifest-is-valid': 3.4.20(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -6729,50 +6729,50 @@ snapshots:
       - utf-8-validate
     optional: true
 
-  '@hint/configuration-web-recommended@8.2.24(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/configuration-web-recommended@8.2.24(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/configuration-accessibility': 2.0.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/connector-jsdom': 4.1.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/connector-local': 3.2.28(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/connector-puppeteer': 2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-json': 3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-stylish': 3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-button-type': 3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-compat-api': 4.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-content-type': 4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-create-element-svg': 1.3.27(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-css-prefix-order': 1.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-detect-css-reflows': 1.0.7(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-disown-opener': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-highest-available-document-mode': 5.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-html-checker': 3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-http-cache': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-http-compression': 5.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-image-optimization-cloudinary': 3.2.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-leading-dot-classlist': 1.0.20(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-meta-charset-utf-8': 4.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-meta-viewport': 5.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-no-bom': 4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-disallowed-headers': 3.1.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-friendly-error-pages': 3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-html-only-headers': 3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-http-redirects': 3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-no-inline-styles': 1.0.19(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-protocol-relative-urls': 3.1.7(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-no-vulnerable-javascript-libraries': 2.12.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-scoped-svg-styles': 1.3.28(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-sri': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-ssllabs': 2.4.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-strict-transport-security': 3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-stylesheet-limits': 3.3.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))
-      '@hint/hint-validate-set-cookie-header': 3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/hint-x-content-type-options': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-html': 3.1.4(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      '@hint/configuration-accessibility': 2.0.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/connector-jsdom': 4.1.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/connector-local': 3.2.28(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/connector-puppeteer': 2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-html': 4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-json': 3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-stylish': 3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/formatter-summary': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-button-type': 3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-compat-api': 4.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-content-type': 4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-create-element-svg': 1.3.27(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-css-prefix-order': 1.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-detect-css-reflows': 1.0.7(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-disown-opener': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-highest-available-document-mode': 5.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-html-checker': 3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-http-cache': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-http-compression': 5.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-image-optimization-cloudinary': 3.2.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-leading-dot-classlist': 1.0.20(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-meta-charset-utf-8': 4.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-meta-viewport': 5.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-no-bom': 4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-disallowed-headers': 3.1.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-friendly-error-pages': 3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-html-only-headers': 3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-http-redirects': 3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-no-inline-styles': 1.0.19(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-protocol-relative-urls': 3.1.7(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-no-vulnerable-javascript-libraries': 2.12.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-scoped-svg-styles': 1.3.28(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-sri': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-ssllabs': 2.4.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-strict-transport-security': 3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-stylesheet-limits': 3.3.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))
+      '@hint/hint-validate-set-cookie-header': 3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/hint-x-content-type-options': 4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-html': 3.1.4(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -6781,16 +6781,16 @@ snapshots:
       - utf-8-validate
     optional: true
 
-  '@hint/connector-jsdom@4.1.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/connector-jsdom@4.1.28(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
-      '@hint/utils-connector-tools': 4.0.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/utils-connector-tools': 4.0.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-dom': 2.2.4(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       jsdom: 21.1.2(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(supports-color@7.2.0)
       mutationobserver-shim: 0.3.7
     optionalDependencies:
@@ -6802,7 +6802,7 @@ snapshots:
       - utf-8-validate
     optional: true
 
-  '@hint/connector-local@3.2.28(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/connector-local@3.2.28(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-dom': 2.2.4(supports-color@7.2.0)
@@ -6811,7 +6811,7 @@ snapshots:
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       chokidar: 3.6.0
       globby: 11.1.0
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       jsdom: 21.1.2(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(supports-color@7.2.0)
     transitivePeerDependencies:
       - bufferutil
@@ -6821,16 +6821,16 @@ snapshots:
       - utf-8-validate
     optional: true
 
-  '@hint/connector-puppeteer@2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/connector-puppeteer@2.5.25(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
-      '@hint/utils-connector-tools': 4.0.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/utils-connector-tools': 4.0.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-dom': 2.2.4(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       is-ci: 3.0.1
       lockfile: 1.0.4
       puppeteer-core: 13.7.0(encoding@0.1.13)(supports-color@7.2.0)
@@ -6841,7 +6841,7 @@ snapshots:
       - utf-8-validate
     optional: true
 
-  '@hint/formatter-html@4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/formatter-html@4.3.17(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -6850,26 +6850,26 @@ snapshots:
       '@hint/utils-types': 1.2.1
       ejs: 3.1.10
       fs-extra: 11.4.0
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/formatter-json@3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/formatter-json@3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/formatter-stylish@3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/formatter-stylish@3.1.36(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -6878,7 +6878,7 @@ snapshots:
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
       chalk: 4.1.2
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
       strip-ansi: 6.0.1
       text-table: 0.2.0
@@ -6886,7 +6886,7 @@ snapshots:
       - supports-color
     optional: true
 
-  '@hint/formatter-summary@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/formatter-summary@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -6894,7 +6894,7 @@ snapshots:
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
       chalk: 4.1.2
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
       strip-ansi: 6.0.1
       text-table: 0.2.0
@@ -6902,66 +6902,66 @@ snapshots:
       - supports-color
     optional: true
 
-  '@hint/hint-apple-touch-icons@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-apple-touch-icons@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       image-size: 1.2.1
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-axe@4.4.21(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-axe@4.4.21(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
       axe-core: 4.13.0
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-babel-config@2.4.28(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-babel-config@2.4.28(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-babel-config': 2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-babel-config': 2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-button-type@3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-button-type@3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-compat-api@4.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-compat-api@4.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
-      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-compat-data': 1.1.13
       '@hint/utils-css': 1.0.15
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
     optional: true
 
-  '@hint/hint-content-type@4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-content-type@4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -6970,53 +6970,53 @@ snapshots:
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
       content-type: 1.0.5
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-create-element-svg@1.3.27(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-create-element-svg@1.3.27(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-css-prefix-order@1.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-css-prefix-order@1.5.8(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-css': 1.0.15
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       postcss: 8.5.28
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-detect-css-reflows@1.0.7(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-detect-css-reflows@1.0.7(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-css': 1.0.15
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       postcss: 8.5.28
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-disown-opener@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-disown-opener@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-compat-data': 1.1.13
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -7024,64 +7024,64 @@ snapshots:
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-highest-available-document-mode@5.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-highest-available-document-mode@5.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-html-checker@3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-html-checker@3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-http-cache@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-http-cache@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-http-compression@5.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-http-compression@5.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-image-optimization-cloudinary@3.2.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-image-optimization-cloudinary@3.2.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
@@ -7089,163 +7089,163 @@ snapshots:
       '@hint/utils-types': 1.2.1
       cloudinary: 2.11.0
       fs-extra: 11.4.0
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       image-size: 1.2.1
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-leading-dot-classlist@1.0.20(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-leading-dot-classlist@1.0.20(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-manifest-app-name@2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-manifest-app-name@2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
-      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       punycode: 2.3.1
     optional: true
 
-  '@hint/hint-manifest-exists@2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-manifest-exists@2.4.29(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
-      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     optional: true
 
-  '@hint/hint-manifest-file-extension@3.0.24(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-manifest-file-extension@3.0.24(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
-      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     optional: true
 
-  '@hint/hint-manifest-is-valid@3.4.20(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-manifest-is-valid@3.4.20(@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
-      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-manifest': 2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-compat-data': 1.1.13
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
       bcp47: 1.1.2
       color-string: 1.9.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     optional: true
 
-  '@hint/hint-meta-charset-utf-8@4.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-meta-charset-utf-8@4.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     optional: true
 
-  '@hint/hint-meta-viewport@5.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-meta-viewport@5.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       metaviewport-parser: 0.3.0
     optional: true
 
-  '@hint/hint-no-bom@4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-no-bom@4.2.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-no-disallowed-headers@3.1.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-no-disallowed-headers@3.1.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-no-friendly-error-pages@3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-no-friendly-error-pages@3.3.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-no-html-only-headers@3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
-    dependencies:
-      '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
-      '@hint/utils-i18n': 1.0.15
-      '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
-      '@hint/utils-string': 1.0.14
-      '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    optional: true
-
-  '@hint/hint-no-http-redirects@3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
-    dependencies:
-      '@hint/utils-i18n': 1.0.15
-      '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
-    optional: true
-
-  '@hint/hint-no-inline-styles@1.0.19(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
-    dependencies:
-      '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
-      '@hint/utils-i18n': 1.0.15
-      '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
-    transitivePeerDependencies:
-      - supports-color
-    optional: true
-
-  '@hint/hint-no-protocol-relative-urls@3.1.7(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-no-html-only-headers@3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-no-vulnerable-javascript-libraries@2.12.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-no-http-redirects@3.0.23(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
+    dependencies:
+      '@hint/utils-i18n': 1.0.15
+      '@hint/utils-types': 1.2.1
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
+    optional: true
+
+  '@hint/hint-no-inline-styles@1.0.19(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
+    dependencies:
+      '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
+      '@hint/utils-i18n': 1.0.15
+      '@hint/utils-types': 1.2.1
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
+    transitivePeerDependencies:
+      - supports-color
+    optional: true
+
+  '@hint/hint-no-protocol-relative-urls@3.1.7(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
+    dependencies:
+      '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
+      '@hint/utils-i18n': 1.0.15
+      '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
+      '@hint/utils-string': 1.0.14
+      '@hint/utils-types': 1.2.1
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    optional: true
+
+  '@hint/hint-no-vulnerable-javascript-libraries@2.12.22(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -7253,7 +7253,7 @@ snapshots:
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       js-library-detector: 6.7.0
       lodash: 4.18.1
       semver: 7.8.5
@@ -7262,20 +7262,20 @@ snapshots:
       - supports-color
     optional: true
 
-  '@hint/hint-scoped-svg-styles@1.3.28(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-scoped-svg-styles@1.3.28(@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-css': 3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-css': 1.0.15
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-sri@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-sri@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-fs': 1.0.16
@@ -7283,13 +7283,13 @@ snapshots:
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-ssllabs@2.4.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-ssllabs@2.4.27(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -7297,115 +7297,115 @@ snapshots:
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-types': 1.2.1
       got: 11.8.6
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-strict-transport-security@3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-strict-transport-security@3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-stylesheet-limits@3.3.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))':
+  '@hint/hint-stylesheet-limits@3.3.27(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))':
     dependencies:
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     optional: true
 
-  '@hint/hint-typescript-config@2.5.16(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-typescript-config@2.5.16(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-typescript-config': 2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-typescript-config': 2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-validate-set-cookie-header@3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-validate-set-cookie-header@3.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/hint-webpack-config@2.4.30(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(@hint/parser-webpack-config@2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-webpack-config@2.4.30(@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(@hint/parser-webpack-config@2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-babel-config': 2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-typescript-config': 2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
-      '@hint/parser-webpack-config': 2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-babel-config': 2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-typescript-config': 2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
+      '@hint/parser-webpack-config': 2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/hint-x-content-type-options@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/hint-x-content-type-options@4.0.23(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-i18n': 1.0.15
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-babel-config@2.1.43(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-fs': 1.0.16
       '@hint/utils-json': 1.0.28(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-css@3.0.39(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       postcss: 8.5.28
       postcss-safe-parser: 6.0.0(postcss@8.5.28)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/parser-html@3.1.4(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-html@3.1.4(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-dom': 2.2.4(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -7414,51 +7414,51 @@ snapshots:
       acorn-jsx: 5.3.2(acorn@8.18.0)
       acorn-jsx-walk: 2.0.0
       acorn-walk: 8.3.5
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/parser-jsx@1.1.6(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-jsx@1.1.6(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
-      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-dom': 2.2.4(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       parse5: 6.0.1
       parse5-htmlparser2-tree-adapter: 6.0.1
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/parser-less@1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-less@1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       postcss: 8.5.28
       postcss-less: 5.0.0
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-manifest@2.3.20(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-json': 1.0.28(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/parser-sass@1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-sass@1.0.31(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
       '@hint/utils-string': 1.0.14
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       postcss: 8.5.28
       postcss-sass: 0.5.0
       postcss-scss: 4.0.9(postcss@8.5.28)
@@ -7466,34 +7466,34 @@ snapshots:
       - supports-color
     optional: true
 
-  '@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-typescript-config@2.4.31(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils-fs': 1.0.16
       '@hint/utils-json': 1.0.28(encoding@0.1.13)(supports-color@7.2.0)
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       lodash: 4.18.1
     transitivePeerDependencies:
       - encoding
       - supports-color
     optional: true
 
-  '@hint/parser-typescript@1.0.26(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)(typescript@5.9.3)':
+  '@hint/parser-typescript@1.0.26(@hint/parser-javascript@3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0))(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
-      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/parser-javascript': 3.1.25(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
-      '@typescript-eslint/typescript-estree': 5.62.0(supports-color@7.2.0)(typescript@5.9.3)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 5.62.0(supports-color@7.2.0)(typescript@6.0.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - typescript
     optional: true
 
-  '@hint/parser-webpack-config@2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/parser-webpack-config@2.1.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-network': 1.0.27(encoding@0.1.13)(supports-color@7.2.0)
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -7509,7 +7509,7 @@ snapshots:
       semver: 7.8.5
     optional: true
 
-  '@hint/utils-connector-tools@4.0.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)':
+  '@hint/utils-connector-tools@4.0.42(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)':
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -7517,7 +7517,7 @@ snapshots:
       '@hint/utils-string': 1.0.14
       '@hint/utils-types': 1.2.1
       data-urls: 3.0.2
-      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3)
+      hint: 7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3)
       https: 1.0.0
       iconv-lite: 0.6.3
       node-fetch: 2.7.0(encoding@0.1.13)
@@ -8200,40 +8200,40 @@ snapshots:
       '@types/node': 24.13.4
     optional: true
 
-  '@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
+  '@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       '@typescript-eslint/scope-manager': 8.70.0
-      '@typescript-eslint/type-utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/type-utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.70.0
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
       ignore: 7.0.9
       natural-compare: 1.4.0
-      ts-api-utils: 2.5.0(typescript@5.9.3)
-      typescript: 5.9.3
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
+  '@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.70.0
       '@typescript-eslint/types': 8.70.0
-      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.70.0
       debug: 4.4.3(supports-color@7.2.0)
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/project-service@8.70.0(supports-color@7.2.0)(typescript@5.9.3)':
+  '@typescript-eslint/project-service@8.70.0(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.70.0(typescript@5.9.3)
+      '@typescript-eslint/tsconfig-utils': 8.70.0(typescript@6.0.3)
       '@typescript-eslint/types': 8.70.0
       debug: 4.4.3(supports-color@7.2.0)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -8242,19 +8242,19 @@ snapshots:
       '@typescript-eslint/types': 8.70.0
       '@typescript-eslint/visitor-keys': 8.70.0
 
-  '@typescript-eslint/tsconfig-utils@8.70.0(typescript@5.9.3)':
+  '@typescript-eslint/tsconfig-utils@8.70.0(typescript@6.0.3)':
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
-  '@typescript-eslint/type-utils@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
+  '@typescript-eslint/type-utils@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/types': 8.70.0
-      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       debug: 4.4.3(supports-color@7.2.0)
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
-      ts-api-utils: 2.5.0(typescript@5.9.3)
-      typescript: 5.9.3
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -8263,7 +8263,7 @@ snapshots:
 
   '@typescript-eslint/types@8.70.0': {}
 
-  '@typescript-eslint/typescript-estree@5.62.0(supports-color@7.2.0)(typescript@5.9.3)':
+  '@typescript-eslint/typescript-estree@5.62.0(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/types': 5.62.0
       '@typescript-eslint/visitor-keys': 5.62.0
@@ -8271,36 +8271,36 @@ snapshots:
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.8.5
-      tsutils: 3.21.0(typescript@5.9.3)
+      tsutils: 3.21.0(typescript@6.0.3)
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
     optional: true
 
-  '@typescript-eslint/typescript-estree@8.70.0(supports-color@7.2.0)(typescript@5.9.3)':
+  '@typescript-eslint/typescript-estree@8.70.0(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/project-service': 8.70.0(supports-color@7.2.0)(typescript@5.9.3)
-      '@typescript-eslint/tsconfig-utils': 8.70.0(typescript@5.9.3)
+      '@typescript-eslint/project-service': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/tsconfig-utils': 8.70.0(typescript@6.0.3)
       '@typescript-eslint/types': 8.70.0
       '@typescript-eslint/visitor-keys': 8.70.0
       debug: 4.4.3(supports-color@7.2.0)
       minimatch: 10.2.6
       semver: 7.8.5
       tinyglobby: 0.2.17
-      ts-api-utils: 2.5.0(typescript@5.9.3)
-      typescript: 5.9.3
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
+  '@typescript-eslint/utils@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))
       '@typescript-eslint/scope-manager': 8.70.0
       '@typescript-eslint/types': 8.70.0
-      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -9100,30 +9100,30 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.3.0(@types/node@24.13.4)(cosmiconfig@9.0.2(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.3.0(@types/node@24.13.4)(cosmiconfig@9.0.2(typescript@6.0.3))(typescript@6.0.3):
     dependencies:
       '@types/node': 24.13.4
-      cosmiconfig: 9.0.2(typescript@5.9.3)
+      cosmiconfig: 9.0.2(typescript@6.0.3)
       jiti: 2.6.1
-      typescript: 5.9.3
+      typescript: 6.0.3
 
-  cosmiconfig@8.3.6(typescript@5.9.3):
+  cosmiconfig@8.3.6(typescript@6.0.3):
     dependencies:
       import-fresh: 3.3.1
       js-yaml: 4.3.2
       parse-json: 5.2.0
       path-type: 4.0.0
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
-  cosmiconfig@9.0.2(typescript@5.9.3):
+  cosmiconfig@9.0.2(typescript@6.0.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
       js-yaml: 4.3.2
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   cross-fetch@3.1.5(encoding@0.1.13):
     dependencies:
@@ -9552,20 +9552,20 @@ snapshots:
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
       semver: 7.8.5
 
-  eslint-config-next@16.3.5(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3):
+  eslint-config-next@16.3.5(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3):
     dependencies:
       '@next/eslint-plugin-next': 16.3.5(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
       eslint-import-resolver-node: 0.3.10(supports-color@7.2.0)
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))
       eslint-plugin-react: 7.37.5(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))
       eslint-plugin-react-hooks: 7.1.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
       globals: 16.4.0
-      typescript-eslint: 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+      typescript-eslint: 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-webpack
@@ -9595,22 +9595,22 @@ snapshots:
       tinyglobby: 0.2.17
       unrs-resolver: 1.12.2
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10(supports-color@7.2.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0):
+  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-import-resolver-node@0.3.10(supports-color@7.2.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
       debug: 3.2.7(supports-color@7.2.0)
     optionalDependencies:
-      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
       eslint-import-resolver-node: 0.3.10(supports-color@7.2.0)
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.2.0
@@ -9621,7 +9621,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
       eslint-import-resolver-node: 0.3.10(supports-color@7.2.0)
-      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.10(supports-color@7.2.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint-import-resolver-node@0.3.10(supports-color@7.2.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
       hasown: 2.0.4
       is-core-module: 2.16.2
       is-glob: 4.0.3
@@ -9633,7 +9633,7 @@ snapshots:
       string.prototype.trimend: 1.0.10
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -9703,7 +9703,7 @@ snapshots:
       minimatch: 10.1.2
       scslre: 0.3.0
       semver: 7.7.4
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   eslint-plugin-yml@1.19.1(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
@@ -10297,7 +10297,7 @@ snapshots:
     dependencies:
       hermes-estree: 0.25.1
 
-  hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3):
+  hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3):
     dependencies:
       '@hint/utils': 7.0.24(supports-color@7.2.0)
       '@hint/utils-debug': 1.0.11(supports-color@7.2.0)
@@ -10318,8 +10318,8 @@ snapshots:
       setimmediate: 1.0.5
       update-notifier: 5.1.0
     optionalDependencies:
-      '@hint/configuration-development': 8.3.20(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)(typescript@5.9.3)
-      '@hint/configuration-web-recommended': 8.2.24(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@5.9.3))(supports-color@7.2.0)
+      '@hint/configuration-development': 8.3.20(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)(typescript@6.0.3)
+      '@hint/configuration-web-recommended': 8.2.24(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(hint@7.1.13(canvas@2.11.2(encoding@0.1.13)(supports-color@7.2.0))(encoding@0.1.13)(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -12289,13 +12289,13 @@ snapshots:
 
   scheduler@0.27.0: {}
 
-  schema-dts-lib@1.0.0(typescript@5.9.3):
+  schema-dts-lib@1.0.0(typescript@6.0.3):
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
-  schema-dts@2.0.0(typescript@5.9.3):
+  schema-dts@2.0.0(typescript@6.0.3):
     dependencies:
-      schema-dts-lib: 1.0.0(typescript@5.9.3)
+      schema-dts-lib: 1.0.0(typescript@6.0.3)
     transitivePeerDependencies:
       - typescript
 
@@ -12693,16 +12693,16 @@ snapshots:
     optionalDependencies:
       '@babel/core': 7.29.7(supports-color@7.2.0)
 
-  stylelint-config-recommended@17.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
+  stylelint-config-recommended@17.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@6.0.3)):
     dependencies:
-      stylelint: 16.26.1(supports-color@7.2.0)(typescript@5.9.3)
+      stylelint: 16.26.1(supports-color@7.2.0)(typescript@6.0.3)
 
-  stylelint-config-standard@39.0.1(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3)):
+  stylelint-config-standard@39.0.1(stylelint@16.26.1(supports-color@7.2.0)(typescript@6.0.3)):
     dependencies:
-      stylelint: 16.26.1(supports-color@7.2.0)(typescript@5.9.3)
-      stylelint-config-recommended: 17.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3))
+      stylelint: 16.26.1(supports-color@7.2.0)(typescript@6.0.3)
+      stylelint-config-recommended: 17.0.0(stylelint@16.26.1(supports-color@7.2.0)(typescript@6.0.3))
 
-  stylelint@16.26.1(supports-color@7.2.0)(typescript@5.9.3):
+  stylelint@16.26.1(supports-color@7.2.0)(typescript@6.0.3):
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-syntax-patches-for-csstree': 1.1.13(css-tree@3.2.1)
@@ -12712,7 +12712,7 @@ snapshots:
       '@dual-bundle/import-meta-resolve': 4.2.1
       balanced-match: 2.0.0
       colord: 2.10.0
-      cosmiconfig: 9.0.2(typescript@5.9.3)
+      cosmiconfig: 9.0.2(typescript@6.0.3)
       css-functions-list: 3.3.3
       css-tree: 3.2.1
       debug: 4.4.3(supports-color@7.2.0)
@@ -12910,9 +12910,9 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  ts-api-utils@2.5.0(typescript@5.9.3):
+  ts-api-utils@2.5.0(typescript@6.0.3):
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   tsconfig-paths@3.15.0:
     dependencies:
@@ -12925,10 +12925,10 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsutils@3.21.0(typescript@5.9.3):
+  tsutils@3.21.0(typescript@6.0.3):
     dependencies:
       tslib: 1.14.1
-      typescript: 5.9.3
+      typescript: 6.0.3
     optional: true
 
   type-check@0.4.0:
@@ -12981,18 +12981,18 @@ snapshots:
     dependencies:
       is-typedarray: 1.0.0
 
-  typescript-eslint@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3):
+  typescript-eslint@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
-      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
-      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@5.9.3)
-      '@typescript-eslint/utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
+      '@typescript-eslint/eslint-plugin': 8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/typescript-estree': 8.70.0(supports-color@7.2.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.0(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       eslint: 9.39.5(jiti@2.7.0)(supports-color@7.2.0)
-      typescript: 5.9.3
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  typescript@5.9.3: {}
+  typescript@6.0.3: {}
 
   uc.micro@2.1.0: {}
 
@@ -13114,10 +13114,10 @@ snapshots:
 
   uuid@8.3.2: {}
 
-  validate-branch-name@1.3.2(typescript@5.9.3):
+  validate-branch-name@1.3.2(typescript@6.0.3):
     dependencies:
       commander: 8.3.0
-      cosmiconfig: 8.3.6(typescript@5.9.3)
+      cosmiconfig: 8.3.6(typescript@6.0.3)
       git-local-info: 1.0.1
     transitivePeerDependencies:
       - typescript
