@@ -83,7 +83,6 @@ summary {
 a:active,
 button:active {
 	transform: none;
-	scale: 1;
 }
 
 /* WCAG 2.4.7 Focus Visible — never remove focus outline without a visible replacement */
@@ -110,7 +109,6 @@ summary:focus-visible,
 	color: var(--void);
 	opacity: 1;
 	transform: none;
-	scale: 1;
 }
 
 .cta-button:focus-visible {

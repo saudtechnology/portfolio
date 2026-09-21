@@ -47,10 +47,12 @@
 		"pnpm": ">=12.4.1"
 	},
 	"browserslist": [
-		"defaults",
-		"not dead",
-		"not ie 11",
-		"not ios_saf <= 14.8"
+		"chrome >= 114",
+		"safari >= 15",
+		"ios_saf >= 15",
+		"edge >= 79",
+		"firefox >= 103",
+		"not dead"
 	],
 	"validate-branch-name": {
 		"pattern": "^(main|feat|fix|docs|style|perf|test|chore|ci|revert|release|refactor|changeset-release)(/([a-z0-9.-]+))?$",
@@ -128,6 +130,7 @@
 		"@types/node": "^24.5.2",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"autoprefixer": "^10.6.1",
 		"eslint": "^9",
 		"eslint-config-next": "16.3.5",
 		"eslint-config-prettier": "^10.1.8",
