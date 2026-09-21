@@ -8,16 +8,21 @@ import { AutoHtmlLang } from '@/components/i18n/auto-html-lang';
 import { LocaleGate } from '@/components/i18n/locale-gate';
 import { SiteJsonLd } from '@/components/seo/json-ld';
 import { ThemeBrandStyles } from '@/components/theme/brand-styles';
+import { SiteEffects } from '@/components/motion/site-effects';
+import { SkipLink } from '@/components/a11y/skip-link';
 import { BRAND_THEME_COLORS } from '@/lib/site/tokens';
 import SITE_IDENTITY from '@/lib/site/identity';
 import TRANSLATIONS from '@/lib/i18n/translations';
 
 // Initialize the typography engine leveraging Montserrat configurations with fluid optimization options
+// Weights must match utility classes used across the UI (font-medium=500, font-semibold=600, font-bold=700).
+// Official next/font guidance: only load weights you use — include 500/700 to avoid synthetic bold.
 const montserrat = Montserrat({
 	subsets: ['latin'],
-	weight: ['200', '300', '400', '600'],
+	weight: ['200', '300', '400', '500', '600', '700'],
 	variable: '--font-montserrat',
 	display: 'swap',
+	preload: true,
 });
 
 /**
@@ -106,23 +111,28 @@ export const metadata: Metadata = {
  * @param props - An immutable props configuration block containing the rendering node trees.
  * @returns A strictly formatted native JSX layout sheet encapsulating the full digital portfolio web shell.
  */
-export function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
+export function RootLayout({ children }: Readonly<{ children: React.ReactNode }>): JSX.Element {
 	return (
 		<html lang="en-US" className={`${montserrat.variable} dark h-full antialiased`}>
 			<body className={`${montserrat.className} min-h-full flex flex-col bg-background text-foreground`}>
-				{/* Injects custom CSS brand tokens safely into the head element mapping variables */}
+				{/* WCAG 2.4.1 Bypass Blocks — skip repetitive chrome */}
+				<SkipLink />
+
+				{/* Design tokens + anti-flicker theme (server-injected) */}
 				<ThemeBrandStyles />
 
-				{/* Dynamic accessibility tracker that syncs html lang tags on context switches */}
+				{/* Sync <html lang> with active locale (client) */}
 				<AutoHtmlLang />
 
-				{/* Structural routing guard that transparently redirects users based on agent settings */}
+				{/* Optional locale redirect gate */}
 				<LocaleGate />
 
-				{/* Injects highly secure, crawlable Schema.org graph markup blocks for automated crawlers */}
+				{/* Schema.org JSON-LD */}
 				<SiteJsonLd />
 
-				{/* Render downstream viewport content components */}
+				{/* Cursor follower + scroll polish (client, reduced-motion aware) */}
+				<SiteEffects />
+
 				{children}
 			</body>
 		</html>
