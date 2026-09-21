@@ -43,9 +43,16 @@ type SiteIdentityType = Readonly<{
  * @returns A fully resolved, type-safe block matching the specific locale contract path.
  */
 const getSiteConfig = <L extends FullLocaleType>(LocaleType: L): SiteIdentityType[L]['SITE'] => {
-	const TRANSLATE_CONFIG = SITE_IDENTITY_TRANSLATION[LocaleType];
-	const SITE_TRANSLATION_CONFIG = TRANSLATE_CONFIG && 'SITE' in TRANSLATE_CONFIG ? TRANSLATE_CONFIG.SITE : {};
 	const NAME = 'SAUD TECHNOLOGY';
+
+	const TRANSLATE_CONFIG = SITE_IDENTITY_TRANSLATION[LocaleType];
+	const SITE_TRANSLATION_CONFIG =
+		TRANSLATE_CONFIG && 'SITE' in TRANSLATE_CONFIG
+			? {
+					...TRANSLATE_CONFIG.SITE,
+					COPYRIGHT: TRANSLATE_CONFIG?.SITE.COPYRIGHT.replace('${SITE_IDENTITY.GLOBAL.NAME}', NAME),
+				}
+			: {};
 
 	return {
 		// Cascade incoming localized fields like DESCRIPTION, MOTTO, and KEYWORDS

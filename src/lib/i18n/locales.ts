@@ -33,7 +33,8 @@ export const detectLocale = (
 	lang: LocaleType;
 	state: Record<'isGlobal' | 'isEnUS' | 'isPtBR', boolean>;
 }> => {
-	const CLEANED_TAG = tag.replace(/\//g, '') as FullLocaleType;
+	// Correção: Substituído .replace() por .replaceAll() para global matching com regex
+	const CLEANED_TAG = tag.replaceAll(/\//g, '') as FullLocaleType;
 	const NORMALIZED_TAG = CLEANED_TAG.toLowerCase() as FullLocaleType;
 	const IS_GLOBAL_TAG = NORMALIZED_TAG === 'global';
 	const LANG: LocaleType = IS_GLOBAL_TAG || !NORMALIZED_TAG ? LOCALE_BASE_CONFIG.LANGUAGE : (CLEANED_TAG as LocaleType);

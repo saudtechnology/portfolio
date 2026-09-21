@@ -9,6 +9,7 @@ export type SiteIdentityTranslationType = Readonly<{
 	SITE: {
 		DESCRIPTION: string;
 		MOTTO: string;
+		COPYRIGHT: string;
 		KEYWORDS: string[];
 		MANIFEST: {
 			NAME: string;
@@ -65,6 +66,13 @@ const getSiteDescriptionConfig = (): Readonly<Record<LocaleType, Record<'LAST' |
 	};
 };
 
+const getSiteCopyrightConfig = (locale: LocaleType): Readonly<string> => {
+	const { state } = detectLocale(locale);
+	const CURRENT_STRING = '© 2019 ${SITE_IDENTITY.GLOBAL.NAME}. ${MESSAGE}';
+
+	return CURRENT_STRING.replace('${MESSAGE}', state.isEnUS ? 'All rights reserved' : 'Todos os direitos reservados.');
+};
+
 /**
  * Factory utility function that dynamically compiles and hydra-formats the Web App Manifest
  * semantic text descriptors based on the requested language token.
@@ -112,6 +120,7 @@ export const SITE_IDENTITY_TRANSLATION: Readonly<{
 			MANIFEST: getSiteManifestConfig('en-US'),
 			DESCRIPTION: SITE_DESCRIPTION_CONFIG['en-US'].FULL,
 			MOTTO: 'Engineering Intelligence. Architecting the Future.',
+			COPYRIGHT: getSiteCopyrightConfig('en-US'),
 			KEYWORDS: [
 				'AI Engineering',
 				'Artificial Intelligence',
@@ -160,6 +169,7 @@ export const SITE_IDENTITY_TRANSLATION: Readonly<{
 			MANIFEST: getSiteManifestConfig('pt-BR'),
 			DESCRIPTION: SITE_DESCRIPTION_CONFIG['pt-BR'].FULL,
 			MOTTO: 'Inteligência de Engenharia. Arquitetando o Futuro.',
+			COPYRIGHT: getSiteCopyrightConfig('pt-BR'),
 			KEYWORDS: [
 				'Engenharia de IA',
 				'Inteligência Artificial',
