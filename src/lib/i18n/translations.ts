@@ -1,5 +1,6 @@
 import PAGE_TRANSLATION from './pages';
 import SITE_IDENTITY_TRANSLATION from './site-identity';
+import UI_TRANSLATION from './ui';
 
 /**
  * The consolidated global translation dictionary index.
@@ -10,10 +11,12 @@ const TRANSLATIONS = {
 	'en-US': {
 		...SITE_IDENTITY_TRANSLATION['en-US'],
 		PAGE: PAGE_TRANSLATION['en-US'],
+		UI: UI_TRANSLATION['en-US'],
 	},
 	'pt-BR': {
 		...SITE_IDENTITY_TRANSLATION['pt-BR'],
 		PAGE: PAGE_TRANSLATION['pt-BR'],
+		UI: UI_TRANSLATION['pt-BR'],
 	},
 } as const;
 

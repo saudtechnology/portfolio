@@ -13,6 +13,17 @@ export const BRAND_COLORS = {
 	muteOnLight: '#4D6352',
 } as const;
 
+/** RGB channels for alpha compositing via `rgba(var(--neon-rgb), a)`. */
+export const BRAND_COLOR_RGB = {
+	neon: '16, 243, 0',
+	void: '0, 0, 0',
+	pine: '2, 21, 0',
+	plate: '6, 19, 8',
+	forest: '7, 27, 8',
+	snow: '250, 251, 250',
+	mute: '138, 160, 140',
+} as const;
+
 /**
  * Secondary theme semantic definitions mapping dark and light canvas baseline colors.
  * Readily accessible to feed Next.js layout metadata configurations (e.g., HTML theme-color parameters).
@@ -38,6 +49,13 @@ export function generateBrandCssTokens(): string {
 		--mute: ${BRAND_COLORS.mute};
 		--mute-on-light: ${BRAND_COLORS.muteOnLight};
 		--neon: ${BRAND_COLORS.neon};
+		--void-rgb: ${BRAND_COLOR_RGB.void};
+		--pine-rgb: ${BRAND_COLOR_RGB.pine};
+		--plate-rgb: ${BRAND_COLOR_RGB.plate};
+		--forest-rgb: ${BRAND_COLOR_RGB.forest};
+		--snow-rgb: ${BRAND_COLOR_RGB.snow};
+		--mute-rgb: ${BRAND_COLOR_RGB.mute};
+		--neon-rgb: ${BRAND_COLOR_RGB.neon};
 	}`;
 }
 
