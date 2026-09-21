@@ -7,10 +7,10 @@ import { generateSiteJsonLd } from '@/lib/site/schema';
  * Preserved strict uppercase nomenclature matching your core validation design standards.
  */
 const XSS_ESCAPE_MAP: Record<string, string> = {
-	'<': '\\u003c',
-	'>': '\\u003e',
-	'&': '\\u0026',
-	'/': '\\u002f',
+	'<': '\u003c',
+	'>': '\u003e',
+	'&': '\u0026',
+	'/': '\u002f',
 };
 
 /**

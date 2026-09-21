@@ -7,10 +7,12 @@ import { generateBrandCssTokens } from '@/lib/site/tokens';
  * Preserved strict uppercase nomenclature matching your design system constants.
  */
 const CSS_ESCAPE_MAP: Record<string, string> = {
-	'<': '\\3c ',
-	'>': '\\3e ',
-	'&': '\\26 ',
-	'\\': '\\\\',
+	'<': String.raw`\3c `,
+	'>': String.raw`\3e `,
+	'&': String.raw`\26 `,
+	'"': String.raw`\22 `,
+	"'": String.raw`\27 `,
+	';': String.raw`\3a `,
 };
 
 /**
