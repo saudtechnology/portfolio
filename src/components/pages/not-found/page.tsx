@@ -30,7 +30,7 @@ export function NotFoundPage(): JSX.Element {
 	const CURRENT_REDIRECT_HREF = getLocaleRoutePath(locale) as Route;
 
 	return (
-		<main className="flex flex-1 flex-col items-start justify-center gap-4 px-8 py-24">
+		<main id="main-content" tabIndex={-1} className="flex flex-1 flex-col items-start justify-center gap-4 px-8 py-24">
 			{/* 3. Tab State Synchronizer: Dynamically injects the localized page view title onto the active browser task tab element */}
 			<DocumentTitle title={translation.PAGE.ERROR.NOT_FOUND.DOM_DOCUMENT.TITLE} />
 

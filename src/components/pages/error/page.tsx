@@ -28,7 +28,7 @@ export function ErrorPage({ reset }: ErrorPageProps): JSX.Element {
 	const { translation } = useActiveLocale();
 
 	return (
-		<main className="flex flex-1 flex-col items-start justify-center gap-4 px-8 py-24">
+		<main id="main-content" tabIndex={-1} className="flex flex-1 flex-col items-start justify-center gap-4 px-8 py-24">
 			{/* 2. Structured Layout: Displays the localized title text safely extracted from the page translations dictionary */}
 			<h1 className="text-3xl font-light">{translation.PAGE.ERROR.GENERIC.HEADING.TITLE}</h1>
 
