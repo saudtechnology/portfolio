@@ -176,7 +176,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					kind: 'Bachelor',
 					title: 'B.Sc. Computer Science',
-					org: 'Universidade Veiga de Almeida (UVA)',
+					org: 'Veiga de Almeida University (UVA)',
 					period: 'Jan 2014 — Feb 2019',
 					location: 'Rio de Janeiro, Brazil',
 					description:
@@ -200,12 +200,22 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					kind: 'Executive education',
 					title: 'Business Administration & Management',
-					org: 'Universitat de Barcelona (UB)',
+					org: 'Barcelona University (UB)',
 					period: 'Jan 2018 — Nov 2019',
 					location: 'Catalonia, Spain',
 					description:
 						'Continuing education in leadership profile — business cases, executive decision-making and communication for technical leaders.',
 					tags: ['Leadership', 'Strategy', 'Executive Communication'],
+					status: 'Completed',
+				},
+				{
+					kind: 'Specialization Certificate',
+					title: 'User Experience (UX) and User Interface (UI) Design',
+					org: 'Google',
+					period: 'Dez 2024',
+					description:
+						'Foundational UX concepts: user-centered design, the design process, accessibility, equity-focused design and design sprints — first course of the Google UX Design Professional Certificate.',
+					tags: ['UX', 'User-Centered Design', 'Accessibility', 'Design Thinking', 'Design Sprints'],
 					status: 'Completed',
 				},
 				{
@@ -232,7 +242,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					kind: 'Specialization Certificate',
 					title: 'Deep Learning',
 					org: 'DeepLearning.AI',
-					period: 'In progress',
+					period: 'AUG 2026',
 					description:
 						'Build and train deep neural networks, CNNs, RNNs/LSTMs and Transformers with Python and TensorFlow — from vectorized nets and optimization to computer vision, NLP and sequence models.',
 					tags: [
@@ -247,7 +257,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Computer Vision',
 						'NLP',
 					],
-					status: 'In progress',
+					status: 'Completed',
 				},
 				{
 					kind: 'Professional Certificate',
@@ -534,6 +544,16 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Specialization Certificate',
+					title: 'Experiência do Usuário (UX) and Interface do Usuário (UI) Design',
+					org: 'Google',
+					period: 'Dez 2024',
+					description:
+						'Fundamentos de UX: design centrado no usuário, processo de design, acessibilidade, design com foco em equidade e design sprints — primeiro curso do Google UX Design Professional Certificate.',
+					tags: ['UX', 'Design Centrado no Usuário', 'Acessibilidade', 'Design Thinking', 'Design Sprints'],
+					status: 'Concluído',
+				},
+				{
+					kind: 'Specialization Certificate',
 					title: 'Python',
 					org: 'University of Michigan',
 					period: 'Julho 2026 — Ago 2026',
@@ -556,7 +576,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					kind: 'Specialization Certificate',
 					title: 'Deep Learning',
 					org: 'DeepLearning.AI',
-					period: 'Em andamento',
+					period: 'AGO 2026',
 					description:
 						'Construir e treinar redes neurais profundas, CNNs, RNNs/LSTMs e Transformers com Python e TensorFlow — de redes vetorizadas e otimização a visão computacional, NLP e modelos de sequência.',
 					tags: [
@@ -571,7 +591,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Computer Vision',
 						'NLP',
 					],
-					status: 'Em andamento',
+					status: 'Concluído',
 				},
 				{
 					kind: 'Certificado profissional',
