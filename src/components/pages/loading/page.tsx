@@ -14,7 +14,7 @@ import { JSX } from 'react';
  */
 export function LoadingPage(): JSX.Element {
 	return (
-		<main className="flex flex-1 items-center justify-center px-8 py-24">
+		<main id="main-content" tabIndex={-1} className="flex flex-1 items-center justify-center px-8 py-24">
 			{/* Visual Indicator: Styled with corporate design tokens for professional, understated feedback */}
 			<p className="text-sm tracking-[0.2em] text-mute">Loading...</p>
 		</main>
