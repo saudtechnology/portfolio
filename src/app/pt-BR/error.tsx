@@ -4,8 +4,6 @@ import { JSX } from 'react';
 import { ErrorPage } from '@/components/pages/error/page';
 
 type RootErrorPtBrLayoutProps = {
-	/** An instance of the uncaught Error object accompanied by an optional cryptographic tracking digest hash string. */
-	readonly error: Error & { digest?: string };
 	/** A native Next.js state callback function designed to trigger a safe re-render cycle attempt of the boundary tree. */
 	readonly reset: () => void;
 };

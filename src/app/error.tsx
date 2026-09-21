@@ -3,13 +3,6 @@
 import { JSX } from 'react';
 import { ErrorPage } from '@/components/pages/error/page';
 
-type RootErrorProps = {
-	/** An instance of the uncaught operational Exception accompanied by an optional cryptographic tracking digest hash string. */
-	readonly error: Error & { digest?: string };
-	/** A native Next.js state callback function designed to trigger a safe re-render cycle attempt of the boundary tree. */
-	readonly reset: () => void;
-};
-
 /**
  * Root Baseline English Error Boundary Layout Wrapper.
  * Acts as the official standard catch-all fallback context for unexpected exceptions thrown within the application subtree.
@@ -24,7 +17,7 @@ type RootErrorProps = {
  * @param props - An immutable props configuration block containing the operational failure records and the reset action callback pointer.
  * @returns A strictly formatted native JSX layout wrapper encapsulating the automated error boundary view canvas.
  */
-export function RootError({ reset }: RootErrorProps): JSX.Element {
+export function RootError({ reset }: { readonly reset: () => void }): JSX.Element {
 	return (
 		// Delegates the contextual interface rendering and automated live URL locale checks directly to the ErrorPage core
 		<ErrorPage reset={reset} />
