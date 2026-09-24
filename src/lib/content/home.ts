@@ -91,7 +91,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Thiago Saud',
 			subtitle: '',
 			cta: "Let's Talk",
-			roles: ['Principal Frontend Engineering', 'AI & MLOps Engineering'],
+			roles: ['Principal Frontend Engineering', 'Senior AI & MLOps Engineering'],
 		},
 		aboutTeaser: {
 			label: 'About',
@@ -119,14 +119,14 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					quote:
 						'As a technical specialist, Thiago was decisive for getting Home Broker and COE into production. Architecture, RFCs and delivery discipline that the squad leaned on — without that ownership, those platforms would not have reached the standard they did under regulatory pressure.',
 					author: 'Executive Director',
-					role: 'Digital Equities · Investment Bank',
+					role: 'BTG Pactual Bank · Digital Equities',
 					metric: '4.8M+ clients · R$1.6T+ AUM',
 				},
 				{
 					quote:
 						'He elevated Global Markets platforms for the trading desk and ~12K advisors — Black Sales for structured products and derivatives, and Black AAI for portfolio management — with React micro-frontends, GraphQL and the SOMA design system. Delivery stayed predictable while the surface area kept growing.',
 					author: 'Partner',
-					role: 'XP Investimentos · Global Markets',
+					role: 'XP Investments · Global Markets',
 					metric: '~12K advisors · multi-trillion assets',
 				},
 				{
@@ -170,15 +170,15 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 		},
 		education: {
 			label: 'Credentials',
-			title: 'Education & certifications',
+			title: 'Education & Certifications',
 			subtitle: 'Formal CS foundation plus active specialization in AI Engineering and MLOps.',
 			items: [
 				{
 					kind: 'Bachelor',
-					title: 'B.Sc. Computer Science',
+					title: 'Computer Science',
 					org: 'Veiga de Almeida University (UVA)',
 					period: 'Jan 2014 — Feb 2019',
-					location: 'Rio de Janeiro, Brazil',
+					location: 'Rio de Janeiro, BR (On-Site)',
 					description:
 						'Capstone: Facial Recognition for Public Safety (Dec 2019) — real-time detection (Viola-Jones) and recognition (Eigenfaces/PCA, Fisherfaces/LDA) in Python/OpenCV with ~80–100% accuracy and ~0.8s mean identification time.',
 					tags: [
@@ -200,9 +200,9 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					kind: 'Executive education',
 					title: 'Business Administration & Management',
-					org: 'Barcelona University (UB)',
+					org: 'University of Barcelona (UB)',
 					period: 'Jan 2018 — Nov 2019',
-					location: 'Catalonia, Spain',
+					location: 'Catalonia, Spain (Remote)',
 					description:
 						'Continuing education in leadership profile — business cases, executive decision-making and communication for technical leaders.',
 					tags: ['Leadership', 'Strategy', 'Executive Communication'],
@@ -212,6 +212,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					kind: 'Specialization Certificate',
 					title: 'User Experience (UX) and User Interface (UI) Design',
 					org: 'Google',
+					location: '(Remote)',
 					period: 'Dez 2024',
 					description:
 						'Foundational UX concepts: user-centered design, the design process, accessibility, equity-focused design and design sprints — first course of the Google UX Design Professional Certificate.',
@@ -222,6 +223,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					kind: 'Specialization Certificate',
 					title: 'Python',
 					org: 'University of Michigan',
+					location: '(Remote)',
 					period: 'Jul 2026 — Aug 2026',
 					description:
 						'Python specialization covering data structures, APIs and SQL — applied programming foundations for AI/ML workloads.',
@@ -232,6 +234,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					kind: 'Course Certificate',
 					title: 'AI Fluency: Framework & Foundations',
 					org: 'Anthropic',
+					location: '(Remote)',
 					period: 'Aug 2026',
 					description:
 						'Framework-level fluency for modern AI systems — concepts and practical foundations that support responsible adoption in product engineering.',
@@ -242,7 +245,8 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					kind: 'Specialization Certificate',
 					title: 'Deep Learning',
 					org: 'DeepLearning.AI',
-					period: 'AUG 2026',
+					location: '(Remote)',
+					period: 'Aug 2026',
 					description:
 						'Build and train deep neural networks, CNNs, RNNs/LSTMs and Transformers with Python and TensorFlow — from vectorized nets and optimization to computer vision, NLP and sequence models.',
 					tags: [
@@ -261,8 +265,9 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Professional Certificate',
-					title: 'IBM AI Engineering',
+					title: 'AI Engineering',
 					org: 'IBM',
+					location: '(Remote)',
 					period: 'In progress — target Oct 2026',
 					description:
 						'Machine Learning, Deep Learning, LLMs, RAG, LangChain, PyTorch/TensorFlow — production-oriented AI engineering path.',
@@ -271,8 +276,9 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Professional Certificate',
-					title: 'IBM RAG & Agentic AI',
+					title: 'RAG & Agentic AI',
 					org: 'IBM',
+					location: '(Remote)',
 					period: 'In progress — target Nov 2026',
 					description:
 						'Advanced retrieval-augmented generation and agentic systems: LangChain, LangGraph, CrewAI, MCP and vector databases.',
@@ -283,6 +289,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					kind: 'Specialization Certificate',
 					title: 'MLOps | Machine Learning Operations',
 					org: 'Duke University',
+					location: '(Remote)',
 					period: 'In progress — target Dec 2026',
 					description:
 						'Production ML operations: MLflow, model lifecycle, cloud ML platforms (SageMaker, Azure ML) and reliable deployment practices.',
@@ -297,7 +304,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			items: [
 				{
 					role: 'Principal Frontend Engineer',
-					company: 'Banco BTG Pactual S.A.',
+					company: 'BTG Pactual Bank S.A.',
 					period: 'Feb 2023 — Jun 2026',
 					location: 'São Paulo, BR (Remote)',
 					description:
@@ -305,7 +312,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					role: 'Senior Frontend Engineer',
-					company: 'XP Investimentos S.A.',
+					company: 'XP Investments S.A.',
 					period: 'Jul 2021 — Nov 2022',
 					location: 'São Paulo, BR (Remote)',
 					description:
@@ -313,7 +320,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					role: 'Mid-level Frontend Engineer',
-					company: 'Zoox Tecnologia Ltda.',
+					company: 'Zoox Technology Ltda.',
 					period: 'Jul 2020 — Nov 2020',
 					location: 'Rio de Janeiro, BR (Remote)',
 					description:
@@ -321,19 +328,19 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					role: 'Junior Frontend Engineer',
-					company: 'TG4 Tecnologia Ltda.',
+					company: 'TG4 Technology Ltda.',
 					period: 'Sep 2019 — Jul 2020',
-					location: 'Rio de Janeiro, BR',
+					location: 'Rio de Janeiro, BR (On-Site)',
 					description:
 						'End-to-end ownership of white-label chatbot platform for major Brazilian telecom operators. Predictive recommendation algorithms drove 100% increase in upgrade offer acceptance and reduced CAC/CPC.',
 				},
 				{
 					role: 'R&D Engineering Intern',
-					company: 'Neoris do Brasil Ltda.',
+					company: 'NEORIS of Brazil Ltda.',
 					period: 'Apr 2017 — Apr 2019',
 					location: 'Rio de Janeiro, BR (Hybrid)',
 					description:
-						'Sole intern in the R&D engineering division. Spatial computing, geospatial BI and cognitive AI prototypes (facial recognition, AR/VR). Delivered strategic products for Aliansce and internal PoCs using Computer Vision and Azure Cognitive Services.',
+						'Sole intern in the R&D engineering division. Spatial computing, geospatial BI and cognitive AI prototypes (facial recognition, AR/VR). Delivered strategic products for Aliansce Shopping Centers and internal PoCs using Computer Vision and Azure Cognitive Services.',
 				},
 			],
 		},
@@ -425,7 +432,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Thiago Saud',
 			subtitle: '',
 			cta: 'Vamos Conversar',
-			roles: ['Principal Engenheiro Frontend', 'Engenheiro de IA & MLOps'],
+			roles: ['Principal Engenheiro Frontend', 'Engenheiro Sênior de IA & MLOps'],
 		},
 		aboutTeaser: {
 			label: 'Sobre',
@@ -452,21 +459,21 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					quote:
 						'Como especialista técnico, Thiago foi decisivo para colocar o Home Broker e o COE em produção. Arquitetura, RFCs e disciplina de entrega em que o squad se apoiou — sem essa ownership, essas plataformas não teriam atingido o padrão que atingiram sob pressão regulatória.',
-					author: 'Executive Director',
-					role: 'Digital Equities · Banco de Investimento',
+					author: 'Diretor Executivo',
+					role: 'Banco BTG Pactual · Digital Equities',
 					metric: '4,8M+ clientes · R$1,6T+ AUM',
 				},
 				{
 					quote:
 						'Elevou as plataformas de Global Markets para a mesa e ~12 mil assessores — Black Sales para produtos estruturados e derivativos, e Black AAI para gestão de portfólio — com micro-frontends React, GraphQL e o design system SOMA. A entrega se manteve previsível enquanto a superfície crescia.',
-					author: 'Partner',
+					author: 'Sócio',
 					role: 'XP Investimentos · Global Markets',
 					metric: '~12 mil assessores · ativos multi-trilhões',
 				},
 				{
 					quote:
 						'Ainda como estagiário na nossa divisão de P&D, Thiago operava como dono de produto — BI espacial, protótipos de AR e PoCs de visão cognitiva entregues com clareza executiva e rigor de engenharia que impressionaram a liderança sênior.',
-					author: 'Senior Business Manager',
+					author: 'Gerente Sênior de Negócios',
 					role: 'NEORIS',
 					metric: 'Produtos estratégicos · IA e computação espacial',
 				},
@@ -509,10 +516,10 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			items: [
 				{
 					kind: 'Bacharelado',
-					title: 'Bacharel em Ciência da Computação',
+					title: 'Ciência da Computação',
 					org: 'Universidade Veiga de Almeida (UVA)',
 					period: 'Jan 2014 — Fev 2019',
-					location: 'Rio de Janeiro, Brasil',
+					location: 'Rio de Janeiro, BR (Presencial)',
 					description:
 						'TCC: Reconhecimento Facial para Segurança Pública (Dez/2019) — detecção em tempo real (Viola-Jones) e reconhecimento (Eigenfaces/PCA, Fisherfaces/LDA) em Python/OpenCV com acurácia ~80–100% e ~0,8s de identificação média.',
 					tags: [
@@ -536,16 +543,17 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					title: 'Administração e Gestão Empresarial',
 					org: 'Universitat de Barcelona (UB)',
 					period: 'Jan 2018 — Nov 2019',
-					location: 'Catalunha, Espanha',
+					location: 'Catalunha, Espanha (Remoto)',
 					description:
 						'Formação continuada em perfil de líder — cases de negócio, tomada de decisão e comunicação executiva para lideranças técnicas.',
 					tags: ['Liderança', 'Estratégia', 'Comunicação Executiva'],
 					status: 'Concluído',
 				},
 				{
-					kind: 'Specialization Certificate',
-					title: 'Experiência do Usuário (UX) and Interface do Usuário (UI) Design',
+					kind: 'Certificado de Especialização',
+					title: 'Experiência do Usuário (UX) e Interface do Usuário (UI) Design',
 					org: 'Google',
+					location: '(Remoto)',
 					period: 'Dez 2024',
 					description:
 						'Fundamentos de UX: design centrado no usuário, processo de design, acessibilidade, design com foco em equidade e design sprints — primeiro curso do Google UX Design Professional Certificate.',
@@ -553,9 +561,10 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Specialization Certificate',
+					kind: 'Certificado de Especialização',
 					title: 'Python',
-					org: 'University of Michigan',
+					org: 'Universidade de Michigan',
+					location: '(Remoto)',
 					period: 'Julho 2026 — Ago 2026',
 					description:
 						'Especialização em Python com estruturas de dados, APIs e SQL — bases de programação aplicada a workloads de AI/ML.',
@@ -563,9 +572,10 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Course Certificate',
-					title: 'AI Fluency: Framework & Foundations',
+					kind: 'Certificado do Curso',
+					title: 'Fluência de IA: Estrutura e Fundamentos',
 					org: 'Anthropic',
+					location: '(Remoto)',
 					period: 'Ago 2026',
 					description:
 						'Fluência em frameworks de IA moderna — conceitos e fundamentos práticos para adoção responsável em engenharia de produto.',
@@ -573,10 +583,11 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Specialization Certificate',
-					title: 'Deep Learning',
+					kind: 'Certificado de Especialização',
+					title: 'Aprendizagem Profunda',
 					org: 'DeepLearning.AI',
-					period: 'AGO 2026',
+					location: '(Remoto)',
+					period: 'Ago 2026',
 					description:
 						'Construir e treinar redes neurais profundas, CNNs, RNNs/LSTMs e Transformers com Python e TensorFlow — de redes vetorizadas e otimização a visão computacional, NLP e modelos de sequência.',
 					tags: [
@@ -594,28 +605,31 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Certificado profissional',
-					title: 'IBM AI Engineering',
+					kind: 'Certificado Profissional',
+					title: 'Engenharia de IA',
 					org: 'IBM',
+					location: '(Remoto)',
 					period: 'Em andamento — meta out/2026',
 					description:
-						'Machine Learning, Deep Learning, LLMs, RAG, LangChain, PyTorch/TensorFlow — trilha de AI engineering orientada a produção.',
+						'Machine Learning, Deep Learning, LLMs, RAG, LangChain, PyTorch/TensorFlow — trilha de engenharia orientada a produção.',
 					tags: ['ML', 'Deep Learning', 'LLMs', 'RAG', 'LangChain', 'PyTorch', 'TensorFlow'],
 					status: 'Em andamento',
 				},
 				{
-					kind: 'Certificado profissional',
-					title: 'IBM RAG & Agentic AI',
+					kind: 'Certificado Profissional',
+					title: 'RAG & Agente de AI',
 					org: 'IBM',
+					location: '(Remoto)',
 					period: 'Em andamento — meta nov/2026',
 					description: 'RAG avançado e sistemas agenticos: LangChain, LangGraph, CrewAI, MCP e bancos vetoriais.',
 					tags: ['RAG', 'Agentic AI', 'LangGraph', 'CrewAI', 'MCP', 'Vector DBs'],
 					status: 'Em andamento',
 				},
 				{
-					kind: 'Specialization Certificate',
-					title: 'MLOps | Machine Learning Operations',
-					org: 'Duke University',
+					kind: 'Certificado de Especialização',
+					title: 'MLOps | Operações de Aprendizado de Máquina',
+					org: 'Universidade Duke',
+					location: '(Remoto)',
 					period: 'Em andamento — meta dez/2026',
 					description:
 						'Operações de ML em produção: MLflow, ciclo de vida de modelos, plataformas cloud (SageMaker, Azure ML) e práticas de deploy confiável.',
@@ -656,17 +670,17 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					role: 'Engenheiro Frontend Júnior',
 					company: 'TG4 Tecnologia Ltda.',
 					period: 'Set 2019 — Jul 2020',
-					location: 'Rio de Janeiro, BR',
+					location: 'Rio de Janeiro, BR (Presencial)',
 					description:
 						'Ownership ponta a ponta da plataforma white-label de chatbot para as maiores operadoras de telecom do país. Algoritmos preditivos de recomendação geraram 100% de aumento na aceitação de ofertas de upgrade e redução de CAC/CPC.',
 				},
 				{
 					role: 'Estagiário em P&D Tecnológico',
-					company: 'Neoris do Brasil Ltda.',
+					company: 'NEORIS do Brasil Ltda.',
 					period: 'Abr 2017 — Abr 2019',
 					location: 'Rio de Janeiro, BR (Híbrido)',
 					description:
-						'Único estagiário na divisão de P&D. Computação espacial, BI geoespacial e protótipos cognitivos de IA (reconhecimento facial, AR/VR). Entregou produtos estratégicos para Aliansce e PoCs internas com Computer Vision e Azure Cognitive Services.',
+						'Único estagiário na divisão de P&D. Computação espacial, BI geoespacial e protótipos cognitivos de IA (reconhecimento facial, AR/VR). Entregou produtos estratégicos para Aliansce Shopping Centers e PoCs internas com Computer Vision e Azure Cognitive Services.',
 				},
 			],
 		},
