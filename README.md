@@ -15,9 +15,9 @@
 >
 > **Engineering Intelligence. Architecting the Future.**
 
-**SAUD TECHNOLOGY** is an independent technology engineering practice and portfolio by **THIAGO SAUD**, focused on the intersection of **Artificial Intelligence, Machine Learning, Software Architecture, Frontend Engineering and high-scale distributed systems**.
+**SAUD TECHNOLOGY** is an independent technology engineering practice and portfolio by **THIAGO SAUD**, focused on the intersection of **Artificial Intelligence, Machine Learning, Software Architecture, Front-End Engineering and high-scale distributed systems**.
 
-The portfolio explores the architecture and implementation of **AI-native systems, Generative AI applications, Large Language Models, RAG pipelines, Agentic AI, Multimodal Intelligence, Computer Vision, MLOps, intelligent Frontend applications and distributed systems**.
+The portfolio explores the architecture and implementation of **AI-native systems, Generative AI applications, Large Language Models, RAG pipelines, Agentic AI, Multimodal Intelligence, Computer Vision, MLOps, intelligent Front-End applications and distributed systems**.
 
 It is built around a simple engineering philosophy:
 
@@ -27,7 +27,7 @@ It is built around a simple engineering philosophy:
 >
 > **Engineering turns both into reality.**
 
-This repository contains selected **projects, experiments, architectures and engineering work** spanning **AI Engineering, Machine Learning, MLOps, production infrastructure, cloud platforms, frontend architecture, software architecture and advanced digital products**.
+This repository contains selected **projects, experiments, architectures and engineering work** spanning **AI Engineering, Machine Learning, MLOps, production infrastructure, cloud platforms, Front-End architecture, software architecture and advanced digital products**.
 
 The goal is not simply to build software.
 
@@ -43,7 +43,7 @@ the static export from `out/`.
 - Keep the App Router contract explicit: reserved files in `src/app/`,
   shared UI in `src/components/`, constants in `src/lib/`, global CSS in
   `src/styles/`.
-- Apply frontend and delivery practices that hold in production: Core
+- Apply Front-End and delivery practices that hold in production: Core
   Web Vitals, SEO document metadata, deterministic installs, and quality
   gates before `main`.
 - Automate linting, tests, SAST, versioning, and Pages deployment.

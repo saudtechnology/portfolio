@@ -31,7 +31,7 @@ export const PAGE_SECTION_TRANSLATION: Readonly<{
 			LABEL: 'About',
 			LEAD: 'Driven by curiosity, clarity and craft. With a focus on strategy and technical storytelling, I shape ideas into systems and digital experiences that connect and endure.',
 			BODY: [
-				'I work at the intersection of artificial intelligence, MLOps and principal-level frontend engineering. My work combines the rigor of distributed systems with attention to user experience and long-term maintainability.',
+				'I work at the intersection of artificial intelligence, MLOps and principal-level front-end engineering. My work combines the rigor of distributed systems with attention to user experience and long-term maintainability.',
 				'Throughout my career I have helped teams move from fragile prototypes to production platforms that are observable, scalable and ready for continuous evolution.',
 			],
 			BUTTON_CTA_LABEL: 'Start a Conversation →',
@@ -49,7 +49,7 @@ export const PAGE_SECTION_TRANSLATION: Readonly<{
 			LABEL: 'Sobre',
 			LEAD: 'Sou orientado por curiosidade, clareza e craft. Com foco em estratégia e storytelling técnico, transformo ideias em sistemas e experiências digitais que conectam e perduram.',
 			BODY: [
-				'Atuo na interseção entre inteligência artificial, MLOps e engenharia frontend de alto nível. Meu trabalho combina rigor de sistemas distribuídos com atenção à experiência do usuário e à manutenibilidade de longo prazo.',
+				'Atuo na interseção entre inteligência artificial, MLOps e engenharia front-end de alto nível. Meu trabalho combina rigor de sistemas distribuídos com atenção à experiência do usuário e à manutenibilidade de longo prazo.',
 				'Ao longo da carreira ajudei times a sair de protótipos frágeis para plataformas de produção observáveis, escaláveis e preparadas para evolução contínua.',
 			],
 			BUTTON_CTA_LABEL: 'Iniciar uma Conversa →',
