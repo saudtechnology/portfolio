@@ -40,7 +40,7 @@ export function NotFoundPage(): JSX.Element {
 
 			{/* 5. Navigation Anchor: Native Next.js client-optimized link component configured with automated path pre-fetching,
 			       directing the user cleanly back to the correct baseline language path root. */}
-			<Link className="text-neon underline-offset-4 hover:underline" href={CURRENT_REDIRECT_HREF}>
+			<Link href={CURRENT_REDIRECT_HREF} rel="preload" className="text-neon underline-offset-4 hover:underline">
 				{translation.PAGE.ERROR.NOT_FOUND.BUTTON_BACK.TITLE}
 			</Link>
 		</main>

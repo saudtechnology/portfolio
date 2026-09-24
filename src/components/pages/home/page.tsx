@@ -2,10 +2,12 @@
 
 import { JSX } from 'react';
 import type { Route } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useActiveLocale } from '@/hooks/use-active-locale';
 import HOME_CONTENT from '@/lib/content/home';
 import PROJECTS from '@/lib/content/projects';
+import dynamic from 'next/dynamic';
 import { FadeIn } from '@/components/motion/fade-in';
 import { Stagger, StaggerItem } from '@/components/motion/stagger';
 import { Header } from '@/components/layout/header';
@@ -14,9 +16,13 @@ import SITE_IDENTITY from '@/lib/site/identity';
 import { SocialIcons } from '@/components/ui/social-icons';
 import { BrandWordmark } from '@/components/ui/brand';
 import { HeroParallaxMedia } from '@/components/motion/hero-parallax';
-import { HeroParticles } from '@/components/motion/hero-particles';
-import { CountUp } from '@/components/motion/count-up';
-import { StickyStack } from '@/components/motion/sticky-stack';
+
+/** Below-fold / non-LCP motion — deferred to shrink main-thread work on mobile. */
+const HeroParticles = dynamic(() => import('@/components/motion/hero-particles').then((m) => m.HeroParticles), {
+	ssr: false,
+});
+const CountUp = dynamic(() => import('@/components/motion/count-up').then((m) => m.CountUp), { ssr: false });
+const StickyStack = dynamic(() => import('@/components/motion/sticky-stack').then((m) => m.StickyStack), { ssr: true });
 
 /**
  * Full Home page experience — structure inspired by modern portfolio patterns,
@@ -44,19 +50,16 @@ export function HomePage(): JSX.Element {
 					{/* LCP portrait: WebP primary + JPEG fallback (static export safe) */}
 					<HeroParallaxMedia className="pointer-events-none z-0">
 						{}
-						<picture>
-							<source srcSet="/banner-thiagosaud.webp" type="image/webp" />
-							<img
-								src="/banner-thiagosaud.jpg"
-								alt=""
-								width={1792}
-								height={1008}
-								className="absolute inset-0 h-full w-full max-w-none object-cover object-[center_20%] md:object-[center_18%] lg:object-[center_22%] xl:object-[center_28%] 2xl:object-[center_32%]"
-								fetchPriority="high"
-								decoding="async"
-								aria-hidden
-							/>
-						</picture>
+						<Image
+							src="/images/banner.webp"
+							alt=""
+							width={1792}
+							height={1008}
+							sizes="100vw"
+							priority // Substitui o fetchPriority="high" para imagens críticas acima da dobra
+							className="absolute inset-0 h-full w-full max-w-none object-cover object-[center_20%] md:object-[center_18%] lg:object-[center_22%] xl:object-[center_28%] 2xl:object-[center_32%]"
+							aria-hidden
+						/>
 					</HeroParallaxMedia>
 					{/* Neon light particles — tech ambient */}
 					<div className="pointer-events-none absolute inset-0 z-1">
@@ -111,7 +114,7 @@ export function HomePage(): JSX.Element {
 								>
 									<span className="text-center whitespace-nowrap">{content.hero.cta}</span>
 									<span
-										className="absolute right-1.5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-neon text-void group-hover:scale-105 transition-transform"
+										className="absolute right-1.5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-neon text-void group-hover:transform-[scale(1.05)] transition-transform"
 										aria-hidden
 									>
 										→
@@ -131,7 +134,7 @@ export function HomePage(): JSX.Element {
 									<p className="text-xs uppercase tracking-[0.2em] text-mute mb-4">{content.aboutTeaser.label}</p>
 									<h2 className="text-3xl sm:text-4xl font-light tracking-tight mb-6">{content.aboutTeaser.title}</h2>
 									<p className="text-base text-mute leading-relaxed max-w-lg mb-8">{content.aboutTeaser.body}</p>
-									<Link href={aboutHref} className="text-sm text-neon hover:underline underline-offset-4">
+									<Link href={aboutHref} rel="preload" className="text-sm text-neon hover:underline underline-offset-4">
 										{content.aboutTeaser.cta} →
 									</Link>
 								</FadeIn>
@@ -145,7 +148,7 @@ export function HomePage(): JSX.Element {
 												<p className="text-3xl sm:text-4xl font-light text-foreground tabular-nums whitespace-nowrap">
 													<CountUp value={stat.value} />
 												</p>
-												<p className="mt-2 text-[11px] sm:text-xs uppercase tracking-[0.12em] text-mute leading-tight text-balance">
+												<p className="mt-2 text-[11px] sm:text-xs uppercase tracking-[0.12em] text-mute leading-tight">
 													{stat.label}
 												</p>
 											</div>
@@ -167,7 +170,11 @@ export function HomePage(): JSX.Element {
 									<h2 className="text-3xl sm:text-4xl font-light tracking-tight">{content.projects.title}</h2>
 									<p className="mt-2 text-mute">{content.projects.subtitle}</p>
 								</div>
-								<Link href={projectsHref} className="text-sm text-neon hover:underline underline-offset-4 shrink-0">
+								<Link
+									href={projectsHref}
+									rel="preload"
+									className="text-sm text-neon hover:underline underline-offset-4 shrink-0"
+								>
 									{content.projects.cta} →
 								</Link>
 							</div>
@@ -183,6 +190,7 @@ export function HomePage(): JSX.Element {
 								<Link
 									key={project.slug}
 									href={`${prefix}/projects/${project.slug}` as Route}
+									rel="preload"
 									className="group flex h-full flex-col rounded-2xl border border-border bg-surface/40 p-6 sm:p-8 transition-colors hover:border-neon/40 hover:bg-surface"
 								>
 									<div className="flex items-start justify-between gap-4 mb-6">
@@ -190,10 +198,7 @@ export function HomePage(): JSX.Element {
 										<span className="text-xs text-mute">{project.category}</span>
 									</div>
 									{project.client ? (
-										<p
-											className="text-xs mb-2 tracking-wide"
-											style={{ color: 'color-mix(in oklab, var(--neon) 90%, transparent)' }}
-										>
+										<p className="text-xs mb-2 tracking-wide" style={{ color: 'rgba(var(--neon-rgb), 0.9)' }}>
 											{project.client}
 										</p>
 									) : null}

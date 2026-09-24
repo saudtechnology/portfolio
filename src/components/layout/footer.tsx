@@ -27,6 +27,7 @@ export function Footer(): JSX.Element {
 					<div className="flex flex-col items-start">
 						<Link
 							href={HOME_HREF}
+							rel="preload"
 							className="inline-flex items-center justify-center"
 							aria-label={SITE_IDENTITY.global.SITE.WORDMARK}
 						>
@@ -45,7 +46,11 @@ export function Footer(): JSX.Element {
 						<ul className="space-y-3">
 							{links.map((link) => (
 								<li key={link.href}>
-									<Link href={link.href} className="text-sm text-foreground transition-colors hover:text-neon">
+									<Link
+										href={link.href}
+										rel="preload"
+										className="text-sm text-foreground transition-colors hover:text-neon"
+									>
 										{link.label}
 									</Link>
 								</li>

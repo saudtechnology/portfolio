@@ -19,7 +19,7 @@ import TRANSLATIONS from '@/lib/i18n/translations';
 // Official next/font guidance: only load weights you use — include 500/700 to avoid synthetic bold.
 const montserrat = Montserrat({
 	subsets: ['latin'],
-	weight: ['200', '300', '400', '500', '600', '700'],
+	weight: ['300', '400', '500', '600', '700'],
 	variable: '--font-montserrat',
 	display: 'swap',
 	preload: true,
@@ -114,6 +114,10 @@ export const metadata: Metadata = {
 export function RootLayout({ children }: Readonly<{ children: React.ReactNode }>): JSX.Element {
 	return (
 		<html lang="en-US" className={`${montserrat.variable} dark h-full antialiased`}>
+			<head>
+				{/* Preload LCP portrait — discoverable in initial document */}
+				<link rel="preload" as="image" href="/images/banner.webp" type="image/webp" fetchPriority="high" />
+			</head>
 			<body className={`${montserrat.className} min-h-full flex flex-col bg-background text-foreground`}>
 				{/* WCAG 2.4.1 Bypass Blocks — skip repetitive chrome */}
 				<SkipLink />
