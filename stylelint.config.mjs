@@ -22,6 +22,12 @@ const config = {
 				],
 			},
 		],
+		'property-no-vendor-prefix': [
+			true,
+			{
+				ignoreProperties: ['text-size-adjust', 'backdrop-filter'],
+			},
+		],
 		'function-no-unknown': [true, { ignoreFunctions: ['theme'] }],
 		'import-notation': 'string',
 		'color-hex-length': 'long',

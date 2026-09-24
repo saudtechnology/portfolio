@@ -30,6 +30,7 @@ export function ProjectDetailPage({ slug }: Readonly<{ slug: string }>): JSX.Ele
 						<FadeIn>
 							<Link
 								href={`${prefix}/projects` as Route}
+								rel="preload"
 								className="text-sm text-mute hover:text-neon transition-colors mb-8 inline-block"
 							>
 								← {translation.UI.COMMON.ALL_PROJECTS}

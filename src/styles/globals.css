@@ -1,11 +1,35 @@
 @import 'tailwindcss';
 
-/* Design tokens are injected at runtime via ThemeBrandStyles (CSS variables). */
+/* Design tokens são injetados em tempo de execução via ThemeBrandStyles (variáveis CSS). */
 
+/* Tratamento de compatibilidade para 'color-scheme' */
+@supports (color-scheme: dark) {
+	:root,
+	html.dark {
+		color-scheme: dark;
+	}
+
+	html.light {
+		color-scheme: light;
+	}
+}
+
+/* Smooth scroll only when user has not requested reduced motion */
+@supports (scroll-behavior: smooth) {
+	html.scroll-smooth-enhanced {
+		scroll-behavior: smooth;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html.scroll-smooth-enhanced {
+		scroll-behavior: auto;
+	}
+}
+
+/* Fallback direto caso o navegador não suporte @supports para color-scheme */
 :root,
 html.dark {
-	color-scheme: dark;
-
 	--background: var(--plate);
 	--foreground: var(--snow);
 	--surface: var(--forest);
@@ -13,8 +37,6 @@ html.dark {
 }
 
 html.light {
-	color-scheme: light;
-
 	--background: var(--snow);
 	--foreground: var(--pine);
 	--surface: var(--snow);
@@ -38,9 +60,9 @@ html.light {
 }
 
 html {
-	text-size-adjust: 100%;
 	background: var(--background);
 	text-rendering: optimizelegibility;
+	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -182,13 +204,7 @@ summary::-webkit-details-marker {
 	}
 }
 
-/* Smooth scroll only when user has not requested reduced motion */
-html.scroll-smooth-enhanced {
-	scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-	html.scroll-smooth-enhanced {
-		scroll-behavior: auto;
-	}
+.backdrop-blur-md {
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
 }

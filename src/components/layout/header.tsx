@@ -141,14 +141,14 @@ function resolveNavHref(item: NavItem, opts: Readonly<{ prefix: string; isHome: 
 }
 
 function desktopNavClass(isActive: boolean, overHero: boolean): string {
-	const base = 'shrink-0 text-[11px] xl:text-xs tracking-wide transition-colors active:scale-100 whitespace-nowrap';
+	const base = 'shrink-0 text-[11px] xl:text-xs tracking-wide transition-colors whitespace-nowrap';
 	if (isActive) return `${base} text-neon`;
 	if (overHero) return `${base} text-snow/80 hover:text-snow`;
 	return `${base} text-mute hover:text-foreground`;
 }
 
 function mobileNavClass(isActive: boolean): string {
-	const base = 'block py-2.5 text-left text-base font-semibold transition-colors active:scale-100';
+	const base = 'block py-2.5 text-left text-base font-semibold transition-colors';
 	return isActive ? `${base} text-neon` : `${base} text-foreground hover:text-neon`;
 }
 
@@ -161,7 +161,7 @@ function headerShellClass(scrolled: boolean, isHome: boolean): string {
 }
 
 function menuButtonClass(overHero: boolean): string {
-	const base = 'flex flex-col items-end justify-center gap-1.5 p-2 transition-colors active:scale-100';
+	const base = 'flex flex-col items-end justify-center gap-1.5 p-2 transition-colors';
 	return overHero ? `${base} text-snow` : `${base} text-foreground`;
 }
 
@@ -293,6 +293,7 @@ function NavLinks({
 					<Link
 						key={item.key}
 						href={href}
+						rel="preload"
 						className={className}
 						aria-current={active ? 'page' : undefined}
 						onClick={(e) => onNavClick(e, item)}
@@ -376,7 +377,7 @@ function MobileMenu({
 							href={cvHref}
 							filename={cvFilename}
 							label={ui.DOWNLOAD_CV}
-							className="cta-button col-span-2 mt-3 inline-flex cursor-pointer items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition-colors active:scale-100"
+							className="cta-button col-span-2 mt-3 inline-flex cursor-pointer items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition-colors"
 							onClick={onClose}
 						/>
 					</motion.div>
@@ -466,7 +467,8 @@ export function Header(): JSX.Element {
 			<div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-6 lg:px-8">
 				<Link
 					href={homeHref}
-					className="inline-flex shrink-0 items-center transition-opacity hover:opacity-90 active:scale-100"
+					rel="preload"
+					className="inline-flex shrink-0 items-center transition-opacity hover:opacity-90"
 					aria-label={SITE_IDENTITY.global.SITE.WORDMARK}
 				>
 					<BrandLogotype className="h-10 w-10" />
@@ -480,7 +482,7 @@ export function Header(): JSX.Element {
 						href={cvHref}
 						filename={cvFilename}
 						label={ui.DOWNLOAD_CV}
-						className="cta-button inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-colors active:scale-100"
+						className="cta-button inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-colors"
 					/>
 				</div>
 
@@ -489,7 +491,7 @@ export function Header(): JSX.Element {
 						href={cvHref}
 						filename={cvFilename}
 						label={ui.DOWNLOAD_CV}
-						className="cta-button hidden cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-colors active:scale-100 sm:inline-flex"
+						className="cta-button hidden cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-colors sm:inline-flex"
 					/>
 					<button
 						type="button"

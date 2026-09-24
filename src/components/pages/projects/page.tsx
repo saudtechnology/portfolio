@@ -42,6 +42,7 @@ export function ProjectsPage(): JSX.Element {
 								<Link
 									key={project.slug}
 									href={`${prefix}/projects/${project.slug}` as Route}
+									rel="preload"
 									className="group flex h-full flex-col rounded-2xl border border-border bg-surface/30 p-6 sm:p-8 transition-colors hover:border-neon/40 hover:bg-surface"
 								>
 									<div className="flex items-start justify-between gap-4 mb-8">
@@ -49,10 +50,7 @@ export function ProjectsPage(): JSX.Element {
 										<span className="text-xs text-mute">{project.category}</span>
 									</div>
 									{project.client ? (
-										<p
-											className="text-xs mb-2 tracking-wide"
-											style={{ color: 'color-mix(in oklab, var(--neon) 90%, transparent)' }}
-										>
+										<p className="text-xs mb-2 tracking-wide" style={{ color: 'rgba(var(--neon-rgb), 0.9)' }}>
 											{project.client}
 										</p>
 									) : null}
