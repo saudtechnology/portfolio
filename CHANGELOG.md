@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2
+
+### Patch Changes
+
+- 5a26c86: - Applied dependabot correction
+
 ## 1.1.1
 
 ### Patch Changes
