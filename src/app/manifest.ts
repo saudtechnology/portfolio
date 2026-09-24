@@ -65,23 +65,23 @@ export default function manifest(): MetadataRoute.Manifest {
 				short_name: TRANSLATIONS['en-US'].SITE.MANIFEST.SHORT_NAME,
 				description: TRANSLATIONS['en-US'].SITE.MANIFEST.DESCRIPTION,
 				url: '/?utm_source=pwa_shortcut_en_us',
-				icons: [{ src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
+				icons: [{ src: '/images/icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
 			},
 			{
 				name: TRANSLATIONS['pt-BR'].SITE.MANIFEST.NAME,
 				short_name: TRANSLATIONS['pt-BR'].SITE.MANIFEST.SHORT_NAME,
 				description: TRANSLATIONS['pt-BR'].SITE.MANIFEST.DESCRIPTION,
 				url: '/pt-BR/?utm_source=pwa_shortcut_pt_br',
-				icons: [{ src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
+				icons: [{ src: '/images/icons/icon-192.png', sizes: '192x192', type: 'image/png' }],
 			},
 		],
 
 		// Maps out the icon file array served straight out of your public root folders (Strictly PNG)
 		icons: [
-			{ src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' }, // Baseline icon for mid-density legacy displays and mobile application shortcuts dropdown menus
-			{ src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' }, // High-density baseline icon used primarily by desktop chromium taskbars, splash screens, and high-res asset layers
-			{ src: '/icons/icon-192-maskable.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' }, // Maskable 192px variant allowing adaptive systems (like Android) to dynamically scale and clip backgrounds without white bleed margins
-			{ src: '/icons/icon-512-maskable.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }, // Maskable 512px variant providing maximum resolution clarity during full-screen splash or loading states on Android devices
+			{ src: '/images/icons/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' }, // Baseline icon for mid-density legacy displays and mobile application shortcuts dropdown menus
+			{ src: '/images/icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' }, // High-density baseline icon used primarily by desktop chromium taskbars, splash screens, and high-res asset layers
+			{ src: '/images/icons/icon-192-maskable.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' }, // Maskable 192px variant allowing adaptive systems (like Android) to dynamically scale and clip backgrounds without white bleed margins
+			{ src: '/images/icons/icon-512-maskable.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }, // Maskable 512px variant providing maximum resolution clarity during full-screen splash or loading states on Android devices
 		],
 	};
 }
