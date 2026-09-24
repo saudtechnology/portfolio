@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
 	reactStrictMode: true,
 	poweredByHeader: false,
 	typedRoutes: true,
+	productionBrowserSourceMaps: false,
 	images: {
 		unoptimized: true,
 	},
