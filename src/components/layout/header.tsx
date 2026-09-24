@@ -53,7 +53,7 @@ const SECTION_IDS = NAV_ITEMS.map((i) => i.sectionId);
 const HEADER_OFFSET = 96;
 
 function getCvHref(locale: 'en-US' | 'pt-BR'): string {
-	return locale === 'pt-BR' ? '/CV-Thiago-Saud.pt-BR.pdf' : '/CV-Thiago-Saud.en-US.pdf';
+	return locale === 'pt-BR' ? '/documents/CV-Thiago-Saud.pt-BR.pdf' : '/documents/CV-Thiago-Saud.en-US.pdf';
 }
 
 function getCvFilename(locale: 'en-US' | 'pt-BR'): string {
