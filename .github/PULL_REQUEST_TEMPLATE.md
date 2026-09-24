@@ -1,6 +1,7 @@
 # 📝 Pull Request Type
 
 - [ ] Feature / Architecture expansion
+- [ ] Enhancement / Refactoring (Performance, UX, code quality, or optimization)
 - [ ] Bug Fix / Structural correction
 - [ ] Security patch / Supply-chain update
 - [ ] Documentation / Writing style sweep
