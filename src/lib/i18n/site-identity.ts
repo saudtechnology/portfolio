@@ -29,8 +29,8 @@ const getAuthorJobPositionConfig = (): Readonly<Record<LocaleType, Record<'FIRST
 	const getAuthorJobPosition = (locale: LocaleType) => {
 		const { state } = detectLocale(locale);
 
-		const FIRST = state.isEnUS ? 'Senior AI & MLOps Engineering' : 'Engenheiro Sênior de IA & MLOps';
-		const SECOND = state.isEnUS ? 'Principal FrontEnd Engineering' : 'Principal Engenheiro FrontEnd';
+		const FIRST = state.isEnUS ? 'Senior AI & MLOps Engineer' : 'Engenheiro Sênior de IA & MLOps';
+		const SECOND = state.isEnUS ? 'Principal Front-End Engineer' : 'Engenheiro Front-End Principal';
 
 		return { FIRST, SECOND, FULL: `${FIRST} • ${SECOND}` };
 	};
@@ -148,12 +148,12 @@ export const SITE_IDENTITY_TRANSLATION: Readonly<{
 				'Event-Driven Architecture',
 				'Microservices',
 				'Domain-Driven Design',
-				'Principal Frontend Engineering',
-				'Frontend Architecture',
+				'Principal Front-End Engineer',
+				'Front-End Architecture',
 				'Web Application Architecture',
 				'Web Performance',
 				'Design Systems',
-				'Micro Frontends',
+				'Micro-Frontends',
 				'Real-Time Web Applications',
 				'High-Scale Engineering',
 				'Performance Engineering',
@@ -197,8 +197,8 @@ export const SITE_IDENTITY_TRANSLATION: Readonly<{
 				'Arquitetura Orientada a Eventos',
 				'Microsserviços',
 				'Design Orientado por Domínio',
-				'Engenharia Frontal Principal',
-				'Arquitetura de Frontend',
+				'Engenheiro Front-End Principal',
+				'Arquitetura Front-End',
 				'Arquitetura de Aplicativos da Web',
 				'Desempenho da Web',
 				'Sistemas de Design',

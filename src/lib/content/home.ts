@@ -91,12 +91,12 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Thiago Saud',
 			subtitle: '',
 			cta: "Let's Talk",
-			roles: ['Principal Frontend Engineering', 'Senior AI & MLOps Engineering'],
+			roles: ['Principal Front-End Engineer', 'Senior AI & MLOps Engineer'],
 		},
 		aboutTeaser: {
 			label: 'About',
 			title: 'Crafted for Impact.',
-			body: 'Principal Frontend Engineer with 7+ years architecting mission-critical web platforms in regulated financial ecosystems. Combining software architecture, engineering governance and active specialization in AI & MLOps (Python, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow).',
+			body: 'Principal Front-End Engineer with 7+ years architecting mission-critical web platforms in regulated financial ecosystems. Combining software architecture, engineering governance and active specialization in AI & MLOps (Python, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow).',
 			cta: 'See More',
 		},
 		stats: [
@@ -209,7 +209,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Completed',
 				},
 				{
-					kind: 'Specialization Certificate',
+					kind: 'Professional Specialization Certificate',
 					title: 'User Experience (UX) and User Interface (UI) Design',
 					org: 'Google',
 					location: '(Remote)',
@@ -220,7 +220,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Completed',
 				},
 				{
-					kind: 'Specialization Certificate',
+					kind: 'Professional Specialization Certificate',
 					title: 'Python',
 					org: 'University of Michigan',
 					location: '(Remote)',
@@ -242,7 +242,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Completed',
 				},
 				{
-					kind: 'Specialization Certificate',
+					kind: 'Professional Specialization Certificate',
 					title: 'Deep Learning',
 					org: 'DeepLearning.AI',
 					location: '(Remote)',
@@ -264,7 +264,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Completed',
 				},
 				{
-					kind: 'Professional Certificate',
+					kind: 'Professional Specialization Certificate',
 					title: 'AI Engineering',
 					org: 'IBM',
 					location: '(Remote)',
@@ -275,7 +275,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'In progress',
 				},
 				{
-					kind: 'Professional Certificate',
+					kind: 'Professional Specialization Certificate',
 					title: 'RAG & Agentic AI',
 					org: 'IBM',
 					location: '(Remote)',
@@ -286,7 +286,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'In progress',
 				},
 				{
-					kind: 'Specialization Certificate',
+					kind: 'Professional Specialization Certificate',
 					title: 'MLOps | Machine Learning Operations',
 					org: 'Duke University',
 					location: '(Remote)',
@@ -303,7 +303,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Career Highlights',
 			items: [
 				{
-					role: 'Principal Frontend Engineer',
+					role: 'Principal Front-End Engineer',
 					company: 'BTG Pactual Bank S.A.',
 					period: 'Feb 2023 — Jun 2026',
 					location: 'São Paulo, BR (Remote)',
@@ -311,7 +311,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Technical specialist in the Digital Equities vertical at one of Latin America’s largest banks. Engineering governance via RFCs/ADRs, mentoring 2–5 engineers. Platforms serving 4.8M+ active clients and R$1.6T+ AUM/Custody. Pioneered AI Engineering adoption (LLMs/VLMs via MCP, Cursor, Copilot) — 65% faster delivery, 80% higher code quality. Strategic products: Home Broker Web (white-label), COE platform, and the Digital Equities vertical Angular component library / design system.',
 				},
 				{
-					role: 'Senior Frontend Engineer',
+					role: 'Senior Front-End Engineer',
 					company: 'XP Investments S.A.',
 					period: 'Jul 2021 — Nov 2022',
 					location: 'São Paulo, BR (Remote)',
@@ -319,7 +319,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Technical specialist in the Global Markets vertical at one of the world’s largest investment platforms. Platforms for the trading desk and ~12K investment advisors serving ~4.5M active clients, supporting R$1.2T total assets. Products: Black Sales (structured products & derivatives) and Black AAI (advisor portfolio platform). Architecture with React, micro-frontends, GraphQL and SOMA design system.',
 				},
 				{
-					role: 'Mid-level Frontend Engineer',
+					role: 'Mid-level Front-End Engineer',
 					company: 'Zoox Technology Ltda.',
 					period: 'Jul 2020 — Nov 2020',
 					location: 'Rio de Janeiro, BR (Remote)',
@@ -327,7 +327,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Technical reference on a complex white-label PMS. Real-time billing integration with global OTAs. End-to-end facial detection and recognition flow (AWS Rekognition) for biometric validation. Vue.js, Docker, PostgreSQL.',
 				},
 				{
-					role: 'Junior Frontend Engineer',
+					role: 'Junior Front-End Engineer',
 					company: 'TG4 Technology Ltda.',
 					period: 'Sep 2019 — Jul 2020',
 					location: 'Rio de Janeiro, BR (On-Site)',
@@ -350,19 +350,6 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			items: [
 				{
 					number: '01',
-					title: 'Principal Frontend Architecture',
-					description:
-						'Mission-critical UI platforms for regulated finance: trading, structured products and advisor tooling — Angular/React, micro-frontends, design systems and Core Web Vitals under production SLAs.',
-					points: [
-						'Angular · React · NextJS, VueJS, Javascript/Ecmascript, TypeScript · Nx',
-						'Micro-frontends & modular monorepos',
-						'Design systems',
-						'Real-time UIs · WebSockets · RxJS',
-						'Core Web Vitals (LCP · INP · CLS) · RUM/APM (Datadog, Sentry)',
-					],
-				},
-				{
-					number: '02',
 					title: 'AI & MLOps Engineering',
 					description:
 						'Active specialization path in production AI: RAG, agentic systems and MLOps — bridging product architecture with model lifecycle and intelligent features.',
@@ -372,6 +359,19 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Python · Deep Learning · PyTorch/TensorFlow',
 						'MLOps · MLflow · cloud ML platforms',
 						'AI-assisted delivery workflows',
+					],
+				},
+				{
+					number: '02',
+					title: 'Front-End Engineering',
+					description:
+						'Mission-critical UI platforms for regulated finance: trading, structured products and advisor tooling — Angular/React, micro-frontends, design systems and Core Web Vitals under production SLAs.',
+					points: [
+						'Angular · React · NextJS, VueJS, Javascript/Ecmascript, TypeScript · Nx',
+						'Micro-frontends & modular monorepos',
+						'Design systems',
+						'Real-time UIs · WebSockets · RxJS',
+						'Core Web Vitals (LCP · INP · CLS) · RUM/APM (Datadog, Sentry)',
 					],
 				},
 				{
@@ -396,7 +396,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					question: 'What services do you offer?',
 					answer:
-						'I specialize in principal-level frontend architecture, AI/MLOps engineering and end-to-end product engineering — from strategy and system design to production delivery and observability in regulated environments.',
+						'I specialize in principal-level front-end architecture, AI/MLOps engineering and end-to-end product engineering — from strategy and system design to production delivery and observability in regulated environments.',
 				},
 				{
 					question: 'Do you work with international clients?',
@@ -432,12 +432,12 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Thiago Saud',
 			subtitle: '',
 			cta: 'Vamos Conversar',
-			roles: ['Principal Engenheiro Frontend', 'Engenheiro Sênior de IA & MLOps'],
+			roles: ['Engenheiro Front-End Principal', 'Engenheiro Sênior de IA & MLOps'],
 		},
 		aboutTeaser: {
 			label: 'Sobre',
 			title: 'Construído para Impacto.',
-			body: 'Principal Engenheiro Front-End com 7+ anos arquitetando plataformas web de missão crítica em ecossistemas financeiros regulamentados. Unindo Software Architecture a Governança de Engenharia e especialização ativa em AI & MLOps (Python, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow).',
+			body: 'Engenheiro Front-End Principal com 7+ anos arquitetando plataformas web de missão crítica em ecossistemas financeiros regulamentados. Unindo Software Architecture a Governança de Engenharia e especialização ativa em AI & MLOps (Python, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow).',
 			cta: 'Ver Mais',
 		},
 		stats: [
@@ -550,7 +550,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Certificado de Especialização',
+					kind: 'Certificado de Especialização Profissional',
 					title: 'Experiência do Usuário (UX) e Interface do Usuário (UI) Design',
 					org: 'Google',
 					location: '(Remoto)',
@@ -561,7 +561,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Certificado de Especialização',
+					kind: 'Certificado de Especialização Profissional',
 					title: 'Python',
 					org: 'Universidade de Michigan',
 					location: '(Remoto)',
@@ -583,7 +583,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Certificado de Especialização',
+					kind: 'Certificado de Especialização Profissional',
 					title: 'Aprendizagem Profunda',
 					org: 'DeepLearning.AI',
 					location: '(Remoto)',
@@ -605,7 +605,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Concluído',
 				},
 				{
-					kind: 'Certificado Profissional',
+					kind: 'Certificado de Especialização Profissional',
 					title: 'Engenharia de IA',
 					org: 'IBM',
 					location: '(Remoto)',
@@ -616,7 +616,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Em andamento',
 				},
 				{
-					kind: 'Certificado Profissional',
+					kind: 'Certificado de Especialização Profissional',
 					title: 'RAG & Agente de AI',
 					org: 'IBM',
 					location: '(Remoto)',
@@ -626,7 +626,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					status: 'Em andamento',
 				},
 				{
-					kind: 'Certificado de Especialização',
+					kind: 'Certificado de Especialização Profissional',
 					title: 'MLOps | Operações de Aprendizado de Máquina',
 					org: 'Universidade Duke',
 					location: '(Remoto)',
@@ -643,7 +643,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Destaques da Carreira',
 			items: [
 				{
-					role: 'Principal Engenheiro Frontend',
+					role: 'Engenheiro Front-End Principal',
 					company: 'Banco BTG Pactual S.A.',
 					period: 'Fev 2023 — Jun 2026',
 					location: 'São Paulo, BR (Remoto)',
@@ -651,7 +651,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Especialista técnico na vertical Digital Equities em um dos maiores bancos da América Latina. Governança de engenharia via RFCs/ADRs, mentoria de 2 a 5 engenheiros. Plataformas que atendem 4,8M+ clientes ativos e R$1,6T+ em AUM/Custódia. Adoção pioneira de AI Engineering (LLMs/VLMs via MCP, Cursor, Copilot) — 65% de redução no tempo de entrega e 80% de aumento na qualidade do código. Produtos: Home Broker Web (white-label), plataforma COE e biblioteca de componentes Angular / design system da vertical Digital Equities.',
 				},
 				{
-					role: 'Engenheiro Frontend Sênior',
+					role: 'Engenheiro Front-End Sênior',
 					company: 'XP Investimentos S.A.',
 					period: 'Jul 2021 — Nov 2022',
 					location: 'São Paulo, BR (Remoto)',
@@ -659,7 +659,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Especialista técnico na vertical Global Markets em uma das maiores plataformas de investimentos do mundo. Plataformas para a Mesa de Operações e ~12 mil assessores, atendendo ~4,5M de clientes ativos e suportando R$1,2T em ativos totais. Produtos: Black Sales (produtos estruturados e derivativos) e Black AAI (plataforma de portfólio para assessores). Arquitetura com React, micro-frontends, GraphQL e design system SOMA.',
 				},
 				{
-					role: 'Engenheiro Frontend Pleno',
+					role: 'Engenheiro Front-End Pleno',
 					company: 'Zoox Tecnologia Ltda.',
 					period: 'Jul 2020 — Nov 2020',
 					location: 'Rio de Janeiro, BR (Remoto)',
@@ -667,7 +667,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Referência técnica em plataforma PMS white-label de alta complexidade. Integração de faturamento em tempo real com OTAs globais. Fluxo ponta a ponta de detecção e reconhecimento facial (AWS Rekognition) para validação biométrica. Vue.js, Docker, PostgreSQL.',
 				},
 				{
-					role: 'Engenheiro Frontend Júnior',
+					role: 'Engenheiro Front-End Júnior',
 					company: 'TG4 Tecnologia Ltda.',
 					period: 'Set 2019 — Jul 2020',
 					location: 'Rio de Janeiro, BR (Presencial)',
@@ -690,19 +690,6 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			items: [
 				{
 					number: '01',
-					title: 'Arquitetura Frontend Principal',
-					description:
-						'Plataformas de UI de missão crítica para finanças reguladas: trading, estruturados e ferramentas de assessores — Angular/React, micro-frontends, design systems e Core Web Vitals sob SLAs de produção.',
-					points: [
-						'Angular · React · NextJS, VueJS, Javascript/Ecmascript, TypeScript · Nx',
-						'Micro-frontends e monorepos modulares',
-						'Design systems',
-						'UIs em tempo real · WebSockets · RxJS',
-						'Core Web Vitals (LCP · INP · CLS) · RUM/APM (Datadog, Sentry)',
-					],
-				},
-				{
-					number: '02',
 					title: 'Engenharia de IA & MLOps',
 					description:
 						'Especialização ativa em IA de produção: RAG, sistemas agenticos e MLOps — unindo arquitetura de produto ao ciclo de vida de modelos e features inteligentes.',
@@ -712,6 +699,19 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 						'Python · Deep Learning · PyTorch/TensorFlow',
 						'MLOps · MLflow · plataformas cloud de ML',
 						'Workflows de entrega assistidos por IA',
+					],
+				},
+				{
+					number: '02',
+					title: 'Engenharia Front-End',
+					description:
+						'Plataformas de UI de missão crítica para finanças reguladas: trading, estruturados e ferramentas de assessores — Angular/React, micro-frontends, design systems e Core Web Vitals sob SLAs de produção.',
+					points: [
+						'Angular · React · NextJS, VueJS, Javascript/Ecmascript, TypeScript · Nx',
+						'Micro-frontends e monorepos modulares',
+						'Design systems',
+						'UIs em tempo real · WebSockets · RxJS',
+						'Core Web Vitals (LCP · INP · CLS) · RUM/APM (Datadog, Sentry)',
 					],
 				},
 				{
@@ -736,7 +736,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					question: 'Quais serviços você oferece?',
 					answer:
-						'Especializo-me em arquitetura frontend de nível principal, engenharia de IA/MLOps e engenharia de produto de ponta a ponta — da estratégia e design de sistemas até entrega em produção e observabilidade em ambientes regulamentados.',
+						'Especializo-me em arquitetura front-end de nível principal, engenharia de IA/MLOps e engenharia de produto de ponta a ponta — da estratégia e design de sistemas até entrega em produção e observabilidade em ambientes regulamentados.',
 				},
 				{
 					question: 'Você trabalha com clientes internacionais?',
