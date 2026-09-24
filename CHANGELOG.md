@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+### Patch Changes
+
+- ae29e4b: - Correction in translations
+
 ## 1.1.0
 
 ### Minor Changes
