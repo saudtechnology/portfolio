@@ -48,8 +48,8 @@
 	},
 	"browserslist": [
 		"chrome >= 114",
-		"safari >= 15",
-		"ios_saf >= 15",
+		"safari >= 15.4",
+		"ios_saf >= 15.4",
 		"edge >= 79",
 		"firefox >= 103",
 		"not dead"
