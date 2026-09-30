@@ -29,7 +29,7 @@ const getAuthorJobPositionConfig = (): Readonly<Record<LocaleType, Record<'FIRST
 	const getAuthorJobPosition = (locale: LocaleType) => {
 		const { state } = detectLocale(locale);
 
-		const FIRST = state.isEnUS ? 'Senior AI & MLOps Engineer' : 'Engenheiro Sênior de IA & MLOps';
+		const FIRST = state.isEnUS ? 'Senior AI/MLOps Engineer' : 'Engenheiro IA/MLOps Sênior';
 		const SECOND = state.isEnUS ? 'Principal Front-End Engineer' : 'Engenheiro Front-End Principal';
 
 		return { FIRST, SECOND, FULL: `${FIRST} • ${SECOND}` };

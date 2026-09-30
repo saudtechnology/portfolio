@@ -91,12 +91,12 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Thiago Saud',
 			subtitle: '',
 			cta: "Let's Talk",
-			roles: ['Principal Front-End Engineer', 'Senior AI & MLOps Engineer'],
+			roles: ['Principal Front-End Engineer', 'Senior AI/MLOps Engineer'],
 		},
 		aboutTeaser: {
 			label: 'About',
 			title: 'Crafted for Impact.',
-			body: 'Principal Front-End Engineer with 7+ years architecting mission-critical web platforms in regulated financial ecosystems. Combining software architecture, engineering governance and active specialization in AI & MLOps (Python, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow).',
+			body: 'Software Engineer with 7+ years in mission-critical web platforms and regulated financial ecosystems. Reports to C-Level executives conducting RFCs, ADRS and Brag Document. Combining Software Architecture with Engineering Governance and active specialization in AI & MLOps (Machine Learning, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow etc).',
 			cta: 'See More',
 		},
 		stats: [
@@ -176,7 +176,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					kind: 'Bachelor',
 					title: 'Computer Science',
-					org: 'Veiga de Almeida University (UVA)',
+					org: 'Universidade Veiga De Almeida (UVA)',
 					period: 'Jan 2014 — Feb 2019',
 					location: 'Rio de Janeiro, BR (On-Site)',
 					description:
@@ -200,7 +200,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					kind: 'Executive education',
 					title: 'Business Administration & Management',
-					org: 'University of Barcelona (UB)',
+					org: 'Universitat de Barcelona (UB)',
 					period: 'Jan 2018 — Nov 2019',
 					location: 'Catalonia, Spain (Remote)',
 					description:
@@ -432,12 +432,12 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Thiago Saud',
 			subtitle: '',
 			cta: 'Vamos Conversar',
-			roles: ['Engenheiro Front-End Principal', 'Engenheiro Sênior de IA & MLOps'],
+			roles: ['Engenheiro Front-End Principal', 'Engenheiro IA/MLOps Sênior'],
 		},
 		aboutTeaser: {
 			label: 'Sobre',
 			title: 'Construído para Impacto.',
-			body: 'Engenheiro Front-End Principal com 7+ anos arquitetando plataformas web de missão crítica em ecossistemas financeiros regulamentados. Unindo Software Architecture a Governança de Engenharia e especialização ativa em AI & MLOps (Python, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow).',
+			body: 'Engenheiro de Software com 7+ anos em plataformas web de missão crítica e em ecossistemas financeiros regulamentados. Reporta a executivos C-Level conduzindo RFCs, ADRS e Brag Document. Unindo Arquitetura de Software a Governança de Engenharia e especialização ativa em AI & MLOps (Machine Learning, Deep Learning, RAG, Agentic AI, LangChain/LangGraph, MLflow etc).',
 			cta: 'Ver Mais',
 		},
 		stats: [
@@ -563,7 +563,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					kind: 'Certificado de Especialização Profissional',
 					title: 'Python',
-					org: 'Universidade de Michigan',
+					org: 'University of Michigan',
 					location: '(Remoto)',
 					period: 'Julho 2026 — Ago 2026',
 					description:
@@ -628,7 +628,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				{
 					kind: 'Certificado de Especialização Profissional',
 					title: 'MLOps | Operações de Aprendizado de Máquina',
-					org: 'Universidade Duke',
+					org: 'Duke University',
 					location: '(Remoto)',
 					period: 'Em andamento — meta dez/2026',
 					description:
