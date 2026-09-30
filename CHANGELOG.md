@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.4
+
+### Patch Changes
+
+- 04888fe: - Changed Text Translation
+  - Changed CV Documents
+
 ## 1.1.3
 
 ### Patch Changes
