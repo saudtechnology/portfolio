@@ -6,16 +6,15 @@ import { ProjectDetailPage } from '@/components/pages/projects/detail';
  */
 export function generateStaticParams() {
 	return [
-		{ slug: 'home-broker' },
-		{ slug: 'coe-platform' },
-		{ slug: 'orquestra-ds' },
-		{ slug: 'black-sales' },
-		{ slug: 'black-aai' },
-		{ slug: 'facial-recognition' },
-		{ slug: 'guest-digital-journey' },
-		{ slug: 'aliansce-web' },
-		{ slug: 'aliansce-mobile' },
-		{ slug: 'neoris-mobile' },
+		{ slug: 'btg-pactual-home-broker-web' },
+		{ slug: 'btg-pactual-coe-web-platform' },
+		{ slug: 'btg-pactual-digital-equities-ds' },
+		{ slug: 'xp-investimentos-black-sales' },
+		{ slug: 'xp-investimentos-black-aai' },
+		{ slug: 'zoox-pms-web' },
+		{ slug: 'aliansce-bi-geospatial-web' },
+		{ slug: 'aliansce-spatial-metrics-mobile' },
+		{ slug: 'neoris-spatial-metrics-mobile' },
 		{ slug: 'neoris-web-vision' },
 	];
 }
