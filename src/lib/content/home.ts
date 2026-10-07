@@ -119,7 +119,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					quote:
 						'As a technical specialist, Thiago was decisive for getting Home Broker and COE into production. Architecture, RFCs and delivery discipline that the squad leaned on — without that ownership, those platforms would not have reached the standard they did under regulatory pressure.',
 					author: 'Executive Director',
-					role: 'BTG Pactual Bank · Digital Equities',
+					role: 'Banco BTG Pactual · Digital Equities Vertical',
 					metric: '4.8M+ clients · R$1.6T+ AUM',
 				},
 				{
@@ -210,7 +210,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Professional Specialization Certificate',
-					title: 'User Experience (UX) and User Interface (UI) Design',
+					title: 'Foundations of User Experience Design',
 					org: 'Google',
 					location: '(Remote)',
 					period: 'Dez 2024',
@@ -304,7 +304,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			items: [
 				{
 					role: 'Principal Front-End Engineer',
-					company: 'BTG Pactual Bank S.A.',
+					company: 'Banco BTG Pactual S.A.',
 					period: 'Feb 2023 — Jun 2026',
 					location: 'São Paulo, BR (Remote)',
 					description:
@@ -551,7 +551,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Certificado de Especialização Profissional',
-					title: 'Experiência do Usuário (UX) e Interface do Usuário (UI) Design',
+					title: 'Foundations of User Experience Design',
 					org: 'Google',
 					location: '(Remoto)',
 					period: 'Dez 2024',
@@ -573,7 +573,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Certificado do Curso',
-					title: 'Fluência de IA: Estrutura e Fundamentos',
+					title: 'AI Fluency: Framework & Foundations',
 					org: 'Anthropic',
 					location: '(Remoto)',
 					period: 'Ago 2026',
@@ -584,7 +584,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Certificado de Especialização Profissional',
-					title: 'Aprendizagem Profunda',
+					title: 'Deep Learning',
 					org: 'DeepLearning.AI',
 					location: '(Remoto)',
 					period: 'Ago 2026',
@@ -606,7 +606,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Certificado de Especialização Profissional',
-					title: 'Engenharia de IA',
+					title: 'IA Engineering',
 					org: 'IBM',
 					location: '(Remoto)',
 					period: 'Em andamento — meta out/2026',
@@ -617,7 +617,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Certificado de Especialização Profissional',
-					title: 'RAG & Agente de AI',
+					title: 'RAG & Agentic AI',
 					org: 'IBM',
 					location: '(Remoto)',
 					period: 'Em andamento — meta nov/2026',
@@ -627,7 +627,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 				},
 				{
 					kind: 'Certificado de Especialização Profissional',
-					title: 'MLOps | Operações de Aprendizado de Máquina',
+					title: 'MLOps | Machine Learning Operations',
 					org: 'Duke University',
 					location: '(Remoto)',
 					period: 'Em andamento — meta dez/2026',

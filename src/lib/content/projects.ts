@@ -28,13 +28,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 			'Production systems across regulated finance, AI/ML and spatial computing — built for scale, compliance and measurable business impact.',
 		items: [
 			{
-				slug: 'home-broker',
-				title: 'Web — Home Broker',
-				category: 'Trading Platform',
+				slug: 'btg-pactual-home-broker-web',
+				title: 'Home Broker — Real-Time Electronic Digital Trading Web Platform',
+				category: 'Front-End · White-Label',
 				year: '2023–2026',
 				summary:
 					'White-label digital trading platform for high-frequency real-time operations in a regulated investment bank environment.',
-				client: 'BTG Pactual Bank — Digital Equities',
+				client: 'Banco BTG Pactual — Digital Equities Vertical',
 				duration: '3+ years',
 				location: 'São Paulo, BR (Remote)',
 				description:
@@ -57,13 +57,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'coe-platform',
-				title: 'Web — COE Platform',
-				category: 'Structured Products',
+				slug: 'btg-pactual-coe-web-platform',
+				title: 'Structured Operations Certificates Products Web Platform',
+				category: 'Front-End · White-Label',
 				year: '2023–2026',
 				summary:
 					'End-to-end platform for Structured Operations Certificates (COE) — issuance, distribution and lifecycle in a compliance-heavy context.',
-				client: 'BTG Pactual Bank — Digital Equities',
+				client: 'Banco BTG Pactual — Digital Equities Vertical',
 				duration: '1 month',
 				location: 'São Paulo, BR (Remote)',
 				description:
@@ -82,13 +82,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'orquestra-ds',
-				title: 'Web — Design System',
-				category: 'Design System',
+				slug: 'btg-pactual-digital-equities-ds',
+				title: 'Digital Equities Design System',
+				category: 'Front-End · White-Label · Design System',
 				year: '2023–2026',
 				summary:
 					'Angular component library and design system for the Digital Equities vertical — shared private packages accelerating regulated product delivery.',
-				client: 'BTG Pactual Bank — Digital Equities',
+				client: 'Banco BTG Pactual — Digital Equities Vertical',
 				duration: '1 week',
 				location: 'São Paulo, BR (Remote)',
 				description:
@@ -108,13 +108,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'black-sales',
-				title: 'Web — Black Sales',
-				category: 'Trading Desk',
+				slug: 'xp-investimentos-black-sales',
+				title: 'Black Sales — Strucutured & Derivatives Products Web Platform',
+				category: 'Front-End · Sales Platform',
 				year: '2021–2022',
 				summary:
 					'Operations-desk platform for registration and distribution of structured products and derivatives for Global Markets.',
-				client: 'XP Investments — Global Markets',
+				client: 'XP Investimentos — Global Markets Vertical · Treasury',
 				duration: '1+ year',
 				location: 'São Paulo, BR (Remote)',
 				description:
@@ -133,13 +133,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'black-aai',
-				title: 'Web — Black AAI',
-				category: 'Advisor Platform',
+				slug: 'xp-investimentos-black-aai',
+				title: 'Black AAI — Structured Products & Portfolio Management Web Platform',
+				category: 'Front-End · Advisor Platform',
 				year: '2021–2022',
 				summary:
 					'Advisor-facing platform for profile analysis, recommendation and portfolio management at scale (~12K advisors).',
-				client: 'XP Investments — Global Markets',
+				client: 'XP Investimentos — Global Markets Vertical · Treasury',
 				duration: '1+ year',
 				location: 'São Paulo, BR (Remote)',
 				description:
@@ -158,38 +158,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'facial-recognition',
-				title: 'Web — Facial Recognition Flow',
-				category: 'Biometrics · Hospitality',
-				year: '2020',
-				summary:
-					'End-to-end facial detection and recognition to authenticate and authorize hotel users accessing the PMS — AWS Rekognition, TLS and Brazilian guest-registration (FNHR) compliance.',
-				client: 'Zoox Technology',
-				duration: 'Jul 2020 — Nov 2020',
-				location: 'Rio de Janeiro, BR (Remote)',
-				description:
-					'Designed the biometric validation flow for hotel guests: facial detection (bounding boxes) and recognition (face matching with confidence score) via Amazon Rekognition, ensuring strict Brazilian guest-registration (FNHR) compliance. Secured the path used to authenticate and authorize users into the white-label PMS under OWASP Top 10 and TLS baselines.',
-				tags: [
-					'AWS Rekognition',
-					'Biometrics',
-					'Computer Vision',
-					'Face Matching',
-					'TLS',
-					'OWASP',
-					'FNHR',
-					'Hospitality',
-					'PMS',
-					'AuthN/AuthZ',
-				],
-			},
-			{
-				slug: 'guest-digital-journey',
-				title: 'Web — Guest Digital Journey',
-				category: 'Hospitality · PMS',
+				slug: 'zoox-pms-web',
+				title: 'PMS — Hotel Property Management Web Platform',
+				category: 'Front-End · Artificial Intelligence · Computer Vision',
 				year: '2020',
 				summary:
 					'Async check-in / check-out journey on a complex white-label PMS — fewer operational bottlenecks at peak occupancy, real-time OTA billing integration.',
-				client: 'Zoox Technology',
+				client: 'Zoox Technologia',
 				duration: 'Jul 2020 — Nov 2020',
 				location: 'Rio de Janeiro, BR (Remote)',
 				description:
@@ -210,13 +185,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'aliansce-web',
-				title: 'Web — Spatial BI',
-				category: 'Geospatial BI',
+				slug: 'aliansce-bi-geospatial-web',
+				title: 'BI Geospatial Web Platform',
+				category: 'Front-End · BI Geospatial',
 				year: '2017–2019',
 				summary:
 					'Framework-free spatial BI platform mapping multi-floor shopping metrics and revenue indicators on interactive maps.',
-				client: 'Aliansce Shopping Centers (via NEORIS)',
+				client: 'Aliansce (Shopping Centers Administrator) — via NEORIS',
 				duration: 'Strategic product',
 				location: 'Rio de Janeiro, BR (Hybrid)',
 				description:
@@ -235,13 +210,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'aliansce-mobile',
-				title: 'Mobile — AR Metrics',
-				category: 'AR / Spatial Computing',
+				slug: 'aliansce-spatial-metrics-mobile',
+				title: 'Real-time Spatial Metrics Visualization Mobile App (AR/VR)',
+				category: 'Native Android App · AR/VR · Spatial Computing',
 				year: '2017–2019',
 				summary:
 					'Native Android AR app overlaying real-time operational metrics on physical retail spaces via optical target tracking.',
-				client: 'Aliansce Shopping Centers (via NEORIS)',
+				client: 'Aliansce (Shopping Centers Administrator) — via NEORIS',
 				duration: 'Strategic product',
 				location: 'Rio de Janeiro, BR (Hybrid)',
 				description:
@@ -260,9 +235,9 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'neoris-mobile',
-				title: 'Mobile — 3D BI Dashboards',
-				category: 'AR / Executive Vision',
+				slug: 'neoris-spatial-metrics-mobile',
+				title: 'Real-Time Spatial 3D Dashboards Metrics Visualization Mobile App (AR/VR)',
+				category: 'Native Android App · AR/VR · Executive BI Vision',
 				year: '2017–2019',
 				summary:
 					'Native Android prototype rendering volumetric 3D dashboards fed by live BI for executive presentations.',
@@ -286,8 +261,8 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 			},
 			{
 				slug: 'neoris-web-vision',
-				title: 'Web — Cognitive Vision',
-				category: 'AI / Computer Vision',
+				title: 'Media Computer Vision Web Platform',
+				category: 'Front-End · AI/ML · Computer Vision',
 				year: '2017–2019',
 				summary:
 					'Web prototype for async media ingestion with object detection, people tracking, demographic classification and content moderation.',
@@ -318,13 +293,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 			'Sistemas em produção em finanças reguladas, AI/ML e computação espacial — construídos para escala, compliance e impacto de negócio mensurável.',
 		items: [
 			{
-				slug: 'home-broker',
-				title: 'Web — Home Broker',
-				category: 'Plataforma de Trading',
+				slug: 'btg-pactual-home-broker-web',
+				title: 'Home Broker — Plataforma Web de Trading Eletrônico Digital em Tempo Real',
+				category: 'Front-End · White-Label',
 				year: '2023–2026',
 				summary:
 					'Plataforma digital de trading white-label para operações em tempo real de alta frequência em ambiente bancário regulado.',
-				client: 'Banco BTG Pactual — Digital Equities',
+				client: 'Banco BTG Pactual — Vertical Digital Equities',
 				duration: '3+ anos',
 				location: 'São Paulo, BR (Remoto)',
 				description:
@@ -347,9 +322,9 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'coe-platform',
-				title: 'Web — Plataforma COE',
-				category: 'Produtos Estruturados',
+				slug: 'btg-pactual-coe-web-platform',
+				title: 'Plataforma Web de Produtos de Certificados de Operações Estruturadas',
+				category: 'Front-End · White-Label',
 				year: '2023–2026',
 				summary:
 					'Plataforma ponta a ponta para Certificados de Operações Estruturadas — emissão, distribuição e ciclo de vida com forte compliance.',
@@ -372,13 +347,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'orquestra-ds',
-				title: 'Web — Design System',
-				category: 'Design System',
+				slug: 'btg-pactual-digital-equities-ds',
+				title: 'Digital Equities Design System',
+				category: 'Front-End · White-Label · Design System',
 				year: '2023–2026',
 				summary:
 					'Biblioteca de componentes Angular e design system da vertical Digital Equities — pacotes privados compartilhados acelerando a entrega de produtos regulados.',
-				client: 'Banco BTG Pactual — Digital Equities',
+				client: 'Banco BTG Pactual — Vertical Digital Equities',
 				duration: '1 semana',
 				location: 'São Paulo, BR (Remoto)',
 				description:
@@ -398,13 +373,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'black-sales',
-				title: 'Web — Black Sales',
-				category: 'Mesa de Operações',
+				slug: 'xp-investimentos-black-sales',
+				title: 'Black Sales — Plataforma Web de Produtos Estruturados e Derivativos',
+				category: 'Front-End · Plataforma para a Mesa de Operações',
 				year: '2021–2022',
 				summary:
 					'Plataforma da mesa para cadastro e distribuição de produtos estruturados e derivativos em Global Markets.',
-				client: 'XP Investimentos — Global Markets',
+				client: 'XP Investimentos — Vertical Global Markets · Tesouraria',
 				duration: '1+ ano',
 				location: 'São Paulo, BR (Remoto)',
 				description:
@@ -423,13 +398,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'black-aai',
-				title: 'Web — Black AAI',
-				category: 'Plataforma de Assessores',
+				slug: 'xp-investimentos-black-aai',
+				title: 'Black AAI — Plataforma Web de Gerenciamento de Produtos Estruturados e Portfólio',
+				category: 'Front-End · Plataforma para Assessores',
 				year: '2021–2022',
 				summary:
 					'Plataforma para assessores: análise de perfil, recomendação e gestão de portfólio em escala (~12K assessores).',
-				client: 'XP Investimentos — Global Markets',
+				client: 'XP Investimentos — Vertical Global Markets · Tesouraria',
 				duration: '1+ ano',
 				location: 'São Paulo, BR (Remoto)',
 				description:
@@ -448,34 +423,9 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'facial-recognition',
-				title: 'Web — Fluxo de Reconhecimento Facial',
-				category: 'Biometria · Hospitalidade',
-				year: '2020',
-				summary:
-					'Detecção e reconhecimento facial ponta a ponta para autenticar e autorizar o hóspede no PMS — AWS Rekognition, TLS e conformidade FNHR.',
-				client: 'Zoox Technology',
-				duration: 'Jul 2020 — Nov 2020',
-				location: 'Rio de Janeiro, BR (Remoto)',
-				description:
-					'Fluxo de validação biométrica para hóspedes: detecção facial (bounding boxes) e reconhecimento (face matching com score de confiança) via Amazon Rekognition, com conformidade estrita à FNHR. Caminho usado para autenticar e autorizar o usuário do hotel no PMS white-label, sob baselines OWASP Top 10 e TLS.',
-				tags: [
-					'AWS Rekognition',
-					'Biometria',
-					'Computer Vision',
-					'Face Matching',
-					'TLS',
-					'OWASP',
-					'FNHR',
-					'Hospitalidade',
-					'PMS',
-					'AuthN/AuthZ',
-				],
-			},
-			{
-				slug: 'guest-digital-journey',
-				title: 'Web — Jornada Digital do Hóspede',
-				category: 'Hospitalidade · PMS',
+				slug: 'zoox-pms-web',
+				title: 'PMS — Plataforma Web de Gestão de Propriedade Hoteleira',
+				category: 'Front-End · Inteligência Artificial · Visão Computacional',
 				year: '2020',
 				summary:
 					'Jornada assíncrona de check-in / check-out em PMS white-label de alta complexidade — menos gargalos operacionais em picos e integração de faturamento em tempo real com OTAs.',
@@ -500,13 +450,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'aliansce-web',
-				title: 'Web — BI Espacial',
-				category: 'BI Geoespacial',
+				slug: 'aliansce-bi-geospatial-web',
+				title: 'Plataforma Web de BI Geoespacial',
+				category: 'Front-End · BI Geoespacial',
 				year: '2017–2019',
 				summary:
 					'Plataforma web sem frameworks para BI espacial: métricas multi-andar de shoppings em mapas interativos.',
-				client: 'Aliansce Shopping Centers (via NEORIS)',
+				client: 'Aliansce (Administrador de Shopping Centers) — via NEORIS',
 				duration: 'Produto estratégico',
 				location: 'Rio de Janeiro, BR (Híbrido)',
 				description:
@@ -525,13 +475,13 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'aliansce-mobile',
-				title: 'Mobile — Métricas em AR',
-				category: 'AR / Computação Espacial',
+				slug: 'aliansce-spatial-metrics-mobile',
+				title: 'Aplicativo móvel para visualização de métricas espaciais em Tempo Real (AR/VR)',
+				category: 'App Android Nativo · AR/VR · Computação Espacial',
 				year: '2017–2019',
 				summary:
 					'App Android nativo de AR com overlay de métricas operacionais em tempo real sobre espaços físicos de varejo.',
-				client: 'Aliansce Shopping Centers (via NEORIS)',
+				client: 'Aliansce (Administrador de Shopping Centers) — via NEORIS',
 				duration: 'Produto estratégico',
 				location: 'Rio de Janeiro, BR (Híbrido)',
 				description:
@@ -550,9 +500,9 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 				],
 			},
 			{
-				slug: 'neoris-mobile',
-				title: 'Mobile — Dashboards 3D de BI',
-				category: 'AR / Visão Executiva',
+				slug: 'neoris-spatial-metrics-mobile',
+				title: 'Aplicativo móvel para visualização de métricas em dashboards 3D espaciais em tempo real (AR/VR)',
+				category: 'App Android Nativo · AR/VR · Visão Executiva de BI',
 				year: '2017–2019',
 				summary:
 					'Protótipo Android nativo com dashboards volumétricos 3D alimentados por BI ao vivo para apresentações executivas.',
@@ -576,8 +526,8 @@ const PROJECTS: Record<LocaleType, ProjectsContent> = {
 			},
 			{
 				slug: 'neoris-web-vision',
-				title: 'Web — Visão Cognitiva',
-				category: 'IA / Computer Vision',
+				title: 'Plataforma Web de Visão Computacional de Mídia',
+				category: 'Front-End · AI/ML · Visão Computacional',
 				year: '2017–2019',
 				summary:
 					'Protótipo web de ingestão assíncrona de mídia com detecção de objetos, rastreamento de pessoas, classificação demográfica e moderação.',
