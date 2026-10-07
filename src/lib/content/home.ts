@@ -268,11 +268,11 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					title: 'AI Engineering',
 					org: 'IBM',
 					location: '(Remote)',
-					period: 'In progress — target Oct 2026',
+					period: 'Sep 2026 — Oct 2026',
 					description:
 						'Machine Learning, Deep Learning, LLMs, RAG, LangChain, PyTorch/TensorFlow — production-oriented AI engineering path.',
 					tags: ['ML', 'Deep Learning', 'LLMs', 'RAG', 'LangChain', 'PyTorch', 'TensorFlow'],
-					status: 'In progress',
+					status: 'Completed',
 				},
 				{
 					kind: 'Professional Specialization Certificate',
@@ -609,11 +609,11 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					title: 'IA Engineering',
 					org: 'IBM',
 					location: '(Remoto)',
-					period: 'Em andamento — meta out/2026',
+					period: 'Set 2026 — Out 2026',
 					description:
 						'Machine Learning, Deep Learning, LLMs, RAG, LangChain, PyTorch/TensorFlow — trilha de engenharia orientada a produção.',
 					tags: ['ML', 'Deep Learning', 'LLMs', 'RAG', 'LangChain', 'PyTorch', 'TensorFlow'],
-					status: 'Em andamento',
+					status: 'Concluído',
 				},
 				{
 					kind: 'Certificado de Especialização Profissional',
