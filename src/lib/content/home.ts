@@ -565,7 +565,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 					title: 'Python',
 					org: 'University of Michigan',
 					location: '(Remoto)',
-					period: 'Julho 2026 — Ago 2026',
+					period: 'Jul 2026 — Ago 2026',
 					description:
 						'Especialização em Python com estruturas de dados, APIs e SQL — bases de programação aplicada a workloads de AI/ML.',
 					tags: ['Python', 'Estruturas de Dados', 'APIs', 'SQL'],
