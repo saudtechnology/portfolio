@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.5
+
+### Patch Changes
+
+- b5320fa: - Added new script in package
+  - Updated ibm ai engineering certificate status
+  - Changged all projects informations
+  - Changed the CV Documents
+  - Correction in translation and changed project titles
+  - Correction in translation in certification period
+  - Correction by pnpm audit --prod
+
 ## 1.1.4
 
 ### Patch Changes
