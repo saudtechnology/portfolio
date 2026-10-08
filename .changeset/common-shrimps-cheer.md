@@ -8,3 +8,4 @@
 - Changed the CV Documents
 - Correction in translation and changed project titles
 - Correction in translation in certification period
+- Correction by pnpm audit --prod
