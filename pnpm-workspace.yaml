@@ -7,6 +7,10 @@ blockExoticSubdeps: true
 preferFrozenLockfile: true
 verifyStoreIntegrity: true
 
+overrides:
+  sharp: 0.35.5
+  source-map-js: 1.2.2
+
 allowBuilds:
   '@changesets/cli': true
   canvas: true
