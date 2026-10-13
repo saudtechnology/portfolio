@@ -3,3 +3,4 @@
 ---
 
 - Fix: cv docs files
+- Fix: dependabot corrections
