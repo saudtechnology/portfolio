@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.6
+
+### Patch Changes
+
+- 7102682: - Fix: cv docs files
+  - Fix: dependabot corrections
+
 ## 1.1.5
 
 ### Patch Changes
