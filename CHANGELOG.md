@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.7
+
+### Patch Changes
+
+- 800004e: - Updated CV Documents
+  - Updated Education and Experiences
+  - Correction in initial color-scheme hydratation
+
 ## 1.1.6
 
 ### Patch Changes
