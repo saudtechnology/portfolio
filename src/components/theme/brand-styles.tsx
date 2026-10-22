@@ -51,7 +51,7 @@ export function ThemeBrandStyles(): JSX.Element | null {
 	// 5. Anti-Flicker Engineering Shield Script String
 	// This tiny inline raw sequence runs block-side synchronously on the client window before React initialization loops fire.
 	// Prevents layout flashes on static hosting stacks like GitHub Pages by resolving themes before the DOM paints.
-	const CURRENT_ANTI_FLICKER_SCRIPT: string = `(function(){try{var t=localStorage.getItem('theme');var s=window.matchMedia('(prefers-color-scheme:light)').matches;var e=document.documentElement;if(t==='light'||(!t&&s)){e.classList.remove('dark');e.classList.add('light');e.style.colorScheme='light'}else{e.classList.remove('light');e.classList.add('dark');e.style.colorScheme='dark'}}catch(e){}})()`;
+	const CURRENT_ANTI_FLICKER_SCRIPT: string = `(function(){try{var t=localStorage.getItem('theme');var e=document.documentElement;if(t==='light'){e.classList.remove('dark');e.classList.add('light')}else{e.classList.remove('light');e.classList.add('dark')}}catch(e){}})()`;
 
 	return (
 		<>
