@@ -344,9 +344,9 @@ function MobileMenu({
 	ui,
 	reduceMotion,
 	navLinkProps,
-	cvHref,
-	cvFilename,
-	onClose,
+	// cvHref,
+	// cvFilename,
+	// onClose,
 }: MobileMenuProps): JSX.Element {
 	const duration = reduceMotion ? 0 : 0.32;
 	const panelDuration = reduceMotion ? 0 : 0.28;
@@ -373,13 +373,13 @@ function MobileMenu({
 						transition={{ duration: panelDuration, delay: panelDelay }}
 					>
 						<NavLinks {...navLinkProps} compact={false} />
-						<CvLink
+						{/* <CvLink
 							href={cvHref}
 							filename={cvFilename}
 							label={ui.DOWNLOAD_CV}
 							className="cta-button col-span-2 mt-3 inline-flex cursor-pointer items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition-colors"
 							onClick={onClose}
-						/>
+						/> */}
 					</motion.div>
 				</motion.nav>
 			) : null}
@@ -478,21 +478,21 @@ export function Header(): JSX.Element {
 					<nav className="flex min-w-0 items-center gap-4 xl:gap-5" aria-label={ui.ARIA_PRIMARY}>
 						<NavLinks {...navLinkProps} compact />
 					</nav>
-					<CvLink
+					{/* <CvLink
 						href={cvHref}
 						filename={cvFilename}
 						label={ui.DOWNLOAD_CV}
 						className="cta-button inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-colors"
-					/>
+					/> */}
 				</div>
 
 				<div className="flex items-center gap-3 lg:hidden">
-					<CvLink
+					{/* <CvLink
 						href={cvHref}
 						filename={cvFilename}
 						label={ui.DOWNLOAD_CV}
 						className="cta-button hidden cursor-pointer items-center gap-2 rounded-full px-4 py-2 text-xs font-medium transition-colors sm:inline-flex"
-					/>
+					/> */}
 					<button
 						type="button"
 						className={menuButtonClass(overHero)}
