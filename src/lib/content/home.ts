@@ -91,7 +91,7 @@ const HOME_CONTENT: Record<LocaleType, HomeContent> = {
 			title: 'Thiago Saud',
 			subtitle: '',
 			cta: "Let's Talk",
-			roles: ['Principal Front-End Engineer', 'Senior AI/MLOps Engineer'],
+			roles: ['Principal Front-End Engineer'],
 		},
 		aboutTeaser: {
 			label: 'About',
