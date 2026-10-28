@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.8
+
+### Patch Changes
+
+- 6700edd: - Removed AI/MLOps Engineer Title
+  - Disabled Cv Link
+  - Correction in security severity and critical
+
 ## 1.1.7
 
 ### Patch Changes
